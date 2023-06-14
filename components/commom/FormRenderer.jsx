@@ -10,6 +10,7 @@ const FormRenderer = (props) => {
 
     const [counter, setCounter] = useState(0);
     const [trailArr, setTrailArr] = useState([]);
+    const [fieldsetVisibility, setFieldsetVisibility] = useState({});
 
     function pageUp() {
         event.preventDefault();
