@@ -7,13 +7,13 @@ import Text from '@components/formComponents/Text';
 
 const keys = Object.keys(formFormat);
 
-const queue = [0];
+const queue: Number[] = [0];
 
 const getCurrentPage = () => {
-    const element = document.getElementById(queue.at(-1));
+    const element: any = document.getElementById(String(queue.at(-1)));
     const childNodes = element.children[3].children;
 
-    let isAnyChecked = false;
+    let isAnyChecked: any = false;
 
     for (let i = 0; i < childNodes.length; i++) {
         const childestNode = childNodes[i].children;
@@ -22,10 +22,11 @@ const getCurrentPage = () => {
 
             // Check if the child node is a radio input and is checked
             if ((child.type === "radio" || child.type === "checkbox") && child.checked) {
-                isAnyChecked = true;
+                child.type === "radio" ? isAnyChecked = child.value : isAnyChecked = true;
                 break; // Exit the loop if any radio input is checked
             }
         }
+
         if (isAnyChecked) {
             break; // Exit the outer loop if any radio input is checked
         }
@@ -35,20 +36,18 @@ const getCurrentPage = () => {
 }
 
 const handlePagesFw = () => {
-    console.log('click');
-    console.log(getCurrentPage())
     const page = queue.at(-1);
+
+    const pageTo: any = getCurrentPage();
     
-    if (getCurrentPage()) {
-        queue.push(Number(formFormat[page].goto));
+    if (pageTo) {
+        queue.push(Number(formFormat[page].goto[pageTo !== true ? pageTo : 0 ]));
         document.getElementById(page).classList.toggle('hidden');
         document.getElementById(queue.at(-1)).classList.toggle('hidden');
     }
 };
 
 const handlePagesBw = () => {    
-    console.log('click');
-    console.log(getCurrentPage());
     const page = queue.at(-1);
 
     if (queue.at(-1)) {
@@ -65,7 +64,7 @@ const FormRenderer = (props) => {
             {Object.values(formFormat).map((item, index) => {
 
                 return (
-                    <fieldset key={index} id={index} className={`border ${index != 0 ? 'hidden' : ''}`} >
+                    <fieldset key={index} id={index} className={`border p-4 ${index != 0 ? 'hidden' : ''}`} >
                         <h1>{keys[index]}</h1>
                         <legend>{item.title}</legend>
                         <div>{item.subtitle}</div>

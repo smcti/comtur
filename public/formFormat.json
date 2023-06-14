@@ -8,14 +8,19 @@
         "data": [
             {
                 "value": "value",
-                "label": "valor"
+                "label": "valor",
+                "goto": "1"
             },
             {
                 "value": "value2",
-                "label": "valor2"
+                "label": "valor2",
+                "goto": "2"
             }
         ],
-        "goto": "1"
+        "goto": {
+            "value": "1",
+            "value2": "2"
+        }
     },
     "1": {
         "type": "checkbox",
@@ -33,7 +38,7 @@
                 "label": "valor4"
             }
         ],
-        "goto": "2"
+        "goto": [2]
     },
     "2": {
         "type": "text",
