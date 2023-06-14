@@ -1,0 +1,49 @@
+{
+    "1": {
+        "type": "radio",
+        "title": "Lorem",
+        "subtitle": "Ipsum dolor sit amet",
+        "required": true,
+        "name": "testName",
+        "data": [
+            {
+                "value": "value",
+                "label": "valor"
+            },
+            {
+                "value": "value2",
+                "label": "valor2"
+            }
+        ],
+        "goto": "2"
+    },
+    "2": {
+        "type": "checkbox",
+        "title": "",
+        "subtitle": "",
+        "required": false,
+        "name": "testName2",
+        "data": [
+            {
+                "value": "value",
+                "label": "valor"
+            },
+            {
+                "value": "value2",
+                "label": "valor2"
+            }
+        ],
+        "goto": "3"
+    },
+    "3": {
+        "type": "text",
+        "title": "",
+        "subtitle": "",
+        "required": false,
+        "name": "testName3",
+        "data": [
+
+        ],
+        "goto": "end"
+    }
+}
