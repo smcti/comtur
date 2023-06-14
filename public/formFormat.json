@@ -1,5 +1,5 @@
 {
-    "1": {
+    "0": {
         "type": "radio",
         "title": "Lorem",
         "subtitle": "Ipsum dolor sit amet",
@@ -15,27 +15,27 @@
                 "label": "valor2"
             }
         ],
-        "goto": "2"
+        "goto": "1"
     },
-    "2": {
+    "1": {
         "type": "checkbox",
-        "title": "",
-        "subtitle": "",
+        "title": "Okay",
+        "subtitle": "Here we go",
         "required": false,
         "name": "testName2",
         "data": [
             {
-                "value": "value",
-                "label": "valor"
+                "value": "value3",
+                "label": "valor3"
             },
             {
-                "value": "value2",
-                "label": "valor2"
+                "value": "value4",
+                "label": "valor4"
             }
         ],
-        "goto": "3"
+        "goto": "2"
     },
-    "3": {
+    "2": {
         "type": "text",
         "title": "",
         "subtitle": "",

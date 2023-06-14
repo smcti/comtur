@@ -20,10 +20,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className='flex flex-col min-h-[100dvh]'>
         <Nav></Nav>
-        <main className='bg-zircon-50 font-poppins'>{children}</main>
+        <main className='font-poppins'>{children}</main>
         <Footer></Footer>
       </body>
     </html>
