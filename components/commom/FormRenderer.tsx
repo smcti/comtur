@@ -64,7 +64,7 @@ const FormRenderer = (props) => {
             {Object.values(formFormat).map((item, index) => {
 
                 return (
-                    <fieldset key={index} id={index} className={`border p-4 ${index != 0 ? 'hidden' : ''}`} >
+                    <fieldset key={index} id={index}  >
                         <h1>{keys[index]}</h1>
                         <legend>{item.title}</legend>
                         <div>{item.subtitle}</div>

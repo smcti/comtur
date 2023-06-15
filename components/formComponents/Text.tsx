@@ -1,6 +1,6 @@
 const Text = (props: any) => {
   return (
-    <input type="text"></input>
+    <input type="text" id={props.value} name={props.name} ></input>
   )
 }
 
