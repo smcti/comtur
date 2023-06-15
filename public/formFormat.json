@@ -157,6 +157,65 @@
             "value9": "3"
         }
     },
+    "13": {
+        "type": "checkbox",
+        "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
+        "subtitle": "Na questão anterior você respondeu que eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Francisco Beltrão e/ou Pato Branco ao longo do ano. Qual ou quais as principais razões desse(s) deslocamento(s)? Você pode assinalar mais que uma resposta.",
+        "required": false,
+        "name": "local de residencia (sudoesto do parana)",
+        "data": [
+            [
+                {
+                    "title": "Dois "
+                }, 
+                {
+
+                    "title": "branco"
+                }, 
+                {
+                    "title": "embreagado"
+                }
+                
+            ],
+            [
+                {
+                    "title": "value4",
+                    "value": "valor4"
+                },
+                {
+                    "title": "",
+                    "value": "valor4"
+                },
+                {
+                    "title": "value5",
+                    "value": "valor5"
+                },
+                {
+                    "title": "value5",
+                    "value": "valor5"
+                }
+            ],
+            [
+                {
+                    "title": "value4",
+                    "value": "valor4"
+                },
+                {
+                    "title": "value4",
+                    "value": "valor4"
+                },
+                {
+                    "title": "value5",
+                    "value": "valor5"
+                },
+                {
+                    "title": "value5",
+                    "value": "valor5"
+                }
+            ]
+        ],
+        "goto": [2]
+    },
     "X": {
         "type": "checkbox",
         "title": "Okay",
