@@ -9,6 +9,8 @@ const keys = Object.keys(formFormat);
 
 const queue: Number[] = [0];
 
+let goTo = 0;
+
 const getCurrentPage = () => {
     const element: any = document.getElementById(String(queue.at(-1)));
     const childNodes = element.children[3].children;
@@ -19,10 +21,11 @@ const getCurrentPage = () => {
         const childestNode = childNodes[i].children;
         for (let j = 0; j < childestNode.length; j++) {
             const child = childestNode[j];
-
             // Check if the child node is a radio input and is checked
             if ((child.type === "radio" || child.type === "checkbox") && child.checked) {
-                child.type === "radio" ? isAnyChecked = child.value : isAnyChecked = true;
+                console.log((child));
+
+                child.type === "radio" ? isAnyChecked = child.step : isAnyChecked = true;
                 break; // Exit the loop if any radio input is checked
             }
         }
@@ -39,9 +42,11 @@ const handlePagesFw = () => {
     const page = queue.at(-1);
 
     const pageTo: any = getCurrentPage();
-    
+
+    console.log(pageTo)
+
     if (pageTo) {
-        queue.push(Number(formFormat[page].goto[pageTo !== true ? pageTo : 0 ]));
+        queue.push(Number(pageTo || 0 ));
         document.getElementById(page).classList.toggle('hidden');
         document.getElementById(queue.at(-1)).classList.toggle('hidden');
     }
@@ -79,8 +84,8 @@ const FormRenderer = (props: any) => {
                 )
             })}
             <div className='flex flex-row-reverse gap-4'>
-                <button type='button' className='button' onClick={handlePagesFw} >next</button>
-                <button type='button' className='button' onClick={handlePagesBw} >back</button>
+                <button type='button' className='button hover:bg-gray-200' onClick={handlePagesFw} >next</button>
+                <button type='button' className='button hover:bg-gray-200' onClick={handlePagesBw} >back</button>
             </div>
         </form>
     )

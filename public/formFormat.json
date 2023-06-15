@@ -21,19 +21,14 @@
                 "label": "Outro",
                 "goto": "1"
             }
-        ],
-        "goto": {
-            "value": "1",
-            "value2": "1",
-            "value3": "1"
-        }
+        ]
     },
     "1": {
         "type": "radio",
         "title": "Perfil - Idade",
         "subtitle": "Por favor, informe sua faixa-etária",
         "required": true,
-        "name": "genero",
+        "name": "idade",
         "data": [
             {
                 "value": "16 a 17 anos",
@@ -75,23 +70,14 @@
                 "label": "65 anos ou mais",
                 "goto": "2"
             }
-        ],
-        "goto": {
-            "value": "2",
-            "value2": "2",
-            "value3": "2",
-            "value4": "2",
-            "value5": "2",
-            "value6": "2",
-            "value7": "2"
-        }
+        ]
     },
     "2": {
         "type": "radio",
         "title": "Perfil - Escolaridade",
         "subtitle": "Por favor, informe sua escolaridade",
         "required": true,
-        "name": "genero",
+        "name": "escolaridade",
         "data": [
             {
                 "value": "ensino fundamental incompleto",
@@ -144,18 +130,7 @@
                 "goto": "3"
             }
            
-        ],
-        "goto": {
-            "value": "3",
-            "value2": "3",
-            "value3": "3",
-            "value4": "3",
-            "value5": "3",
-            "value6": "3",
-            "value7": "3",
-            "value8": "3",
-            "value9": "3"
-        }
+        ]
     },
     "13": {
         "type": "checkbox",
@@ -267,8 +242,7 @@
                     "value": "sd-pr-outro-pb"
                 }
             ]
-        ],
-        "goto": [2]
+        ]
     },
     "Y": {
         "type": "text",
@@ -279,7 +253,6 @@
         "name": "testName3",
         "data": [
 
-        ],
-        "goto": "end"
+        ]
     }
 }
