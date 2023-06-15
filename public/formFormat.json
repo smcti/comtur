@@ -28,12 +28,17 @@
         "subtitle": "Here we go",
         "required": false,
         "name": "testName2",
-        "data": {
-            "header": {
-                "value": "value3",
-                "label": "valor3"
-            },
-            "line1": [
+        "data": [
+            [
+                "header1",
+                "header2",
+                "header3"
+            ],
+            [
+                {
+                    "title": "value4",
+                    "alias": "valor4"
+                },
                 {
                     "title": "value4",
                     "alias": "valor4"
@@ -41,19 +46,31 @@
                 {
                     "title": "value5",
                     "alias": "valor5"
-                }
-            ],
-            "line2": [
-                {
-                    "title": "value6",
-                    "alias": "valor6"
                 },
                 {
-                    "title": "value7",
-                    "alias": "valor7"
+                    "title": "value5",
+                    "alias": "valor5"
+                }
+            ],
+            [
+                {
+                    "title": "value4",
+                    "alias": "valor4"
+                },
+                {
+                    "title": "value4",
+                    "alias": "valor4"
+                },
+                {
+                    "title": "value5",
+                    "alias": "valor5"
+                },
+                {
+                    "title": "value5",
+                    "alias": "valor5"
                 }
             ]
-        },
+        ],
         "goto": [2]
     },
     "2": {
