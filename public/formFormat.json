@@ -1,28 +1,222 @@
 {
     "0": {
         "type": "radio",
-        "title": "Lorem",
-        "subtitle": "Ipsum dolor sit amet",
+        "title": "Perfil - Gênero",
+        "subtitle": "Por favor, informe seu gênero",
         "required": true,
-        "name": "testName",
+        "name": "genero",
         "data": [
             {
-                "value": "value",
-                "label": "valor",
+                "value": "feminino",
+                "label": "Feminino",
                 "goto": "1"
             },
             {
-                "value": "value2",
-                "label": "valor2",
-                "goto": "2"
+                "value": "masculino",
+                "label": "Masculino",
+                "goto": "1"
+            },
+            {
+                "value": "outro",
+                "label": "Outro",
+                "goto": "1"
             }
         ],
         "goto": {
             "value": "1",
-            "value2": "2"
+            "value2": "1",
+            "value3": "1"
         }
     },
     "1": {
+        "type": "radio",
+        "title": "Perfil - Idade",
+        "subtitle": "Por favor, informe sua faixa-etária",
+        "required": true,
+        "name": "genero",
+        "data": [
+            {
+                "value": "16 a 17 anos",
+                "label": "16 a 17 anos",
+                "goto": "2"
+            },
+            {
+                "value": "18 a 24 anos",
+                "label": "18 a 24 anos",
+                "goto": "2"
+            },
+            {
+                "value": "25 a 34 anos",
+                "label": "25 a 34 anos",
+                "goto": "2"
+            },
+            {
+                "value": "25 a 34 anos",
+                "label": "25 a 34 anos",
+                "goto": "2"
+            },
+            {
+                "value": "35 a 44 anos",
+                "label": "35 a 44 anos",
+                "goto": "2"
+            },
+            {
+                "value": "45 a 54 anos",
+                "label": "45 a 54 anos",
+                "goto": "2"
+            },
+            {
+                "value": "55 a 64 anos",
+                "label": "55 a 64 anos",
+                "goto": "2"
+            },
+            {
+                "value": "65 anos ou mais",
+                "label": "65 anos ou mais",
+                "goto": "2"
+            }
+        ],
+        "goto": {
+            "value": "2",
+            "value2": "2",
+            "value3": "2",
+            "value4": "2",
+            "value5": "2",
+            "value6": "2",
+            "value7": "2"
+        }
+    },
+    "2": {
+        "type": "radio",
+        "title": "Perfil - Escolaridade",
+        "subtitle": "Por favor, informe sua escolaridade",
+        "required": true,
+        "name": "genero",
+        "data": [
+            {
+                "value": "ensino fundamental incompleto",
+                "label": "Ensino Fundamental Incompleto",
+                "goto": "3"
+            },
+            {
+                "value": "ensino fundamental completo",
+                "label": "Ensino Fundamental Completo",
+                "goto": "3"
+            },
+            {
+                "value": "ensino medio incompleto",
+                "label": "Ensino Médio Incompleto",
+                "goto": "3"
+            },
+            {
+                "value": "ensino medio completo",
+                "label": "Ensino Médio Completo",
+                "goto": "3"
+            },
+            {
+                "value": "ensino superior incompleto",
+                "label": "Ensino Superior Incompleto",
+                "goto": "3"
+            },
+            {
+                "value": "ensino superior completo",
+                "label": "Ensino Superior Completo",
+                "goto": "3"
+            },
+            {
+                "value": "pos-graduacao incompleta",
+                "label": "Pós-Graduação Incompleta",
+                "goto": "3"
+            },
+            {
+                "value": "pos-graduacao completa",
+                "label": "Pós-Graduação Completa",
+                "goto": "3"
+            },
+            {
+                "value": "mestrado",
+                "label": "Mestrado",
+                "goto": "3"
+            },
+            {
+                "value": "doutorado",
+                "label": "Doutorado",
+                "goto": "3"
+            }
+           
+        ],
+        "goto": {
+            "value": "3",
+            "value2": "3",
+            "value3": "3",
+            "value4": "3",
+            "value5": "3",
+            "value6": "3",
+            "value7": "3",
+            "value8": "3",
+            "value9": "3"
+        }
+    },
+    "13": {
+        "type": "checkbox",
+        "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
+        "subtitle": "Na questão anterior você respondeu que eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Francisco Beltrão e/ou Pato Branco ao longo do ano. Qual ou quais as principais razões desse(s) deslocamento(s)? Você pode assinalar mais que uma resposta.",
+        "required": false,
+        "name": "local de residencia (sudoesto do parana)",
+        "data": [
+            [
+                {
+                    "title": "Dois Vizinhos"
+                }, 
+                {
+
+                    "title": "Francisco Beltrão"
+                }, 
+                {
+                    "title": "Pato Branco"
+                }
+                
+            ],
+            [
+                {
+                    "title": "Acesso à saúde (pública e/ou privada)",
+                    "value": "valor4"
+                },
+                {
+                    "title": "",
+                    "value": "valor4"
+                },
+                {
+                    "title": "value5",
+                    "value": "valor5"
+                },
+                {
+                    "title": "value5",
+                    "value": "valor5"
+                }
+            ],
+            [
+                {
+                    "title": "value4",
+                    "value": "valor4"
+                },
+                {
+                    "title": "value4",
+                    "value": "valor4"
+                },
+                {
+                    "title": "value5",
+                    "value": "valor5"
+                },
+                {
+                    "title": "value5",
+                    "value": "valor5"
+                }
+            ]
+        ],
+        "goto": [2]
+    },
+    "X": {
         "type": "checkbox",
         "title": "Okay",
         "subtitle": "Here we go",
@@ -81,7 +275,7 @@
         ],
         "goto": [2]
     },
-    "2": {
+    "Y": {
         "type": "text",
         "title": "",
         "subtitle": "",
