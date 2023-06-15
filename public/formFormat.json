@@ -180,37 +180,91 @@
             [
                 {
                     "title": "Acesso à saúde (pública e/ou privada)",
-                    "value": "valor4"
+                    "value": "sd-pr-as"
                 },
                 {
                     "title": "",
-                    "value": "valor4"
+                    "value": "sd-pr-as-dv"
                 },
                 {
-                    "title": "value5",
-                    "value": "valor5"
+                    "title": "",
+                    "value": "sd-pr-as-fb"
                 },
                 {
-                    "title": "value5",
-                    "value": "valor5"
+                    "title": "",
+                    "value": "sd-pr-as-pb"
                 }
             ],
             [
                 {
-                    "title": "value4",
-                    "value": "valor4"
+                    "title": "Compras",
+                    "value": "sd-pr-cprs"
                 },
                 {
-                    "title": "value4",
-                    "value": "valor4"
+                    "title": "",
+                    "value": "sd-pr-cprs-dv"
                 },
                 {
-                    "title": "value5",
-                    "value": "valor5"
+                    "title": "",
+                    "value": "sd-pr-cprs-fb"
                 },
                 {
-                    "title": "value5",
-                    "value": "valor5"
+                    "title": "",
+                    "value": "sd-pr-cprs-pb"
+                }
+            ],
+            [
+                {
+                    "title": "Estudos",
+                    "value": "sd-pr-estd"
+                },
+                {
+                    "title": "",
+                    "value": "sd-pr-estd-dv"
+                },
+                {
+                    "title": "",
+                    "value": "sd-pr-estd-fb"
+                },
+                {
+                    "title": "",
+                    "value": "sd-pr-estd-pb"
+                }
+            ],
+            [
+                {
+                    "title": "Negócios / Trabalho",
+                    "value": "sd-pr-ntrab"
+                },
+                {
+                    "title": "",
+                    "value": "sd-pr-ntrab-dv"
+                },
+                {
+                    "title": "",
+                    "value": "sd-pr-ntrab-fb"
+                },
+                {
+                    "title": "",
+                    "value": "sd-pr-ntrab-pb"
+                }
+            ],
+            [
+                {
+                    "title": "Outra razão",
+                    "value": "sd-pr-outro"
+                },
+                {
+                    "title": "",
+                    "value": "sd-pr-outro-dv"
+                },
+                {
+                    "title": "",
+                    "value": "sd-pr-outro-fb"
+                },
+                {
+                    "title": "",
+                    "value": "sd-pr-outro-pb"
                 }
             ]
         ],
