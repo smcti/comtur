@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-const getAuthSheets = require('utils/helpers/sheets.ts');
+const getAuthSheets = require('utils/helpers/sheetsAuth.ts');
 const time = require("utils/helpers/datetime.ts");
 
 export async function POST(req: Request) {
