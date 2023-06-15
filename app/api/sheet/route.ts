@@ -5,17 +5,43 @@ const time = require("utils/helpers/datetime.ts");
 export async function POST(req: Request) {
     
     const {googleSheets, auth, spreadsheetId} = await getAuthSheets();
-    console.log(time.now());
-    const {values} = await req.json();
-    values[0].unshift(time.now());
+    const values = await req.json();
+
+    const headerRange = "COMTUR!1:1"; // Range to retrieve the header row
+    const response = await googleSheets.spreadsheets.values.get({
+        auth,
+        spreadsheetId,
+        range: headerRange,
+    });
+    
+    if(!response.data.values){
+        return NextResponse.json({
+            message: "No column headers found"
+        })
+    }
+
     console.log(values);
+   
+    values['data e hora'] = time.now();
+    const headers = response.data.values[0];
+    const headersObject: Record<string, any> = {};
+    
+    headers.forEach((header: string) => {
+        const value = values[header];
+        if (value !== undefined) {
+            headersObject[header] = value;
+        }
+    });
+    console.log(headersObject);
+    const valuesArray = headers.map((header: string) => headersObject[header]);    
+
     const row = await googleSheets.spreadsheets.values.append({
         auth,
         spreadsheetId,
         range: "COMTUR",
         valueInputOption: "RAW",
         resource:{
-            values: values
+            values: [valuesArray]
         }
     })
    
