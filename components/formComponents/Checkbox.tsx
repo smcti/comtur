@@ -12,11 +12,11 @@ const Checkbox = (props: any) => {
                 <td>
                   { 
                     index == 0 || subIndex == 0 ? 
-                    <td>{ subItem.title }</td> : 
+                    <><td></td><td>{ subItem.title }</td></> : 
                     <>
-                      <td>{JSON.stringify( subItem )}</td>
+                      <td>{subItem.title}</td>
                       <td>
-                        <input type="checkbox">{ subItem.value }</input>
+                        <input type="checkbox" id={subItem.value} name={subItem.value}></input>
                       </td>
                     </> 
                   }
