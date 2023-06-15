@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 const getAuthSheets = require('utils/helpers/sheetsAuth.ts');
+const sheets = require('utils/helpers/sheets.ts');
 const time = require("utils/helpers/datetime.ts");
 
 export async function POST(req: Request) {
@@ -14,13 +15,18 @@ export async function POST(req: Request) {
         range: headerRange,
     });
     
+    if(await sheets.verifyEmail(values.email)){
+        return NextResponse.json({
+            message: "Email já registrado"
+        })
+    }
+
     if(!response.data.values){
         return NextResponse.json({
             message: "No column headers found"
         })
     }
 
-    console.log(values);
    
     values['data e hora'] = time.now();
     const headers = response.data.values[0];
@@ -32,7 +38,6 @@ export async function POST(req: Request) {
             headersObject[header] = value;
         }
     });
-    console.log(headersObject);
     const valuesArray = headers.map((header: string) => headersObject[header]);    
 
     const row = await googleSheets.spreadsheets.values.append({
