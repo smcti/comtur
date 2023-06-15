@@ -165,9 +165,17 @@
         "name": "testName2",
         "data": [
             [
-                "header1",
-                "header2",
-                "header3"
+                {
+                    "title": "pato"
+                }, 
+                {
+
+                    "title": "branco"
+                }, 
+                {
+                    "title": "embreagado"
+                }
+                
             ],
             [
                 {
