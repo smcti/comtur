@@ -242,7 +242,8 @@
                     "value": "sd-pr-outro-pb"
                 }
             ]
-        ]
+        ],
+        "goto": [0]
     },
     "Y": {
         "type": "text",

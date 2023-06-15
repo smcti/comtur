@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Children, useState } from 'react';
 
 import formFormat from '@public/formFormat.json';
 import Checkbox from '@components/formComponents/Checkbox';
@@ -22,12 +22,32 @@ const getCurrentPage = () => {
         for (let j = 0; j < childestNode.length; j++) {
             const child = childestNode[j];
             // Check if the child node is a radio input and is checked
-            if ((child.type === "radio" || child.type === "checkbox") && child.checked) {
-                console.log((child));
 
-                child.type === "radio" ? isAnyChecked = child.step : isAnyChecked = true;
+            if (child.type === "radio" && child.checked) {
+
+                child.type === "radio" ? isAnyChecked = child.step : isAnyChecked = false;
                 break; // Exit the loop if any radio input is checked
             }
+
+            if (child.nodeName.toLowerCase() === 'tr') {
+                console.group(`Child: ${i}`)
+                console.log("Child typing: ", typeof (child.type))
+                console.log("Child type: ", child.childNodes)
+                console.groupEnd();
+
+                const len = (child.childNodes).length;
+                const trNode = child.childNodes;
+                for (let k = 0; k < len; k++) {
+                    if (trNode[k].firstElementChild) {
+                        console.log("I'm in the table: ", trNode[k]);
+                        console.log("I'm: ", child.checked);
+                        child.checked ? isAnyChecked = true : isAnyChecked = false;
+                        break; // Exit the loop if any radio input is checked
+                    }
+                }
+            }
+
+
         }
 
         if (isAnyChecked) {
@@ -43,16 +63,14 @@ const handlePagesFw = () => {
 
     const pageTo: any = getCurrentPage();
 
-    console.log(pageTo)
-
     if (pageTo) {
-        queue.push(Number(pageTo || 0 ));
+        queue.push(Number(pageTo || 0));
         document.getElementById(page).classList.toggle('hidden');
         document.getElementById(queue.at(-1)).classList.toggle('hidden');
     }
 };
 
-const handlePagesBw = () => {    
+const handlePagesBw = () => {
     const page = queue.at(-1);
 
     if (queue.at(-1)) {
