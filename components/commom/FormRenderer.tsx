@@ -57,14 +57,14 @@ const handlePagesBw = () => {
     }
 }
 
-const FormRenderer = (props) => {
+const FormRenderer = (props: any) => {
     const [page, setPage] = useState(1);
     return (
         <form className='section-default flex flex-col gap-4'>
-            {Object.values(formFormat).map((item, index) => {
+            {Object.values(formFormat).map((item: any, index: any) => {
 
                 return (
-                    <fieldset key={index} id={index}  >
+                    <fieldset key={index} id={String(index)} className={`border p-4 ${index != 0 ? 'hidden' : ''}`} >
                         <h1>{keys[index]}</h1>
                         <legend>{item.title}</legend>
                         <div>{item.subtitle}</div>

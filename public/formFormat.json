@@ -270,65 +270,6 @@
         ],
         "goto": [2]
     },
-    "X": {
-        "type": "checkbox",
-        "title": "Okay",
-        "subtitle": "Here we go",
-        "required": false,
-        "name": "testName2",
-        "data": [
-            [
-                {
-                    "title": "pato"
-                }, 
-                {
-
-                    "title": "branco"
-                }, 
-                {
-                    "title": "embreagado"
-                }
-                
-            ],
-            [
-                {
-                    "title": "value4",
-                    "alias": "valor4"
-                },
-                {
-                    "title": "value4",
-                    "alias": "valor4"
-                },
-                {
-                    "title": "value5",
-                    "alias": "valor5"
-                },
-                {
-                    "title": "value5",
-                    "alias": "valor5"
-                }
-            ],
-            [
-                {
-                    "title": "value4",
-                    "alias": "valor4"
-                },
-                {
-                    "title": "value4",
-                    "alias": "valor4"
-                },
-                {
-                    "title": "value5",
-                    "alias": "valor5"
-                },
-                {
-                    "title": "value5",
-                    "alias": "valor5"
-                }
-            ]
-        ],
-        "goto": [2]
-    },
     "Y": {
         "type": "text",
         "title": "",
