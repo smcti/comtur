@@ -1,16 +1,27 @@
 const Checkbox = (props: any) => {
   return (
-    <div>
+    <table>
       {Object.values(props.data).map((item: any, index: any) => {
         return (
-          <div key={index} className="flex flex-row gap-4">
-            <input type="checkbox" id={item.value} name={item.value} value={item.value} />
-            <label htmlFor={item.value}>{item.label}</label>
-          </div>
+          <tr key={index} className="flex flex-row gap-4">
+            {Object.keys(item).map((subItem: any, subIndex: any) => {
+
+              return (
+                <>
+                {
+                  <td>{subItem}</td>
+                }
+                </>
+              )
+            })}
+          </tr>
         )
       })}
-    </div>
+    </table>
   )
 }
 
 export default Checkbox
+
+{/* <input type="checkbox" id={item.value} name={item.value} value={item.value} />
+            <label htmlFor={item.value}>{item.label}</label> */}
