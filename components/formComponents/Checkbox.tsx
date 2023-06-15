@@ -1,10 +1,10 @@
 const Checkbox = (props: any) => {
   return (
     <table>
-      {Object.values(props.data).map((item: any, index: any) => {
+      {Object.values(props.data).map(( item: any, index: any ) => {
         return (
           <tr key={index} className="flex flex-row gap-4">
-            {Object.values(item).map((subItem: any, subIndex: any) => {
+            {Object.values(item).map(( subItem: any, subIndex: any ) => {
 
               return (
                 <>
@@ -12,8 +12,13 @@ const Checkbox = (props: any) => {
                 <td>
                   { 
                     index == 0 || subIndex == 0 ? 
-                    <td>{subItem.title }</td> : 
-                    <><td>{JSON.stringify(subItem)}</td><td><input type="checkbox"></input></td></> 
+                    <td>{ subItem.title }</td> : 
+                    <>
+                      <td>{JSON.stringify( subItem )}</td>
+                      <td>
+                        <input type="checkbox">{ subItem.value }</input>
+                      </td>
+                    </> 
                   }
                 </td>
 
