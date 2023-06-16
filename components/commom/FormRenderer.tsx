@@ -92,14 +92,14 @@ const FormRenderer = (props: any) => {
     return (
         <div>
             <ProgressBar pageTotal={pages} page={Number(page) + 1}/>
-            <form id='form' className='section-default flex flex-col gap-4'>
+            <form id='form' className='section-default flex flex-col gap-4 py-32'>
                 {Object.values(formFormat).map((item: any, index: any) => {
 
                     return (
-                        <fieldset key={index} id={String(Object.keys(formFormat)[index])} className={`relative border rounded-md p-4 flex flex-col gap-4 ${index != 0 ? 'hidden' : ''}`} >
-                            <div className='flex flex-row justify-between'>
-                                <div>{item.title}</div>
-                                <h1 className='w-8 h-8 bg-cello-800 text-zircon-50 flex items-center justify-center rounded-full'>{Number(keys[index]) + 1}</h1>
+                        <fieldset key={index} id={String(Object.keys(formFormat)[index])} className={`bg-white relative border rounded-md p-4 flex flex-col gap-8 ${index != 0 ? 'hidden' : ''}`} >
+                            <div className='flex flex-row justify-between gap-4'>
+                                <div className='font-bold'>{item.title}</div>
+                                <h1 className=' min-w-[32px] h-8 bg-cello-800 text-zircon-50 flex items-center justify-center rounded-full'>{Number(keys[index]) + 1}</h1>
                             </div>
                             <div>{item.subtitle}</div>
                             {
@@ -113,9 +113,9 @@ const FormRenderer = (props: any) => {
                     )
                 })}
                 <div className='flex flex-row-reverse gap-4'>
-                    <button id='submit' type='submit' className='rounded-md button hover:bg-gray-200 hidden' onClick={submit}>Submit</button>
-                    <button id='next' type='button' className='rounded-md button hover:bg-gray-200' onClick={btFw} >next</button>
-                    <button id='back' type='button' className='rounded-md button hover:bg-gray-200 hidden' onClick={btBw} >back</button>
+                    <button id='submit' type='submit' className='font-semibold text-lg bg-white rounded-md button hover:bg-gray-200 hidden' onClick={submit}>Submit</button>
+                    <button id='next' type='button' className='font-semibold text-lg bg-white rounded-md button hover:bg-gray-200' onClick={btFw} >next</button>
+                    <button id='back' type='button' className='font-semibold text-lg bg-white rounded-md button hover:bg-gray-200 hidden' onClick={btBw} >back</button>
                 </div>
             </form>
         </div>
