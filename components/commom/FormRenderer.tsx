@@ -4,108 +4,121 @@ import formFormat from '@public/formFormat.json';
 import Checkbox from '@components/formComponents/Checkbox';
 import Radio from '@components/formComponents/Radio';
 import Text from '@components/formComponents/Text';
+import {handlePagesFw, handlePagesBw} from '@utils/helpers/pagination'
+import ProgressBar from '@components/ui/ProgressBar';
 
 const keys = Object.keys(formFormat);
+const pages = keys.length;
 
-const queue: Number[] = [0];
+const submit = (event: any) => {
+    event?.preventDefault()
 
-let goTo = 0;
+    const form: any = document.getElementById('form');
 
-const getCurrentPage = () => {
-    const element: any = document.getElementById(String(queue.at(-1)));
-    const childNodes = element.children[3].children;
-
-    let isAnyChecked: any = false;
-
-    for (let i = 0; i < childNodes.length; i++) {
-        const childestNode = childNodes[i].children;
-        for (let j = 0; j < childestNode.length; j++) {
-            const child = childestNode[j];
-            // Check if the child node is a radio input and is checked
-
-            if (child.type === "radio" && child.checked) {
-
-                child.type === "radio" ? isAnyChecked = child.step : isAnyChecked = false;
-                break; // Exit the loop if any radio input is checked
-            }
-
-            if (child.nodeName.toLowerCase() === 'tr') {
-                console.group(`Child: ${i}`)
-                console.log("Child typing: ", typeof (child.type))
-                console.log("Child type: ", child.childNodes)
-                console.groupEnd();
-
-                const len = (child.childNodes).length;
-                const trNode = child.childNodes;
-                for (let k = 0; k < len; k++) {
-                    if (trNode[k].firstElementChild) {
-                        console.log("I'm in the table: ", trNode[k]);
-                        console.log("I'm: ", child.checked);
-                        child.checked ? isAnyChecked = true : isAnyChecked = false;
-                        break; // Exit the loop if any radio input is checked
-                    }
-                }
-            }
-
-
-        }
-
-        if (isAnyChecked) {
-            break; // Exit the outer loop if any radio input is checked
-        }
+    const formData = new FormData(form);
+    
+    for(var pair of formData.entries()) {
+        console.log(pair[0]+ ', '+ pair[1]);
     }
 
-    return isAnyChecked;
 }
 
-const handlePagesFw = () => {
-    const page = queue.at(-1);
-
-    const pageTo: any = getCurrentPage();
-
-    if (pageTo) {
-        queue.push(Number(pageTo || 0));
-        document.getElementById(page).classList.toggle('hidden');
-        document.getElementById(queue.at(-1)).classList.toggle('hidden');
-    }
-};
-
-const handlePagesBw = () => {
-    const page = queue.at(-1);
-
-    if (queue.at(-1)) {
-        queue.pop();
-        document.getElementById(page).classList.toggle('hidden');
-        document.getElementById(queue.at(-1)).classList.toggle('hidden');
-    }
-}
-
+// Renders the form with the data provided by the form json
+// Only necessary props are passed to the inputs
 const FormRenderer = (props: any) => {
-    const [page, setPage] = useState(1);
-    return (
-        <form className='section-default flex flex-col gap-4'>
-            {Object.values(formFormat).map((item: any, index: any) => {
 
-                return (
-                    <fieldset key={index} id={String(index)} className={`border p-4 ${index != 0 ? 'hidden' : ''}`} >
-                        <h1>{keys[index]}</h1>
-                        <legend>{item.title}</legend>
-                        <div>{item.subtitle}</div>
-                        {
-                            item.type == 'radio' ?
-                                <Radio data={item.data} name={item.name} required={item.required} /> :
-                                item.type == 'checkbox' ?
-                                    <Checkbox data={item.data} name={item.name} /> :
-                                    <Text />
-                        }
-                    </fieldset>
-                )
-            })}
-            <div className='flex flex-row-reverse gap-4'>
-                <button type='button' className='button hover:bg-gray-200' onClick={handlePagesFw} >next</button>
-                <button type='button' className='button hover:bg-gray-200' onClick={handlePagesBw} >back</button>
-            </div>
-        </form>
+    const [page, setPage] = useState(0);
+
+    const btFw = () => {
+        if (!handlePagesFw()) {
+            return;
+        }
+        
+        let myPage = page; 
+        const formId: HTMLElement | null = document.getElementById('form');
+    
+        const childNodes: any = formId?.children;
+        for (let i = 0; i < childNodes.length; i++) {
+            if(!(childNodes[i].classList.contains('hidden')) && (childNodes[i].nodeName.toLowerCase() === 'fieldset')) {
+                myPage = childNodes[i].id;
+                setPage(childNodes[i].id);
+            }
+        }
+        document.getElementById('next')?.classList.remove('hidden');
+        document.getElementById('back')?.classList.remove('hidden');
+        const submitButton = document.getElementById('submit') as HTMLButtonElement;
+        submitButton.disabled = true;
+
+        if (myPage == pages - 1) {
+            
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.classList.remove('hidden');
+            }
+
+            document.getElementById('next')?.classList.add('hidden');
+        }
+
+    }
+    
+    const btBw = () => {
+        if (!handlePagesBw()) {
+            return;
+        }
+
+        const formId = document.getElementById('form');
+
+        const childNodes: any = formId?.children;
+        for (let i = 0; i < childNodes.length; i++) {
+            if(!(childNodes[i].classList.contains('hidden')) && (childNodes[i].nodeName.toLowerCase() === 'fieldset')) {
+                setPage(childNodes[i].id);
+            }
+        }
+
+        const submitButton = document.getElementById('submit') as HTMLButtonElement | null;
+        
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.classList.add('hidden');
+        }
+        document.getElementById('next')?.classList.remove('hidden');
+        document.getElementById('back')?.classList.remove('hidden');
+        if (page == 1) {
+            document.getElementById('back')?.classList.add('hidden');
+        }
+    }
+
+    console.log()
+    return (
+        <div>
+            <ProgressBar pageTotal={pages} page={Number(page) + 1}/>
+            <form id='form' className='section-default flex flex-col gap-4'>
+                {Object.values(formFormat).map((item: any, index: any) => {
+
+                    return (
+                        <fieldset key={index} id={String(Object.keys(formFormat)[index])} className={`relative border rounded-md p-4 flex flex-col gap-4 ${index != 0 ? 'hidden' : ''}`} >
+                            <div className='flex flex-row justify-between'>
+                                <div>{item.title}</div>
+                                <h1 className='w-8 h-8 bg-cello-800 text-zircon-50 flex items-center justify-center rounded-full'>{Number(keys[index]) + 1}</h1>
+                            </div>
+                            <div>{item.subtitle}</div>
+                            {
+                                item.type == 'radio' ?
+                                    <Radio data={item.data} name={item.name} required={item.required} /> :
+                                    item.type == 'checkbox' ?
+                                        <Checkbox data={item.data} name={item.name} goTo={item.goto}/> :
+                                        <Text goTo={item.goto} name={item.name} placeholder={item.placeholder}/>
+                            }
+                        </fieldset>
+                    )
+                })}
+                <div className='flex flex-row-reverse gap-4'>
+                    <button id='submit' type='submit' className='rounded-md button hover:bg-gray-200 hidden' onClick={submit}>Submit</button>
+                    <button id='next' type='button' className='rounded-md button hover:bg-gray-200' onClick={btFw} >next</button>
+                    <button id='back' type='button' className='rounded-md button hover:bg-gray-200 hidden' onClick={btBw} >back</button>
+                </div>
+            </form>
+        </div>
     )
 }
 

@@ -132,7 +132,16 @@
            
         ]
     },
-    "13": {
+    "3": {
+        "type": "text",
+        "title": "Perfil - Local de Residência (Outras Regiões)",
+        "subtitle": "Na questão anterior você informou que não reside no Sudoeste do Paraná nem no Oeste de Santa Catarina. Por gentileza, informe o nome da cidade na qual você reside.",
+        "placeholder": "Sua resposta",
+        "required": false,
+        "name": "testName3",
+        "goto": "4"
+    },
+    "4": {
         "type": "checkbox",
         "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
         "subtitle": "Na questão anterior você respondeu que eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Francisco Beltrão e/ou Pato Branco ao longo do ano. Qual ou quais as principais razões desse(s) deslocamento(s)? Você pode assinalar mais que uma resposta.",
@@ -243,17 +252,6 @@
                 }
             ]
         ],
-        "goto": [0]
-    },
-    "Y": {
-        "type": "text",
-        "title": "",
-        "subtitle": "",
-        "placeholder": "Lorem Ipsum",
-        "required": false,
-        "name": "testName3",
-        "data": [
-
-        ]
+        "goto": 0
     }
 }

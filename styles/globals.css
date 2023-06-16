@@ -9,7 +9,7 @@
     }
 
     .section-default {
-        @apply max-w-6xl my-0 mx-auto p-4 sm:px-8;
+        @apply max-w-4xl my-0 mx-auto p-4 sm:px-8;
     }
 
     .glass {

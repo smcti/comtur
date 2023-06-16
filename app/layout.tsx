@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className='flex flex-col min-h-[100dvh]'>
         <Nav></Nav>
-        <main className='font-poppins'>{children}</main>
+        <main className='font-poppins text-gray-700'>{children}</main>
         <Footer></Footer>
       </body>
     </html>
