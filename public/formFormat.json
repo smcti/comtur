@@ -89,42 +89,42 @@
         "name": "escolaridade",
         "data": [
             {
-                "value": "ensino fundamental incompleto",
+                "value": "ensino_fundamental_incompleto",
                 "label": "Ensino Fundamental Incompleto",
                 "goto": "4"
             },
             {
-                "value": "ensino fundamental completo",
+                "value": "ensino_fundamental_completo",
                 "label": "Ensino Fundamental Completo",
                 "goto": "4"
             },
             {
-                "value": "ensino medio incompleto",
+                "value": "ensino_medio_incompleto",
                 "label": "Ensino Médio Incompleto",
                 "goto": "4"
             },
             {
-                "value": "ensino medio completo",
+                "value": "ensino_medio_completo",
                 "label": "Ensino Médio Completo",
                 "goto": "4"
             },
             {
-                "value": "ensino superior incompleto",
+                "value": "ensino_superior_incompleto",
                 "label": "Ensino Superior Incompleto",
                 "goto": "4"
             },
             {
-                "value": "ensino superior completo",
+                "value": "ensino_superior_completo",
                 "label": "Ensino Superior Completo",
                 "goto": "4"
             },
             {
-                "value": "pos-graduacao incompleta",
+                "value": "pos-graduacao_incompleta",
                 "label": "Pós-Graduação Incompleta",
                 "goto": "4"
             },
             {
-                "value": "pos-graduacao completa",
+                "value": "pos-graduacao_completa",
                 "label": "Pós-Graduação Completa",
                 "goto": "4"
             },
@@ -159,7 +159,7 @@
                 "goto": "5"
             },
             {
-                "value": "uniao estavel",
+                "value": "uniao_estavel",
                 "label": "União estável",
                 "goto": "5"
             },
@@ -441,7 +441,6 @@
             }
         ]
     },
-    
     "9": {
         "type": "radio",
         "title": "Perfil - Fonte de Informação - Mídias Sociais",
@@ -788,7 +787,7 @@
         "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
         "subtitle": "Na questão anterior você respondeu que eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Francisco Beltrão e/ou Pato Branco ao longo do ano. Qual ou quais as principais razões desse(s) deslocamento(s)? Você pode assinalar mais que uma resposta.",
         "required": false,
-        "name": "local de residencia (sudoesto do parana)",
+        "name": "local_de_residencia_spr",
         "data": [
             [
                 {
@@ -806,110 +805,97 @@
             [
                 {
                     "title": "Acesso à saúde (pública e/ou privada)",
-                    "value": "sd-pr-as"
+                    "value": "spr_acesso_saude"
                 },
                 {
                     "title": "",
-                    "value": "sd-pr-as-dv"
+                    "value": "spr_acesso_saude_dv"
                 },
                 {
                     "title": "",
-                    "value": "sd-pr-as-fb"
+                    "value": "spr_acesso_saude_fb"
                 },
                 {
                     "title": "",
-                    "value": "sd-pr-as-pb"
+                    "value": "spr_acesso_saude_pb"
                 }
             ],
             [
                 {
                     "title": "Compras",
-                    "value": "sd-pr-cprs"
+                    "value": "spr_compras"
                 },
                 {
                     "title": "",
-                    "value": "sd-pr-cprs-dv"
+                    "value": "spr_compras_dv"
                 },
                 {
                     "title": "",
-                    "value": "sd-pr-cprs-fb"
+                    "value": "spr_compras_fb"
                 },
                 {
                     "title": "",
-                    "value": "sd-pr-cprs-pb"
+                    "value": "spr_compras_pb"
                 }
             ],
             [
                 {
                     "title": "Estudos",
-                    "value": "sd-pr-estd"
+                    "value": "spr_estudos"
                 },
                 {
                     "title": "",
-                    "value": "sd-pr-estd-dv"
+                    "value": "spr_estudos_dv"
                 },
                 {
                     "title": "",
-                    "value": "sd-pr-estd-fb"
+                    "value": "spr_estudos_fb"
                 },
                 {
                     "title": "",
-                    "value": "sd-pr-estd-pb"
+                    "value": "spr_estudos_pb"
                 }
             ],
             [
                 {
                     "title": "Negócios / Trabalho",
-                    "value": "sd-pr-ntrab"
+                    "value": "spr_negocios_trabalho"
                 },
                 {
                     "title": "",
-                    "value": "sd-pr-ntrab-dv"
+                    "value": "spr_negocios_trabalho_dv"
                 },
                 {
                     "title": "",
-                    "value": "sd-pr-ntrab-fb"
+                    "value": "spr_negocios_trabalho_fb"
                 },
                 {
                     "title": "",
-                    "value": "sd-pr-ntrab-pb"
+                    "value": "spr_negocios_trabalho_pb"
                 }
             ],
             [
                 {
                     "title": "Outra razão",
-                    "value": "sd-pr-outro"
+                    "value": "spr_outro"
                 },
                 {
                     "title": "",
-                    "value": "sd-pr-outro-dv"
+                    "value": "spr_outro_dv"
                 },
                 {
                     "title": "",
-                    "value": "sd-pr-outro-fb"
+                    "value": "spr_outro_fb"
                 },
                 {
                     "title": "",
-                    "value": "sd-pr-outro-pb"
+                    "value": "spr_outro_pb"
                 }
             ]
         ],
         "goto": 14
-    },
-    "x": {
-        "type": "radio",
-        "title": "Title",
-        "subtitle": "Subtitle",
-        "required": true,
-        "name": "key",
-        "data": [
-            {
-                "value": "",
-                "label": "",
-                "goto": "x"
-            }
-        ]
     }
+    
 
     
 }
