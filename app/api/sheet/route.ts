@@ -14,7 +14,10 @@ export async function POST(req: Request) {
             range: headerRange,
         });
 
-        const checkbox_keys = ["spr_acesso_saude", "spr_compras", "spr_estudos", "spr_negocios_trabalho", "spr_outro"];
+        const checkbox_keys = [
+            "spr_acesso_saude", "spr_compras", "spr_estudos", "spr_negocios_trabalho", "spr_outro",
+            "osc_acesso_saude", "osc_compras", "osc_estudos", "osc_negocios_trabalho", "osc_outro"
+        ];
         checkbox_keys.forEach(checkboxKey => {
             const matchingValues = Object.entries(values)
               .filter(([key]) => key.includes(checkboxKey))
