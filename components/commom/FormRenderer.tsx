@@ -1,11 +1,14 @@
 import { Children, useState } from 'react';
 
+import { LuAlertCircle } from 'react-icons/lu';
+
 import formFormat from '@public/formFormat.json';
 import Checkbox from '@components/formComponents/Checkbox';
 import Radio from '@components/formComponents/Radio';
 import Text from '@components/formComponents/Text';
 import {handlePagesFw, handlePagesBw} from '@utils/helpers/pagination'
 import ProgressBar from '@components/ui/ProgressBar';
+
 
 const keys = Object.keys(formFormat);
 const pages = keys.length;
@@ -140,7 +143,7 @@ const FormRenderer = (props: any) => {
                                         <Checkbox data={item.data} name={item.name} goTo={item.goto}/> :
                                         <Text goTo={item.goto} name={item.name} placeholder={item.placeholder}/>
                             }
-                            <div className='text-red-500 hidden' id={`err-${index}`}>Por favor, preencha o campo antes de avançar</div>
+                            <div className='flex flex-row items-center gap-4 text-red-500 hidden' id={`err-${index}`}><LuAlertCircle /> Por favor, preencha o campo antes de avançar</div>
                         </fieldset>
                     )
                 })}
