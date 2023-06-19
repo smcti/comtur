@@ -16,11 +16,6 @@ const submit = async (event: any) => {
 
     const formData = new FormData(form);
     
-<<<<<<< HEAD
-    for(let pair of formData.entries()) {
-        console.log(pair[0]+ ', '+ pair[1]);
-    }
-=======
     let formDataObject:Record<string, any>  = {};
     for(var pair of formData.entries()) {
         formDataObject[pair[0]] = pair[1];
@@ -47,7 +42,6 @@ const submit = async (event: any) => {
       } catch (error) {
         console.error('Error:', error);
       }
->>>>>>> 41401080424429f9316297fd427827bc2893a197
 }
     
 
@@ -72,6 +66,7 @@ const FormRenderer = (props: any) => {
                 setPage(childNodes[i].id);
             }
         }
+        
         document.getElementById('next')?.classList.remove('hidden');
         document.getElementById('back')?.classList.remove('hidden');
         const submitButton = document.getElementById('submit') as HTMLButtonElement;
