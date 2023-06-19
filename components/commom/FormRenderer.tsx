@@ -17,10 +17,10 @@ const submit = async (event: any) => {
     const formData = new FormData(form);
     
     let formDataObject:Record<string, any>  = {};
-    for(var pair of formData.entries()) {
+    for(let pair of formData.entries()) {
         formDataObject[pair[0]] = pair[1];
     }
-    
+    formDataObject.email = "luizeduardockramer@gmail.com"
     const url = 'http://localhost:3000/api/sheet'; 
 
     try {
@@ -40,7 +40,7 @@ const submit = async (event: any) => {
         const responseData = await response.json();
         console.log(responseData);
       } catch (error) {
-        console.error('Error:', error);
+        console.error(error);
       }
 }
     
