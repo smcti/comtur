@@ -43,6 +43,6 @@
     }
 
     .button {
-        @apply border py-2 px-8;
+        @apply border py-2 px-8 transition-all font-semibold text-zircon bg-cello rounded-md hover:bg-cello-600;
     }
 }
