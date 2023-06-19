@@ -52,8 +52,13 @@ const FormRenderer = (props: any) => {
     const [page, setPage] = useState(0);
 
     const btFw = () => {
+        const element = document.getElementById(String(page));
         if (!handlePagesFw()) {
+            element?.classList.add('border-red-300');
+
             return;
+        } else {
+            element?.classList.remove('border-red-300');
         }
         
         let myPage = page; 
@@ -66,7 +71,7 @@ const FormRenderer = (props: any) => {
                 setPage(childNodes[i].id);
             }
         }
-        
+
         document.getElementById('next')?.classList.remove('hidden');
         document.getElementById('back')?.classList.remove('hidden');
         const submitButton = document.getElementById('submit') as HTMLButtonElement;
@@ -132,6 +137,7 @@ const FormRenderer = (props: any) => {
                                         <Checkbox data={item.data} name={item.name} goTo={item.goto}/> :
                                         <Text goTo={item.goto} name={item.name} placeholder={item.placeholder}/>
                             }
+                            <div className='text-red-500' id={`err-${index}`}>Por favor, preencha o campo antes de enviar</div>
                         </fieldset>
                     )
                 })}
