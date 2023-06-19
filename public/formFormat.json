@@ -18,17 +18,17 @@
             {
                 "value": "feminino",
                 "label": "Feminino",
-                "goto": "1"
+                "goto": "2"
             },
             {
                 "value": "masculino",
                 "label": "Masculino",
-                "goto": "1"
+                "goto": "2"
             },
             {
                 "value": "outro",
                 "label": "Outro",
-                "goto": "1"
+                "goto": "2"
             }
         ]
     },
@@ -47,37 +47,37 @@
             {
                 "value": "18 a 24 anos",
                 "label": "18 a 24 anos",
-                "goto": "2"
+                "goto": "3"
             },
             {
                 "value": "25 a 34 anos",
                 "label": "25 a 34 anos",
-                "goto": "2"
+                "goto": "3"
             },
             {
                 "value": "25 a 34 anos",
                 "label": "25 a 34 anos",
-                "goto": "2"
+                "goto": "3"
             },
             {
                 "value": "35 a 44 anos",
                 "label": "35 a 44 anos",
-                "goto": "2"
+                "goto": "3"
             },
             {
                 "value": "45 a 54 anos",
                 "label": "45 a 54 anos",
-                "goto": "2"
+                "goto": "3"
             },
             {
                 "value": "55 a 64 anos",
                 "label": "55 a 64 anos",
-                "goto": "2"
+                "goto": "3"
             },
             {
                 "value": "65 anos ou mais",
                 "label": "65 anos ou mais",
-                "goto": "2"
+                "goto": "3"
             }
         ]
     },
@@ -91,52 +91,52 @@
             {
                 "value": "ensino fundamental incompleto",
                 "label": "Ensino Fundamental Incompleto",
-                "goto": "3"
+                "goto": "4"
             },
             {
                 "value": "ensino fundamental completo",
                 "label": "Ensino Fundamental Completo",
-                "goto": "3"
+                "goto": "4"
             },
             {
                 "value": "ensino medio incompleto",
                 "label": "Ensino Médio Incompleto",
-                "goto": "3"
+                "goto": "4"
             },
             {
                 "value": "ensino medio completo",
                 "label": "Ensino Médio Completo",
-                "goto": "3"
+                "goto": "4"
             },
             {
                 "value": "ensino superior incompleto",
                 "label": "Ensino Superior Incompleto",
-                "goto": "3"
+                "goto": "4"
             },
             {
                 "value": "ensino superior completo",
                 "label": "Ensino Superior Completo",
-                "goto": "3"
+                "goto": "4"
             },
             {
                 "value": "pos-graduacao incompleta",
                 "label": "Pós-Graduação Incompleta",
-                "goto": "3"
+                "goto": "4"
             },
             {
                 "value": "pos-graduacao completa",
                 "label": "Pós-Graduação Completa",
-                "goto": "3"
+                "goto": "4"
             },
             {
                 "value": "mestrado",
                 "label": "Mestrado",
-                "goto": "3"
+                "goto": "4"
             },
             {
                 "value": "doutorado",
                 "label": "Doutorado",
-                "goto": "3"
+                "goto": "4"
             }
            
         ]
@@ -151,27 +151,27 @@
             {
                 "value": "solteiro(a)",
                 "label": "Solteiro(a)",
-                "goto": "4"
+                "goto": "5"
             },
             {
                 "value": "casado(a)",
                 "label": "Casado(a)",
-                "goto": "4"
+                "goto": "5"
             },
             {
                 "value": "uniao estavel",
                 "label": "União estável",
-                "goto": "4"
+                "goto": "5"
             },
             {
                 "value": "separado(a)/divorciado(a)",
                 "label": "Separado(a) / Divorciado(a)",
-                "goto": "4"
+                "goto": "5"
             },
             {
                 "value": "viuvo(a)",
                 "label": "Viúvo(a)",
-                "goto": "4"
+                "goto": "5"
             }
         ]
     },
@@ -286,7 +286,7 @@
                 }
             ]
         ],
-        "goto": 0
+        "goto": 14
     },
     "14": {
         "type": "text",
@@ -295,7 +295,7 @@
         "placeholder": "Sua resposta",
         "required": false,
         "name": "testName3",
-        "goto": "4"
+        "goto": "15"
     }
     
 }
