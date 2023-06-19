@@ -527,7 +527,7 @@
                 "goto": "14"
             },
             {
-                "value": "outro",
+                "value": "outro_local_residencia",
                 "label": "Eu não resido no Sudoeste do Paraná ou no Oeste de Santa Catarina",
                 "goto": "18"
             }
@@ -757,25 +757,25 @@
         "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
         "subtitle": "Ao longo do ano você eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Francisco Beltrão e/ou Pato Branco?",
         "required": true,
-        "name": "deslocamento_dv_fb_pb",
+        "name": "deslocamento_dv_fb_pb_spr",
         "data": [
             {
-                "value": "com_muita_frequencia",
+                "value": "com_muita_frequencia_spr",
                 "label": "Sim, com muita frequência",
                 "goto": "13"
             },
             {
-                "value": "com_alguma_frequencia",
+                "value": "com_alguma_frequencia_spr",
                 "label": "Sim, com alguma frequência",
                 "goto": "13"
             },
             {
-                "value": "com_pouca_frequencia",
+                "value": "com_pouca_frequencia_spr",
                 "label": "Sim, com pouca frequência",
                 "goto": "13"
             },
             {
-                "value": "nao_preciso_me_deslocar",
+                "value": "nao_preciso_me_deslocar_spr",
                 "label": "Não preciso me deslocar para essas cidades",
                 "goto": "19"
             }
@@ -1195,18 +1195,163 @@
         "name": "cidade_osc_outra",
         "goto": "19"
     },
-    "x": {
+    "16": {
         "type": "radio",
-        "title": "title",
-        "subtitle": "sub",
+        "title": "Perfil - Local de Residência (Oeste de Santa Catarina)",
+        "subtitle": " Ao longo do ano você eventualmente precisa se <b>deslocar do seu local de residência para Chapecó/SC e/ou Francisco Beltrão/PR e/ou Pato Branco/PR</b>?",
         "required": false,
-        "name": "field_name",
+        "name": "desloca-se_para_cpc_dv_fb_osc",
         "data": [
             {
-                "value": "",
-                "label": "",
-                "goto": "x"
+                "value": "com_muita_frequencia_osc",
+                "label": "Sim, com muita frequência",
+                "goto": "17"
+            },
+            {
+                "value": "com_alguma_frequencia_osc",
+                "label": "Sim, com alguma frequência",
+                "goto": "17"
+            },
+            {
+                "value": "com_pouca_frequencia_osc",
+                "label": "Sim, com pouca frequência",
+                "goto": "17"
+            },
+            {
+                "value": "nao_preciso_deslocar_osc",
+                "label": "Não preciso me deslocar para essas cidades",
+                "goto": "19"
             }
         ]
+    },
+    "17": {
+        "type": "checkbox",
+        "title": "Perfil - Local de Residência (Oeste de Santa Catarina)",
+        "subtitle": "Na questão anterior você respondeu que eventualmente precisa se <b>deslocar do seu local de residência para Chapecó/SC e/ou Francisco Beltrão/PR e/ou Pato Branco/PR</b> ao longo do ano. <b>Qual ou quais as principais razões desse(s) deslocamento(s)?</b> Você pode assinalar mais que uma resposta.",
+        "required": false,
+        "name": "local_de_residencia_osc",
+        "data": [
+            [
+                {
+                    "title": "Capecó/SC"
+                },
+                {
+                    "title": "Francisco Beltrão/PR"
+                },
+                {
+                    "title": "Pato Branco/PR"
+                }
+            ],
+            [
+                {
+                    "title": "Acesso à saúde (pública e/ou privada)",
+                    "value": "osc_acesso_saude"
+                },
+                {
+                    "title": "",
+                    "value": "osc_acesso_saude_cpc"
+                },
+                {
+                    "title": "",
+                    "value": "osc_acesso_saude_fb"
+                },
+                {
+                    "title": "",
+                    "value": "osc_acesso_saude_pb"
+                }
+            ],
+            [
+                {
+                    "title": "Compras",
+                    "value": "osc_compras"
+                },
+                {
+                    "title": "",
+                    "value": "osc_compras_cpc"
+                },
+                {
+                    "title": "",
+                    "value": "osc_compras_fb"
+                },
+                {
+                    "title": "",
+                    "value": "osc_compras_pb"
+                }
+            ],
+            [
+                {
+                    "title": "Estudos",
+                    "value": "osc_estudos"
+                },
+                {
+                    "title": "",
+                    "value": "osc_estudos_cpc"
+                },
+                {
+                    "title": "",
+                    "value": "osc_estudos_fb"
+                },
+                {
+                    "title": "",
+                    "value": "osc_estudos_pb"
+                }
+            ],
+            [
+                {
+                    "title": "Negócios / Trabalho",
+                    "value": "osc_negocios_trabalho"
+                },
+                {
+                    "title": "",
+                    "value": "osc_negocios_trabalho_cpc"
+                },
+                {
+                    "title": "",
+                    "value": "osc_negocios_trabalho_fb"
+                },
+                {
+                    "title": "",
+                    "value": "osc_negocios_trabalho_pb"
+                }
+            ],
+            [
+                {
+                    "title": "Outra razão",
+                    "value": "osc_outro"
+                },
+                {
+                    "title": "",
+                    "value": "osc_outro_cpc"
+                },
+                {
+                    "title": "",
+                    "value": "osc_outro_fb"
+                },
+                {
+                    "title": "",
+                    "value": "osc_outro_pb"
+                }
+            ]
+        ],
+        "goto": 19
+    },
+    "18": {
+        "type": "text",
+        "title": "Perfil - Local de Residência (Outras Regiões)",
+        "subtitle": "Na questão anterior você informou que <u>não reside no Sudoeste do Paraná nem no Oeste de Santa Catarina</u>. Por gentileza, <b>informe o nome da cidade na qual você reside.</b>",
+        "placeholder": "PlaceHolder",
+        "required": true,
+        "name": "Nothing",
+        "goto": "19"
+    },
+    "19": {
+        "type": "text",
+        "title": "Perfil - Local de Residência (Outras Regiões)",
+        "subtitle": "Na questão anterior você informou que <u>não reside no Sudoeste do Paraná nem no Oeste de Santa Catarina</u>. Por gentileza, <b>informe o nome da cidade na qual você reside.</b>",
+        "placeholder": "PlaceHolder",
+        "required": true,
+        "name": "Nothing",
+        "goto": "19"
     }
+   
 }
