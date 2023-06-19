@@ -1,0 +1,7 @@
+const Text = (props: any) => {
+    return (
+      <input className="border w-full px-4 py-1 rounded-md hidden" type="text" id={props.value} name={props.name} step={props.goTo} placeholder={props.placeholder}></input>
+    )
+  }
+  
+  export default Text
