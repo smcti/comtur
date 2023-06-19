@@ -53,12 +53,15 @@ const FormRenderer = (props: any) => {
 
     const btFw = () => {
         const element = document.getElementById(String(page));
+        const errMessage = document.getElementById("err-" + (String(page)));
         if (!handlePagesFw()) {
             element?.classList.add('border-red-300');
+            errMessage?.classList.remove('hidden');
 
             return;
         } else {
             element?.classList.remove('border-red-300');
+            errMessage?.classList.add('hidden');
         }
         
         let myPage = page; 
@@ -129,7 +132,7 @@ const FormRenderer = (props: any) => {
                                 <div className='font-bold'>{item.title}</div>
                                 <h1 className=' min-w-[32px] h-8 bg-cello-800 text-zircon-50 flex items-center justify-center rounded-full'>{Number(keys[index]) + 1}</h1>
                             </div>
-                            <div>{item.subtitle}</div>
+                            <div dangerouslySetInnerHTML={{ __html: item.subtitle }}></div>
                             {
                                 item.type == 'radio' ?
                                     <Radio data={item.data} name={item.name} required={item.required} /> :
@@ -137,14 +140,14 @@ const FormRenderer = (props: any) => {
                                         <Checkbox data={item.data} name={item.name} goTo={item.goto}/> :
                                         <Text goTo={item.goto} name={item.name} placeholder={item.placeholder}/>
                             }
-                            <div className='text-red-500' id={`err-${index}`}>Por favor, preencha o campo antes de enviar</div>
+                            <div className='text-red-500 hidden' id={`err-${index}`}>Por favor, preencha o campo antes de avançar</div>
                         </fieldset>
                     )
                 })}
                 <div className='flex flex-row-reverse gap-4'>
-                    <button id='submit' type='submit' className='font-semibold text-lg bg-white rounded-md button hover:bg-gray-200 hidden' onClick={submit}>Enviar</button>
-                    <button id='next' type='button' className='font-semibold text-lg bg-white rounded-md button hover:bg-gray-200' onClick={btFw} >Avançar</button>
-                    <button id='back' type='button' className='font-semibold text-lg bg-white rounded-md button hover:bg-gray-200 hidden' onClick={btBw} >Voltar</button>
+                    <button id='submit' type='submit' className='button hidden' onClick={submit}>Enviar</button>
+                    <button id='next' type='button' className='button' onClick={btFw} >Avançar</button>
+                    <button id='back' type='button' className='button hidden' onClick={btBw} >Voltar</button>
                 </div>
             </form>
         </div>

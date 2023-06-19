@@ -9,7 +9,7 @@ export const getCurrentPage = () => {
   const element: any = document.getElementById(String(queue.at(-1)));
   const childNodes = element.children[2].children;
 
-  if (element.children[2].type === 'text' && element.children[2].value.replace(/[^a-z1-9]/gi, "").length >= 3) {
+  if (element.children[2].type === 'text' && element.children[2].value.replace(/[^a-z1-9]/gi, "").length >= 1) {
     return element.children[2].step;
   }
 
