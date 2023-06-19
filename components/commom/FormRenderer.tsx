@@ -9,19 +9,41 @@ import ProgressBar from '@components/ui/ProgressBar';
 
 const keys = Object.keys(formFormat);
 const pages = keys.length;
-
-const submit = (event: any) => {
+const submit = async (event: any) => {
     event?.preventDefault()
 
     const form: any = document.getElementById('form');
 
     const formData = new FormData(form);
     
+    let formDataObject:Record<string, any>  = {};
     for(var pair of formData.entries()) {
-        console.log(pair[0]+ ', '+ pair[1]);
+        formDataObject[pair[0]] = pair[1];
     }
+    
+    const url = 'http://localhost:3000/api/sheet'; 
 
+    try {
+        const response = await fetch(url, {
+          method: 'POST',
+          body: JSON.stringify(formDataObject),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
+    
+        if (!response.ok) {
+          throw new Error('Request failed');
+        }
+    
+        // Handle the response here, e.g., parse JSON or check status
+        const responseData = await response.json();
+        console.log(responseData);
+      } catch (error) {
+        console.error('Error:', error);
+      }
 }
+    
 
 // Renders the form with the data provided by the form json
 // Only necessary props are passed to the inputs
