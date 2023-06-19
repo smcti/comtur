@@ -11,7 +11,7 @@
     "1": {
         "type": "radio",
         "title": "Perfil - Gênero",
-        "subtitle": "Por favor, informe seu gênero",
+        "subtitle": "Por favor, informe seu <b>gênero</b>",
         "required": true,
         "name": "genero",
         "data": [
@@ -35,7 +35,7 @@
     "2": {
         "type": "radio",
         "title": "Perfil - Idade",
-        "subtitle": "Por favor, informe sua faixa-etária",
+        "subtitle": "Por favor, informe sua <b>faixa-etária</b>",
         "required": true,
         "name": "faixa_etaria",
         "data": [
@@ -84,7 +84,7 @@
     "3": {
         "type": "radio",
         "title": "Perfil - Escolaridade",
-        "subtitle": "Por favor, informe sua escolaridade",
+        "subtitle": "Por favor, informe <b>sua escolaridade</b>",
         "required": true,
         "name": "escolaridade",
         "data": [
@@ -143,7 +143,7 @@
     "4": {
         "type": "radio",
         "title": "Perfil - Idade",
-        "subtitle": "Por favor, informe seu estado civil",
+        "subtitle": "Por favor, informe seu <b>estado civil</b>",
         "required": true,
         "name": "estado_civil",
         "data": [
@@ -177,7 +177,7 @@
     "5": {
         "type": "radio",
         "title": "Perfil - Empregabilidade",
-        "subtitle": "Por favor, leia com atenção e selecione a alternativa que melhor representa a sua situação atual de trabalho.",
+        "subtitle": "Por favor, leia com atenção e selecione a alternativa que melhor representa a <b>sua situação atual de trabalho.</b>",
         "required": true,
         "name": "empregabilidade",
         "data": [
@@ -246,7 +246,7 @@
     "6": {
         "type": "radio",
         "title": "Perfil - Área de Atuação",
-        "subtitle": "Por favor, informe a área (setor) à qual você está ligado(a)",
+        "subtitle": "Por favor, informe a <b>área (setor)</b> à qual você está ligado(a)",
         "required": true,
         "name": "area_de_atuacao",
         "data": [
@@ -360,7 +360,7 @@
     "7": {
         "type": "radio",
         "title": "Perfil - Renda Familiar",
-        "subtitle": "Qual categoria representa a renda familiar total na sua casa no último mês?",
+        "subtitle": "Qual categoria representa a <b>renda familiar total</b> na sua casa no último mês?",
         "required": true,
         "name": "renda_familiar",
         "data": [
@@ -399,7 +399,7 @@
     "8": {
         "type": "radio",
         "title": "Perfil - Fonte de Informação",
-        "subtitle": "Por favor, assinale a alternativa que identifica a fonte de informação que você mais usa para se manter atualizado(a).",
+        "subtitle": "Por favor, assinale a alternativa que identifica a <b>fonte de informação que você <u>mais usa</u></b> para se manter atualizado(a).",
         "required": true,
         "name": "fonte_de_informacao",
         "data": [
@@ -443,7 +443,7 @@
     "9": {
         "type": "radio",
         "title": "Perfil - Fonte de Informação - Mídias Sociais",
-        "subtitle": "Na questão anterior você informou que utiliza mídias sociais como fonte de informação para se manter atualizado(a). Por favor, informe qual a mídia social você mais usa para se manter atualizado(a).",
+        "subtitle": "Na questão anterior você informou que utiliza <b>mídias sociais</b> como fonte de informação para se manter atualizado(a). Por favor, informe <b>qual a mídia social você <u>mais usa</u></b> para se manter atualizado(a).",
         "required": false,
         "name": "midias_sociais",
         "data": [
@@ -512,7 +512,7 @@
     "10": {
         "type": "radio",
         "title": "Perfil - Local de Residência",
-        "subtitle": "Por favor, leia com atenção as opções de respostas e informe seu local de residência conforme solicitado.",
+        "subtitle": "Por favor, <u>leia com atenção as opções de respostas</u> e informe <b>seu local de residência</b> conforme solicitado.",
         "required": true,
         "name": "local_de_residencia",
         "data": [
@@ -536,7 +536,7 @@
     "11": {
         "type": "radio",
         "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
-        "subtitle": "Na questão anterior você informou que reside numa cidade da região Sudoeste do Paraná. Por gentileza, selecione o nome da cidade na qual você reside.",
+        "subtitle": "Na questão anterior <u>você informou que reside numa cidade da <b><em>região Sudoeste do Paraná</em></b></u>. Por gentileza, <b>selecione o nome da cidade na qual você reside.</b>",
         "required": false,
         "name": "cidade_spr",
         "data": [
@@ -755,7 +755,7 @@
     "12": {
         "type": "radio",
         "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
-        "subtitle": "Ao longo do ano você eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Francisco Beltrão e/ou Pato Branco?",
+        "subtitle": "Ao longo do ano você eventualmente precisa se <b>deslocar do seu local de residência para Dois Vizinhos e/ou Francisco Beltrão e/ou Pato Branco?</b>",
         "required": true,
         "name": "deslocamento_dv_fb_pb_spr",
         "data": [
@@ -1339,19 +1339,471 @@
         "type": "text",
         "title": "Perfil - Local de Residência (Outras Regiões)",
         "subtitle": "Na questão anterior você informou que <u>não reside no Sudoeste do Paraná nem no Oeste de Santa Catarina</u>. Por gentileza, <b>informe o nome da cidade na qual você reside.</b>",
-        "placeholder": "PlaceHolder",
-        "required": true,
-        "name": "Nothing",
+        "placeholder": "Sua resposta",
+        "required": false,
+        "name": "outra_cidade",
         "goto": "19"
     },
     "19": {
-        "type": "text",
-        "title": "Perfil - Local de Residência (Outras Regiões)",
-        "subtitle": "Na questão anterior você informou que <u>não reside no Sudoeste do Paraná nem no Oeste de Santa Catarina</u>. Por gentileza, <b>informe o nome da cidade na qual você reside.</b>",
-        "placeholder": "PlaceHolder",
-        "required": true,
-        "name": "Nothing",
-        "goto": "19"
+        "type": "radio",
+        "title": "Deslocamento - Florianópolis - Frequência",
+        "subtitle": "Ao longo do ano você eventualmente precisa se deslocar do seu local de residência para FLORIANÓPOLIS?",
+        "required": false,
+        "name": "desloca_para_florianopolis",
+        "data": [
+            {
+                "value": "Preciso me deslocar para Florianópolis uma vez por semana",
+                "label": "Preciso me deslocar para Florianópolis uma vez por semana",
+                "goto": "20"
+            },
+            {
+                "value": "Preciso me deslocar para Florianópolis até duas vezes por mês",
+                "label": "Preciso me deslocar para Florianópolis até duas vezes por mês",
+                "goto": "20"
+            },
+            {
+                "value": "Preciso me deslocar para Florianópolis uma vez por mês",
+                "label": "Preciso me deslocar para Florianópolis uma vez por mês",
+                "goto": "20"
+            },
+            {
+                "value": "Preciso me deslocar para Florianópolis uma vez a cada dois ou três meses",
+                "label": "Preciso me deslocar para Florianópolis uma vez a cada dois ou três meses",
+                "goto": "20"
+            },
+            {
+                "value": "Preciso me deslocar para Florianópolis duas vezes por ano",
+                "label": "Preciso me deslocar para Florianópolis duas vezes por ano",
+                "goto": "20"
+            },
+            {
+                "value": "Preciso me deslocar para Florianópolis uma vez por ano",
+                "label": "Preciso me deslocar para Florianópolis uma vez por ano",
+                "goto": "20"
+            },
+            {
+                "value": "Não preciso me deslocar para Florianópolis",
+                "label": "Não preciso me deslocar para Florianópolis",
+                "goto": "27"
+            }
+        ]
+    },
+    "20": {
+        "type": "radio",
+        "title": "Deslocamento - Florianópolis - Permanência",
+        "subtitle": "Na questão anterior você respondeu que ao longo do ano eventualmente precisa se deslocar para Florianópolis. Pensando nessa(s) circunstância(s), por gentileza, informe <b>quanto tempo <u>geralmente</u></b> você costuma permanecer em Florianópolis quando faz esse(s) deslocamento(s). ",
+        "required": false,
+        "name": "permanencia_florianopolis",
+        "data": [
+            {
+                "value": "apenas_um_dia_flo",
+                "label": "Apenas um dia",
+                "goto": "21"
+            },
+            {
+                "value": "entre_um_e_dois_dias_flo",
+                "label": "Entre um e dois dias",
+                "goto": "21"
+            },
+            {
+                "value": "entre_tres_e_cinco_dias_flo",
+                "label": "Entre três e cinco dias",
+                "goto": "21"
+            },
+            {
+                "value": "ate_uma_semana_flo",
+                "label": "Até uma semana",
+                "goto": "21"
+            },
+            {
+                "value": "depende_da_minha_agenda_de_compromissos_flo",
+                "label": "Depende da minha agenda de compromissos",
+                "goto": "21"
+            }
+        ]
+    },
+    "21": {
+        "type": "radio",
+        "title": "Deslocamento - Florianópolis - Hospedagem",
+        "subtitle": "Pensando em quando você está na Grande Florianópolis por gentileza <b>informe onde <u>prioritariamente</u> você costuma se hospedar.</b> ",
+        "required": false,
+        "name": "local_hospedagem_florianopolis",
+        "data": [
+            {
+                "value": "airbnb_flo",
+                "label": "Airbnb",
+                "goto": "22"
+            },
+            {
+                "value": "apart-hotel_flat_flo",
+                "label": "Apart-Hotel/Flat",
+                "goto": "22"
+            },
+            {
+                "value": "hotel_flo",
+                "label": "Hotel",
+                "goto": "22"
+            },
+            {
+                "value": "pensao_flo",
+                "label": "Pensão",
+                "goto": "22"
+            },
+            {
+                "value": "residencia_de_amigos_flo",
+                "label": "Residência de amigos",
+                "goto": "22"
+            },
+            {
+                "value": "residencia_de_familiares_flo",
+                "label": "Residência de familiares",
+                "goto": "22"
+            },
+            {
+                "value": "residencia_propria_flo",
+                "label": "Residência própria",
+                "goto": "22"
+            },
+            {
+                "value": "outro_tipo_de_hospedagem_flo",
+                "label": "Outro tipo de hospedagem",
+                "goto": "22"
+            },
+            {
+                "value": "nao_costumo_me_hospedar_em_florianopolis_flo",
+                "label": "Não costumo me hospedar em Florianópolis",
+                "goto": "22"
+            }
+        ]
+    },
+    "22": {
+        "type": "radio",
+        "title": "Deslocamento - Florianópolis - Meio de Transporte",
+        "subtitle": "Quando você precisa se deslocar para Florianópolis, qual o meio de transporte prioritário que utiliza?",
+        "required": false,
+        "name": "meio_transporte_florianopolis",
+        "data": [
+            {
+                "value": "onibus_flo",
+                "label": "Ônibus",
+                "goto": "23"
+            },
+            {
+                "value": "aviao_flo",
+                "label": "Avião",
+                "goto": "24"
+            },
+            {
+                "value": "veiculo_proprio_ou_empresa_flo",
+                "label": "Veículo (próprio ou da empresa)",
+                "goto": "25"
+            }
+        ]
+    },
+    "23": {
+        "type": "radio",
+        "title": "Deslocamento - Florianópolis - Ônibus",
+        "subtitle": "Você informou que quando precisa se deslocar para Florianópolis o seu meio de transporte prioritário é <b>ônibus</b>. Por favor, <u>leia com atenção as alternativas</u> e <b>informe qual delas melhor representa a realidade em relação ao seu local de residência.</b>",
+        "required": false,
+        "name": "realidade_linhas_onibus_flo",
+        "data": [
+            {
+                "value": "minha_cidade_tem_linha_onibus_flo",
+                "label": "Minha cidade tem linha(s) de ônibus para Florianópolis",
+                "goto": "25"
+            },
+            {
+                "value": "preciso_ir_outra_cidade_linha_onibus_flo",
+                "label": "Preciso ir até outra cidade para conseguir linha(s) de ônibus para Florianópolis",
+                "goto": "25"
+            }
+        ]
+    },
+    "24": {
+        "type": "radio",
+        "title": "Deslocamento - Florianópolis - Avião",
+        "subtitle": "Você informou que quando precisa se deslocar para Florianópolis o seu meio de transporte prioritário é avião. Por favor, leia com atenção as alternativas e informe de qual aeroporto é a sua partida.",
+        "required": false,
+        "name": "aeroporto_flo",
+        "data": [
+            {
+                "value": "aeroporto_chapeco_flo",
+                "label": "Aeroporto de Chapecó/SC",
+                "goto": "25"
+            },
+            {
+                "value": "aeroporto_foz_do_iguacu_flo",
+                "label": "Aeroporto de Foz do Iguaçu/PR",
+                "goto": "25"
+            },
+            {
+                "value": "aeroporto_pato_branco_executiva_flo",
+                "label": "Aeroporto Regional de Pato Branco, utilizando aeronave executiva/particular",
+                "goto": "25"
+            },
+            {
+                "value": "outro_aeroporto_executiva_flo",
+                "label": "Outro aeroporto, utilizando aeronave executiva/particular",
+                "goto": "25"
+            },
+            {
+                "value": "outro_aeroporto_comercial_flo",
+                "label": "Outro aeroporto, utilizando voo comercial",
+                "goto": "25"
+            }
+        ]
+    },
+    "25": {
+        "type": "radio",
+        "title": "Deslocamento - Florianópolis - Avião - Eventual Voo",
+        "subtitle": "Caso uma companhia aérea disponibilizasse voo saindo do Aeroporto Regional de Pato Branco para FLORIANÓPOLIS, qual a probabilidade de você utilizar esse voo?",
+        "required": false,
+        "name": "utilizaria_aeroporto_pb_flo",
+        "data": [
+            {
+                "value": "utilizar_regularmente_flo",
+                "label": "Poderia utilizar regularmente",
+                "goto": "26"
+            },
+            {
+                "value": "utilizar_determinadas_epocas_flo",
+                "label": "Poderia utilizar em determinadas épocas do ano",
+                "goto": "26"
+            },
+            {
+                "value": "utilizar_eventualmente_flo",
+                "label": "Poderia utilizar eventualmente",
+                "goto": "26"
+            },
+            {
+                "value": "nao_utilizaria_flo",
+                "label": "Não utilizaria",
+                "goto": "26"
+            },
+            {
+                "value": "nao_sei_flo",
+                "label": "Não sei",
+                "goto": "26"
+            }
+        ]
+    },
+    "26": {
+        "type": "radio",
+        "title": "Deslocamento - Florianópolis - Avião - Fator de Decisão",
+        "subtitle": "Caso uma companhia aérea disponibilizasse voo saindo do Aeroporto Regional de Pato Branco para FLORIANÓPOLIS, qual o fator mais importante para você usar esse voo?",
+        "required": false,
+        "name": "fator_decisao_voo_pb_flo",
+        "data": [
+            {
+                "value": "conveniencia_horario_flo",
+                "label": "Conveniência do horário de saída do voo",
+                "goto": "27"
+            },
+            {
+                "value": "retorno_mesmo_dia_flo",
+                "label": "Possibilidade de retornar no mesmo dia, independente do preço da passagem",
+                "goto": "27"
+            },
+            {
+                "value": "retorno_mesma_semana_flo",
+                "label": "Possibilidade de retornar na mesma semana, independente do preço da passagem",
+                "goto": "27"
+            },
+            {
+                "value": "preco_passagem_flo",
+                "label": "Preço da passagem aérea",
+                "goto": "27"
+            },
+            {
+                "value": "voo_direto_flo",
+                "label": "Voo direto, sem escala(s) ou conexão(ões)",
+                "goto": "27"
+            },
+            {
+                "value": "outro_fator_flo",
+                "label": "Outro fator",
+                "goto": "27"
+            },
+            {
+                "value": "nao_sei_flo",
+                "label": "Não sei",
+                "goto": "27"
+            }
+        ]
+    },
+    "27": {
+        "type": "radio",
+        "title": "Deslocamento - São Paulo - Frequência",
+        "subtitle": "Ao longo do ano você eventualmente precisa se <b>deslocar do seu local de residência para SÃO PAULO?</b>",
+        "required": false,
+        "name": "desloca_para_sao_paulo",
+        "data": [
+            {
+                "value": "uma_vez_por_semana_sp",
+                "label": "Preciso me deslocar para São Paulo uma vez por semana",
+                "goto": "28"
+            },
+            {
+                "value": "ate_duas_vezes_por_mes_sp",
+                "label": "Preciso me deslocar para São Paulo até duas vezes por mês",
+                "goto": "28"
+            },
+            {
+                "value": "uma_vez_por_mes_sp",
+                "label": "Preciso me deslocar para São Paulo uma vez por mês",
+                "goto": "28"
+            },
+            {
+                "value": "uma_vez_a_cada_dois_ou_tres_meses_sp",
+                "label": "Preciso me deslocar para São Paulo uma vez a cada dois ou três meses",
+                "goto": "28"
+            },
+            {
+                "value": "duas_vezes_por_ano_sp",
+                "label": "Preciso me deslocar para São Paulo duas vezes por ano",
+                "goto": "28"
+            },
+            {
+                "value": "uma_vez_por_ano_sp",
+                "label": "Preciso me deslocar para São Paulo uma vez por ano",
+                "goto": "28"
+            },
+            {
+                "value": "nao_preciso_deslocar_sp",
+                "label": "Não preciso me deslocar para São Paulo",
+                "goto": "38"
+            }
+        ]
+    },
+    "28": {
+        "type": "radio",
+        "title": "Deslocamento - São Paulo - Permanência",
+        "subtitle": "Na questão anterior você respondeu que ao longo do ano eventualmente precisa se deslocar para São Paulo. Pensando nessa(s) circunstância(s), por gentileza, informe <b>quanto tempo <u>geralmente</u></b> você costuma permanecer em São Paulo quando faz esse(s) deslocamento(s).",
+        "required": false,
+        "name": "permanencia_sao_paulo",
+        "data": [
+            {
+                "value": "apenas_um_dia_sp",
+                "label": "Apenas um dia",
+                "goto": "29"
+            },
+            {
+                "value": "entre_um_e_dois_dias_sp",
+                "label": "Entre um e dois dias",
+                "goto": "29"
+            },
+            {
+                "value": "entre_tres_e_cinco_dias_sp",
+                "label": "Entre três e cinco dias",
+                "goto": "29"
+            },
+            {
+                "value": "ate_uma_semana_sp",
+                "label": "Até uma semana",
+                "goto": "29"
+            },
+            {
+                "value": "mais_de_uma_semana_sp",
+                "label": "Mais de uma semana",
+                "goto": "29"
+            },
+            {
+                "value": "depende_da_minha_agenda_sp",
+                "label": "Depende da minha agenda de compromissos",
+                "goto": "29"
+            }
+        ]
+    },
+    "29": {
+        "type": "radio",
+        "title": "Deslocamento - São Paulo - Hospedagem",
+        "subtitle": "Pensando em quando você está em São Paulo, por gentileza, informe onde prioritariamente você costuma se hospedar.",
+        "required": false,
+        "name": "local_hospedagem_sao_paulo",
+        "data": [
+            {
+                "value": "airbnb_sp",
+                "label": "Airbnb",
+                "goto": "30"
+            },
+            {
+                "value": "flat_apart_hotel_sp",
+                "label": "Flat/Apart-Hotel",
+                "goto": "30"
+            },
+            {
+                "value": "hotel_sp",
+                "label": "Hotel",
+                "goto": "30"
+            },
+            {
+                "value": "pensao_sp",
+                "label": "Pensão",
+                "goto": "30"
+            },
+            {
+                "value": "residencia_amigos_sp",
+                "label": "Residência de amigos",
+                "goto": "30"
+            },
+            {
+                "value": "residencia_familiares_sp",
+                "label": "Residência de familiares",
+                "goto": "30"
+            },
+            {
+                "value": "residencia_propria_sp",
+                "label": "Residência própria",
+                "goto": "30"
+            },
+            {
+                "value": "outro_tipo_hospedagem_sp",
+                "label": "Outro tipo de hospedagem",
+                "goto": "30"
+            },
+            {
+                "value": "nao_costumo_me_hospedar_sp",
+                "label": "Não costumo me hospedar em São Paulo",
+                "goto": "30"
+            }
+        ]
+    },
+    "30": {
+        "type": "radio",
+        "title": "Deslocamento - São Paulo - Meio de transporte",
+        "subtitle": "Quando você precisa se deslocar para São Paulo, qual o <b>meio de transporte prioritário</b> que utiliza?",
+        "required": false,
+        "name": "meio_transporte_sp",
+        "data": [
+            {
+                "value": "onibus_sp",
+                "label": "Ônibus",
+                "goto": "31"
+            },
+            {
+                "value": "aviao_sp",
+                "label": "Avião",
+                "goto": "32"
+            },
+            {
+                "value": "veiculo_sp",
+                "label": "Veículo (próprio ou da empresa)",
+                "goto": "33"
+            }
+        ]
+    },
+    "x": {
+        "type": "radio",
+        "title": "",
+        "subtitle": "",
+        "required": false,
+        "name": "",
+        "data": [
+            {
+                "value": "",
+                "label": "",
+                "goto": ""
+            }
+        ]
     }
-   
 }
