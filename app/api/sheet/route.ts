@@ -7,7 +7,6 @@ export async function POST(req: Request) {
     try {
         const { googleSheets, auth, spreadsheetId } = await getAuthSheets();
         const values = await req.json();
-
         const headerRange = "COMTUR!1:1"; // Range to retrieve the header row
         const response = await googleSheets.spreadsheets.values.get({
             auth,
@@ -15,13 +14,22 @@ export async function POST(req: Request) {
             range: headerRange,
         });
 
-        if(!values.email){
+        const checkbox_keys = ["spr_acesso_saude", "spr_compras", "spr_estudos", "spr_negocios_trabalho", "spr_outro"];
+        checkbox_keys.forEach(checkboxKey => {
+            const matchingValues = Object.entries(values)
+              .filter(([key]) => key.includes(checkboxKey))
+              .map(([, value]) => value);
+          
+            values[checkboxKey] = matchingValues.join(", ");
+          });
+
+        if (!values.email) {
             return NextResponse.json({
                 message: "Email não inserido",
             },
-            {
-                status: 400
-            }
+                {
+                    status: 400
+                }
             )
         }
 
@@ -29,18 +37,18 @@ export async function POST(req: Request) {
             return NextResponse.json({
                 message: "Email já registrado",
             },
-            {
-                status: 401
-            })
+                {
+                    status: 401
+                })
         }
 
         if (!response.data.values) {
             return NextResponse.json({
                 message: "No column headers found"
             },
-            {
-                status: 204
-            }
+                {
+                    status: 204
+                }
             )
         }
 
@@ -48,7 +56,6 @@ export async function POST(req: Request) {
         values['data e hora'] = time.now();
         const headers = response.data.values[0];
         const headersObject: Record<string, any> = {};
-
         headers.forEach((header: string) => {
             const value = values[header];
             if (value !== undefined) {
@@ -74,7 +81,7 @@ export async function POST(req: Request) {
         console.error(error);
         return NextResponse.json({
             message: "Server error",
-        },{
+        }, {
             status: 500
         }
         );
