@@ -17,10 +17,9 @@ const submit = (event: any) => {
 
     const formData = new FormData(form);
     
-    for(var pair of formData.entries()) {
+    for(let pair of formData.entries()) {
         console.log(pair[0]+ ', '+ pair[1]);
     }
-
 }
 
 // Renders the form with the data provided by the form json
