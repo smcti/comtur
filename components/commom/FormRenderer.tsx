@@ -133,7 +133,7 @@ const FormRenderer = (props: any) => {
                         <fieldset key={index} id={String(Object.keys(formFormat)[index])} className={`bg-white relative border rounded-md p-4 flex flex-col gap-8 ${index != 0 ? 'hidden' : ''}`} >
                             <div className='flex flex-row justify-between gap-4'>
                                 <div className='font-bold'>{item.title}</div>
-                                <h1 className=' min-w-[32px] h-8 bg-cello-800 text-zircon-50 flex items-center justify-center rounded-full'>{Number(keys[index]) + 1}</h1>
+                                <h1 className=' min-w-[32px] h-8 bg-cello-800 text-zircon-50 flex items-center justify-center rounded-full'>{Number(keys[index])}</h1>
                             </div>
                             <div dangerouslySetInnerHTML={{ __html: item.subtitle }}></div>
                             {
@@ -143,12 +143,12 @@ const FormRenderer = (props: any) => {
                                         <Checkbox data={item.data} name={item.name} goTo={item.goto}/> :
                                         <Text goTo={item.goto} name={item.name} placeholder={item.placeholder}/>
                             }
-                            <div className='flex flex-row items-center gap-4 text-red-500 hidden' id={`err-${index}`}><LuAlertCircle /> Por favor, preencha o campo antes de avançar</div>
+                            <div className='flex flex-row items-center gap-4 text-red-500 hidden' id={`err-${index}`}><LuAlertCircle /> Por favor, preencha o campo acima antes de avançar</div>
                         </fieldset>
                     )
                 })}
                 <div className='flex flex-row-reverse gap-4'>
-                    <button id='submit' type='submit' className='button hidden' onClick={submit}>Enviar</button>
+                    <button id='submit' type='button' className='button hidden' onClick={submit}>Enviar</button>
                     <button id='next' type='button' className='button' onClick={btFw} >Avançar</button>
                     <button id='back' type='button' className='button hidden' onClick={btBw} >Voltar</button>
                 </div>
