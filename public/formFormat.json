@@ -8,7 +8,7 @@
         "name": "Nothing",
         "goto": "1"
     },
-    "1": { 
+    "1": {
         "type": "radio",
         "title": "Perfil - Gênero",
         "subtitle": "Por favor, informe seu gênero",
@@ -138,7 +138,6 @@
                 "label": "Doutorado",
                 "goto": "4"
             }
-           
         ]
     },
     "4": {
@@ -758,7 +757,7 @@
         "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
         "subtitle": "Ao longo do ano você eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Francisco Beltrão e/ou Pato Branco?",
         "required": true,
-        "name": "cidade_osc",
+        "name": "deslocamento_dv_fb_pb",
         "data": [
             {
                 "value": "com_muita_frequencia",
@@ -792,15 +791,13 @@
             [
                 {
                     "title": "Dois Vizinhos"
-                }, 
+                },
                 {
-
                     "title": "Francisco Beltrão"
-                }, 
+                },
                 {
                     "title": "Pato Branco"
                 }
-                
             ],
             [
                 {
@@ -893,9 +890,323 @@
                 }
             ]
         ],
-        "goto": 14
+        "goto": 19
+    },
+    "14": {
+        "type": "radio",
+        "title": "Perfil - Local de Residência (Oeste de Santa Catarina)",
+        "subtitle": "Na questão anterior <u>você informou que reside numa cidade da <b>região Oeste de Santa Catarina</b></u>. Por gentileza, <b>selecione o nome da cidade na qual você reside</b>.",
+        "required": false,
+        "name": "cidade_osc",
+        "data": [
+            {
+                "value": "abelardo_luz",
+                "label": "Abelardo Luz",
+                "goto": "16"
+            },
+            {
+                "value": "aguas_de_chapeco",
+                "label": "Águas de Chapecó",
+                "goto": "16"
+            },
+            {
+                "value": "aguas_frias",
+                "label": "Águas Frias",
+                "goto": "16"
+            },
+            {
+                "value": "anchieta",
+                "label": "Anchieta",
+                "goto": "16"
+            },
+            {
+                "value": "barra_bonita",
+                "label": "Barra Bonita",
+                "goto": "16"
+            },
+            {
+                "value": "bom_jesus_do_oeste",
+                "label": "Bom Jesus do Oeste",
+                "goto": "16"
+            },
+            {
+                "value": "campo_ere",
+                "label": "Campo Erê",
+                "goto": "16"
+            },
+            {
+                "value": "chapeco",
+                "label": "Chapecó",
+                "goto": "16"
+            },
+            {
+                "value": "cordilheira_alta",
+                "label": "Cordilheira Alta",
+                "goto": "16"
+            },
+            {
+                "value": "coronel_freitas",
+                "label": "Coronel Freitas",
+                "goto": "16"
+            },
+            {
+                "value": "coronel_martins",
+                "label": "Coronel Martins",
+                "goto": "16"
+            },
+            {
+                "value": "cunha_pora",
+                "label": "Cunha Porã",
+                "goto": "16"
+            },
+            {
+                "value": "dionisio_cerqueira",
+                "label": "Dionísio Cerqueira",
+                "goto": "16"
+            },
+            {
+                "value": "entre_rios",
+                "label": "Entre Rios",
+                "goto": "16"
+            },
+            {
+                "value": "faxinal_dos_guedes",
+                "label": "Faxinal dos Guedes",
+                "goto": "16"
+            },
+            {
+                "value": "flor_do_sertao",
+                "label": "Flor do Sertão",
+                "goto": "16"
+            },
+            {
+                "value": "formosa_do_sul",
+                "label": "Formosa do Sul",
+                "goto": "16"
+            },
+            {
+                "value": "galvao",
+                "label": "Galvão",
+                "goto": "16"
+            },
+            {
+                "value": "guaraciaba",
+                "label": "Guaraciaba",
+                "goto": "16"
+            },
+            {
+                "value": "guarambu",
+                "label": "Guarambú",
+                "goto": "16"
+            },
+            {
+                "value": "ipuacu",
+                "label": "Ipuaçu",
+                "goto": "16"
+            },
+            {
+                "value": "iraceminha",
+                "label": "Iraceminha",
+                "goto": "16"
+            },
+            {
+                "value": "irati",
+                "label": "Irati",
+                "goto": "16"
+            },
+            {
+                "value": "jardinopolis",
+                "label": "Jardinópolis",
+                "goto": "16"
+            },
+            {
+                "value": "jupia",
+                "label": "Jupiá",
+                "goto": "16"
+            },
+            {
+                "value": "lajeado_grande",
+                "label": "Lajeado Grande",
+                "goto": "16"
+            },
+            {
+                "value": "marema",
+                "label": "Marema",
+                "goto": "16"
+            },
+            {
+                "value": "modelo",
+                "label": "Modelo",
+                "goto": "16"
+            },
+            {
+                "value": "nova_itaberaba",
+                "label": "Nova Itaberaba",
+                "goto": "16"
+            },
+            {
+                "value": "novo_horizonte",
+                "label": "Novo Horizonte",
+                "goto": "16"
+            },
+            {
+                "value": "ouro_verde",
+                "label": "Ouro Verde",
+                "goto": "16"
+            },
+            {
+                "value": "palma_sola",
+                "label": "Palma Sola",
+                "goto": "16"
+            },
+            {
+                "value": "passos_maia",
+                "label": "Passos Maia",
+                "goto": "16"
+            },
+            {
+                "value": "pinhalzinho",
+                "label": "Pinhalzinho",
+                "goto": "16"
+            },
+            {
+                "value": "planalto_alegre",
+                "label": "Planalto Alegre",
+                "goto": "16"
+            },
+            {
+                "value": "ponte_serrada",
+                "label": "Ponte Serrada",
+                "goto": "16"
+            },
+            {
+                "value": "princesa",
+                "label": "Princesa",
+                "goto": "16"
+            },
+            {
+                "value": "quilombo",
+                "label": "Quilombo",
+                "goto": "16"
+            },
+            {
+                "value": "romelandia",
+                "label": "Romelândia",
+                "goto": "16"
+            },
+            {
+                "value": "saltinho",
+                "label": "Saltinho",
+                "goto": "16"
+            },
+            {
+                "value": "santa_terezinha_progresso",
+                "label": "Santa Terezinha do Progresso",
+                "goto": "16"
+            },
+            {
+                "value": "santiago_do_sul",
+                "label": "Santiago do Sul",
+                "goto": "16"
+            },
+            {
+                "value": "sao_bernardino",
+                "label": "São Bernardino",
+                "goto": "16"
+            },
+            {
+                "value": "sao_carlos",
+                "label": "São Carlos",
+                "goto": "16"
+            },
+            {
+                "value": "sao_domingos",
+                "label": "São Domingos",
+                "goto": "16"
+            },
+            {
+                "value": "sao_jose_do_cedro",
+                "label": "São José do Cedro",
+                "goto": "16"
+            },
+            {
+                "value": "sao_lourenco_do_oeste",
+                "label": "São Lourenço do Oeste",
+                "goto": "16"
+            },
+            {
+                "value": "sao_miguel_da_boa_vista",
+                "label": "São Miguel da Boa Vista",
+                "goto": "16"
+            },
+            {
+                "value": "sao_miguel_do_oeste",
+                "label": "São Miguel do Oeste",
+                "goto": "16"
+            },
+            {
+                "value": "saudades",
+                "label": "Saudades",
+                "goto": "16"
+            },
+            {
+                "value": "sul_brasil",
+                "label": "Sul Brasil",
+                "goto": "16"
+            },
+            {
+                "value": "uniao_do_oeste",
+                "label": "União do Oeste",
+                "goto": "16"
+            },
+            {
+                "value": "vargeao",
+                "label": "Vargeão",
+                "goto": "16"
+            },
+            {
+                "value": "xanxere",
+                "label": "Xanxerê",
+                "goto": "16"
+            },
+            {
+                "value": "xavantina",
+                "label": "Xavantina",
+                "goto": "16"
+            },
+            {
+                "value": "xaxim",
+                "label": "Xaxim",
+                "goto": "16"
+            },
+            {
+                "value": "sc_outra_cidade",
+                "label": "Outra cidade",
+                "goto": "15"
+            }
+        ]
+    },
+    "15": {
+        "type": "text",
+        "title": "Perfil - Local de Residência (Oeste de Santa Catarina)",
+        "subtitle": "Na questão anterior você informou que <u>reside em <b>outra cidade da região Oeste de Santa Catarina</b></u> que não consta na lista de opções. Por gentileza, informe o nome da cidade na qual você reside",
+        "placeholder": "Cidade em que você reside",
+        "required": false,
+        "name": "cidade_osc_outra",
+        "goto": "19"
+    },
+    "x": {
+        "type": "radio",
+        "title": "title",
+        "subtitle": "sub",
+        "required": false,
+        "name": "field_name",
+        "data": [
+            {
+                "value": "",
+                "label": "",
+                "goto": "x"
+            }
+        ]
     }
-    
-
-    
 }
