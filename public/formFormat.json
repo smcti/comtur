@@ -37,7 +37,7 @@
         "title": "Perfil - Idade",
         "subtitle": "Por favor, informe sua faixa-etária",
         "required": true,
-        "name": "faixa-etária",
+        "name": "faixa_etaria",
         "data": [
             {
                 "value": "16 a 17 anos",
@@ -144,9 +144,9 @@
     "4": {
         "type": "radio",
         "title": "Perfil - Idade",
-        "subtitle": "Por favor, informe sua faixa-etária",
+        "subtitle": "Por favor, informe seu estado civil",
         "required": true,
-        "name": "estado civil",
+        "name": "estado_civil",
         "data": [
             {
                 "value": "solteiro(a)",
@@ -172,6 +172,614 @@
                 "value": "viuvo(a)",
                 "label": "Viúvo(a)",
                 "goto": "5"
+            }
+        ]
+    },
+    "5": {
+        "type": "radio",
+        "title": "Perfil - Empregabilidade",
+        "subtitle": "Por favor, leia com atenção e selecione a alternativa que melhor representa a sua situação atual de trabalho.",
+        "required": true,
+        "name": "empregabilidade",
+        "data": [
+            {
+                "value": "aposentado(a)/pensionista",
+                "label": "Aposentado(a)/Pensionista",
+                "goto": "6"
+            },
+            {
+                "value": "aprendiz(com_remuneracao)",
+                "label": "Aprendiz (com remuneração)",
+                "goto": "6"
+            },
+            {
+                "value": "assalariado(a)_com_registro",
+                "label": "Assalariado(a) COM REGISTRO em carteira",
+                "goto": "6"
+            },
+            {
+                "value": "assalariado(a)_sem_registro",
+                "label": "Assalariado(a) SEM REGISTRO em carteira",
+                "goto": "6"
+            },
+            {
+                "value": "autonomo(a)",
+                "label": "Autônomo(a)",
+                "goto": "6"
+            },
+            {
+                "value": "desempregado(a)",
+                "label": "Desempregado(a)",
+                "goto": "6"
+            },
+            {
+                "value": "do_lar(dona_de_casa)",
+                "label": "Do lar (dona de casa)",
+                "goto": "6"
+            },
+            {
+                "value": "empresario",
+                "label": "Empresário(a)",
+                "goto": "6"
+            },
+            {
+                "value": "estagiario(com_remuneração)",
+                "label": "Estagiário(a) (com remuneração)",
+                "goto": "6"
+            },
+            {
+                "value": "free_lancer",
+                "label": "Free-lancer (\"bico\")",
+                "goto": "6"
+            },
+            {
+                "value": "profissional_liberal",
+                "label": "Profissional Liberal",
+                "goto": "6"
+            },
+            {
+                "value": "outra_situacao",
+                "label": "Outra situação",
+                "goto": "6"
+            }
+        ]
+    },
+    "6": {
+        "type": "radio",
+        "title": "Perfil - Área de Atuação",
+        "subtitle": "Por favor, informe a área (setor) à qual você está ligado(a)",
+        "required": true,
+        "name": "area_de_atuacao",
+        "data": [
+            {
+                "value": "agronegocio",
+                "label": "Agronegócio",
+                "goto": "7"
+            },
+            {
+                "value": "arquitetura_engenharia",
+                "label": "Arquitetura | Engenharia",
+                "goto": "7"
+            },
+            {
+                "value": "artes",
+                "label": "Artes",
+                "goto": "7"
+            },
+            {
+                "value": "autonomo",
+                "label": "Autônomo (prestador de serviços sem vínculo empregatício)",
+                "goto": "7"
+            },
+            {
+                "value": "bem_estar",
+                "label": "Bem-Estar | Clínica | Hospitalar | Nutrição | Saúde",
+                "goto": "7"
+            },
+            {
+                "value": "comercio",
+                "label": "Comércio",
+                "goto": "7"
+            },
+            {
+                "value": "comunicacao",
+                "label": "Comunicação (Design | Fotografia | Jornal | Mídia Digital | Publicidade | Rádio | Televisão | Vídeo)",
+                "goto": "7"
+            },
+            {
+                "value": "construcao_imobiliario",
+                "label": "Construção | Imobiliário | Incorporação | Infraestrutura",
+                "goto": "7"
+            },
+            {
+                "value": "cultura_eventos_shows",
+                "label": "Cultura | Eventos | Shows",
+                "goto": "7"
+            },
+            {
+                "value": "educacao",
+                "label": "Educação",
+                "goto": "7"
+            },
+            {
+                "value": "esporte",
+                "label": "Esporte",
+                "goto": "7"
+            },
+            {
+                "value": "estudante",
+                "label": "Estudante",
+                "goto": "7"
+            },
+            {
+                "value": "forcas_armadas",
+                "label": "Forças Armadas (Aeronáutica/Exército/Marinha)",
+                "goto": "7"
+            },
+            {
+                "value": "industria",
+                "label": "Indústria",
+                "goto": "7"
+            },
+            {
+                "value": "liberal",
+                "label": "Liberal (Advogado | Consultor | Contador | Dentista | Economista | Médico | Veterinário | Outro)",
+                "goto": "7"
+            },
+            {
+                "value": "prestacao_servicos",
+                "label": "Prestação de Serviços",
+                "goto": "7"
+            },
+            {
+                "value": "seguranca_publica",
+                "label": "Segurança Pública (Bombeiros | Polícias Civil, Federal, Militar, Rod. Estadual, Rod. Federal | SAMU)",
+                "goto": "7"
+            },
+            {
+                "value": "servico_publico",
+                "label": "Serviço Público (Municipal | Estadual | Federal)",
+                "goto": "7"
+            },
+            {
+                "value": "tecnologia_informacao",
+                "label": "Tecnologia da Informação",
+                "goto": "7"
+            },
+            {
+                "value": "turismo",
+                "label": "Turismo (Agência de Viagens | Consultoria | Gastronomia | Hotelaria | Locações | Transporte)",
+                "goto": "7"
+            },
+            {
+                "value": "outra_area_setor",
+                "label": "Outra área/setor",
+                "goto": "7"
+            }
+        ]
+    },
+    "7": {
+        "type": "radio",
+        "title": "Perfil - Renda Familiar",
+        "subtitle": "Qual categoria representa a renda familiar total na sua casa no último mês?",
+        "required": true,
+        "name": "renda_familiar",
+        "data": [
+            {
+                "value": "ate_1320",
+                "label": "Até R$ 1.320,00",
+                "goto": "8"
+            },
+            {
+                "value": "1321_2640",
+                "label": "Entre R$ 1.321,00 e R$ 2.640,00",
+                "goto": "8"
+            },
+            {
+                "value": "2641_3960",
+                "label": "Entre R$ 2.641,00 e R$ 3.960,00",
+                "goto": "8"
+            },
+            {
+                "value": "3961_6600",
+                "label": "Entre R$ 3.961,00 e R$ 6.600,00",
+                "goto": "8"
+            },
+            {
+                "value": "6601_13200",
+                "label": "Entre R$ 6.601,00 e R$ 13.200,00",
+                "goto": "8"
+            },
+            {
+                "value": "acima_13200",
+                "label": "Acima de R$ 13.200,00",
+                "goto": "8"
+            }
+        ]
+    },
+    "8": {
+        "type": "radio",
+        "title": "Perfil - Fonte de Informação",
+        "subtitle": "Por favor, assinale a alternativa que identifica a fonte de informação que você mais usa para se manter atualizado(a).",
+        "required": true,
+        "name": "fonte_de_informacao",
+        "data": [
+            {
+                "value": "acessar_sites",
+                "label": "Acessar sites de notícias",
+                "goto": "10"
+            },
+            {
+                "value": "assistir_tv",
+                "label": "Assistir televisão",
+                "goto": "10"
+            },
+            {
+                "value": "conversar_pessoas",
+                "label": "Conversar com outras pessoas",
+                "goto": "10"
+            },
+            {
+                "value": "ler_jornal",
+                "label": "Ler jornal impresso/online",
+                "goto": "10"
+            },
+            {
+                "value": "midias_sociais",
+                "label": "Mídias sociais (exemplo: Facebook, Instagram, TikTok, WhatsApp etc.)",
+                "goto": "9"
+            },
+            {
+                "value": "ouvir_radio",
+                "label": "Ouvir rádio",
+                "goto": "10"
+            },
+            {
+                "value": "outra",
+                "label": "Nenhuma das anteriores / Outra",
+                "goto": "10"
+            }
+        ]
+    },
+    
+    "9": {
+        "type": "radio",
+        "title": "Perfil - Fonte de Informação - Mídias Sociais",
+        "subtitle": "Na questão anterior você informou que utiliza mídias sociais como fonte de informação para se manter atualizado(a). Por favor, informe qual a mídia social você mais usa para se manter atualizado(a).",
+        "required": false,
+        "name": "midias_sociais",
+        "data": [
+            {
+                "value": "facebook",
+                "label": "Facebook",
+                "goto": "10"
+            },
+            {
+                "value": "messenger",
+                "label": "Facebook Messenger",
+                "goto": "10"
+            },
+            {
+                "value": "instagram",
+                "label": "Instagram",
+                "goto": "10"
+            },
+            {
+                "value": "linkedin",
+                "label": "LinkedIn",
+                "goto": "10"
+            },
+            {
+                "value": "pinterest",
+                "label": "Pinterest",
+                "goto": "10"
+            },
+            {
+                "value": "snapchat",
+                "label": "Snapchat",
+                "goto": "10"
+            },
+            {
+                "value": "tiktok",
+                "label": "TikTok",
+                "goto": "10"
+            },
+            {
+                "value": "twitter",
+                "label": "Twitter",
+                "goto": "10"
+            },
+            {
+                "value": "telegram",
+                "label": "Telegram",
+                "goto": "10"
+            },
+            {
+                "value": "youtube",
+                "label": "Youtube",
+                "goto": "10"
+            },
+            {
+                "value": "whatsapp",
+                "label": "WhatsApp",
+                "goto": "10"
+            },
+            {
+                "value": "outra",
+                "label": "Nenhuma das anteriores / Outra",
+                "goto": "10"
+            }
+        ]
+    },
+    "10": {
+        "type": "radio",
+        "title": "Perfil - Local de Residência",
+        "subtitle": "Por favor, leia com atenção as opções de respostas e informe seu local de residência conforme solicitado.",
+        "required": true,
+        "name": "local_de_residencia",
+        "data": [
+            {
+                "value": "sudoeste_pr",
+                "label": "Eu resido numa cidade da região Sudoeste do Paraná",
+                "goto": "11"
+            },
+            {
+                "value": "oeste_sc",
+                "label": "Eu resido numa cidade da região Oeste de Santa Catarina",
+                "goto": "14"
+            },
+            {
+                "value": "outro",
+                "label": "Eu não resido no Sudoeste do Paraná ou no Oeste de Santa Catarina",
+                "goto": "18"
+            }
+        ]
+    },
+    "11": {
+        "type": "radio",
+        "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
+        "subtitle": "Na questão anterior você informou que reside numa cidade da região Sudoeste do Paraná. Por gentileza, selecione o nome da cidade na qual você reside.",
+        "required": false,
+        "name": "cidade_spr",
+        "data": [
+            {
+                "value": "ampere",
+                "label": "Ampére",
+                "goto": "12"
+            },
+            {
+                "value": "barracao",
+                "label": "Barracão",
+                "goto": "12"
+            },
+            {
+                "value": "bela_vista_caroba",
+                "label": "Bela Vista da Caroba",
+                "goto": "12"
+            },
+            {
+                "value": "boa_esperanca_iguacu",
+                "label": "Boa Esperança do Iguaçu",
+                "goto": "12"
+            },
+            {
+                "value": "bom_jesus_sul",
+                "label": "Bom Jesus do Sul",
+                "goto": "12"
+            },
+            {
+                "value": "bom_sucesso_sul",
+                "label": "Bom Sucesso do Sul",
+                "goto": "12"
+            },
+            {
+                "value": "capanema",
+                "label": "Capanema",
+                "goto": "12"
+            },
+            {
+                "value": "chopinzinho",
+                "label": "Chopinzinho",
+                "goto": "12"
+            },
+            {
+                "value": "clevelandia",
+                "label": "Clevelândia",
+                "goto": "12"
+            },
+            {
+                "value": "coronel_domingos_soares",
+                "label": "Coronel Domingos Soares",
+                "goto": "12"
+            },
+            {
+                "value": "coronel_vivida",
+                "label": "Coronel Vivida",
+                "goto": "12"
+            },
+            {
+                "value": "cruzeiro_iguacu",
+                "label": "Cruzeiro do Iguaçu",
+                "goto": "12"
+            },
+            {
+                "value": "dois_vizinhos",
+                "label": "Dois Vizinhos",
+                "goto": "12"
+            },
+            {
+                "value": "eneas_marques",
+                "label": "Enéas Marques",
+                "goto": "12"
+            },
+            {
+                "value": "flor_serra_sul",
+                "label": "Flor da Serra do Sul",
+                "goto": "12"
+            },
+            {
+                "value": "francisco_beltrao",
+                "label": "Francisco Beltrão",
+                "goto": "12"
+            },
+            {
+                "value": "honorio_serpa",
+                "label": "Honório Serpa",
+                "goto": "12"
+            },
+            {
+                "value": "itapejara_oeste",
+                "label": "Itapejara do Oeste",
+                "goto": "12"
+            },
+            {
+                "value": "manfrinopolis",
+                "label": "Manfrinópolis",
+                "goto": "12"
+            },
+            {
+                "value": "mangueirinha",
+                "label": "Mangueirinha",
+                "goto": "12"
+            },
+            {
+                "value": "mariopolis",
+                "label": "Mariópolis",
+                "goto": "12"
+            },
+            {
+                "value": "marmeleiro",
+                "label": "Marmeleiro",
+                "goto": "12"
+            },
+            {
+                "value": "nova_esperanca_sudoeste",
+                "label": "Nova Esperança do Sudoeste",
+                "goto": "12"
+            },
+            {
+                "value": "nova_prata_iguacu",
+                "label": "Nova Prata do Iguaçu",
+                "goto": "12"
+            },
+            {
+                "value": "palmas",
+                "label": "Palmas",
+                "goto": "12"
+            },
+            {
+                "value": "pato_branco",
+                "label": "Pato Branco",
+                "goto": "12"
+            },
+            {
+                "value": "perola_oeste",
+                "label": "Perola do Oeste",
+                "goto": "12"
+            },
+            {
+                "value": "pinhal_sao_bento",
+                "label": "Pinhal do São Bento",
+                "goto": "12"
+            },
+            {
+                "value": "planalto",
+                "label": "Planalto",
+                "goto": "12"
+            },
+            {
+                "value": "pranchita",
+                "label": "Pranchita",
+                "goto": "12"
+            },
+            {
+                "value": "realeza",
+                "label": "Realeza",
+                "goto": "12"
+            },
+            {
+                "value": "renascenca",
+                "label": "Renascença",
+                "goto": "12"
+            },
+            {
+                "value": "salgado_filho",
+                "label": "Salgado Filho",
+                "goto": "12"
+            },
+            {
+                "value": "salto_lontra",
+                "label": "Salto do Lontra",
+                "goto": "12"
+            },
+            {
+                "value": "santa_izabel_oeste",
+                "label": "Santa Izabel do Oeste",
+                "goto": "12"
+            },
+            {
+                "value": "santo_antonio_sudoeste",
+                "label": "Santo Antônio do Sudoeste",
+                "goto": "12"
+            },
+            {
+                "value": "sao_joao",
+                "label": "São João",
+                "goto": "12"
+            },
+            {
+                "value": "sao_jorge_oeste",
+                "label": "São Jorge do Oeste",
+                "goto": "12"
+            },
+            {
+                "value": "saudade_iguacu",
+                "label": "Saudade do Iguaçu",
+                "goto": "12"
+            },
+            {
+                "value": "sulina",
+                "label": "Sulina",
+                "goto": "12"
+            },
+            {
+                "value": "vere",
+                "label": "Verê",
+                "goto": "12"
+            },
+            {
+                "value": "vitorino",
+                "label": "Vitorino",
+                "goto": "12"
+            }
+        ]
+    },
+    "12": {
+        "type": "radio",
+        "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
+        "subtitle": "Ao longo do ano você eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Francisco Beltrão e/ou Pato Branco?",
+        "required": true,
+        "name": "cidade_osc",
+        "data": [
+            {
+                "value": "com_muita_frequencia",
+                "label": "Sim, com muita frequência",
+                "goto": "13"
+            },
+            {
+                "value": "com_alguma_frequencia",
+                "label": "Sim, com alguma frequência",
+                "goto": "13"
+            },
+            {
+                "value": "com_pouca_frequencia",
+                "label": "Sim, com pouca frequência",
+                "goto": "13"
+            },
+            {
+                "value": "nao_preciso_me_deslocar",
+                "label": "Não preciso me deslocar para essas cidades",
+                "goto": "19"
             }
         ]
     },
@@ -288,14 +896,20 @@
         ],
         "goto": 14
     },
-    "14": {
-        "type": "text",
-        "title": "Perfil - Local de Residência (Outras Regiões)",
-        "subtitle": "Na questão anterior você informou que não reside no Sudoeste do Paraná nem no Oeste de Santa Catarina. Por gentileza, informe o nome da cidade na qual você reside.",
-        "placeholder": "Sua resposta",
-        "required": false,
-        "name": "testName3",
-        "goto": "15"
+    "x": {
+        "type": "radio",
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "required": true,
+        "name": "key",
+        "data": [
+            {
+                "value": "",
+                "label": "",
+                "goto": "x"
+            }
+        ]
     }
+
     
 }
