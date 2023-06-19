@@ -112,9 +112,9 @@ const FormRenderer = (props: any) => {
                     )
                 })}
                 <div className='flex flex-row-reverse gap-4'>
-                    <button id='submit' type='submit' className='font-semibold text-lg bg-white rounded-md button hover:bg-gray-200 hidden' onClick={submit}>Submit</button>
-                    <button id='next' type='button' className='font-semibold text-lg bg-white rounded-md button hover:bg-gray-200' onClick={btFw} >next</button>
-                    <button id='back' type='button' className='font-semibold text-lg bg-white rounded-md button hover:bg-gray-200 hidden' onClick={btBw} >back</button>
+                    <button id='submit' type='submit' className='font-semibold text-lg bg-white rounded-md button hover:bg-gray-200 hidden' onClick={submit}>Enviar</button>
+                    <button id='next' type='button' className='font-semibold text-lg bg-white rounded-md button hover:bg-gray-200' onClick={btFw} >Avançar</button>
+                    <button id='back' type='button' className='font-semibold text-lg bg-white rounded-md button hover:bg-gray-200 hidden' onClick={btBw} >Voltar</button>
                 </div>
             </form>
         </div>
