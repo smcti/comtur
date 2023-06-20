@@ -2690,7 +2690,7 @@
         "title": "Deslocamento - Curitiba - Avião - Fator de Decisão",
         "subtitle": " Caso uma companhia aérea disponibilizasse <b>voo saindo do Aeroporto Regional de Pato Branco para CURITIBA com saída e retorno no mesmo dia</b> (exemplo: saída pela manhã, retorno final da tarde ou a noite)  , qual o <u><b>fator mais importante</b></u> para você usar esse voo?",
         "required": false,
-        "name": "fator_decisao_voo_pb_flo",
+        "name": "fator_decisao_voo_pb_cwb",
         "data": [
             {
                 "value": "conveniencia_horario_cwb",

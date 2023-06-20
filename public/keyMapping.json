@@ -3,5 +3,507 @@
         "masculino": "Masculino",
         "feminino": "Feminino",
         "outro": "Outro"
-    }
+    },
+    "faixa_etaria": {
+        "16_a_17 anos": "16 a 17 anos",
+        "18_a_24 anos": "18 a 24 anos",
+        "25_a_34 anos": "25 a 34 anos",
+        "35_a_44 anos": "35 a 44 anos",
+        "45_a_54 anos": "45 a 54 anos",
+        "55_a_64 anos": "55 a 64 anos",
+        "65_anos_ou_mais": "65 anos ou mais"
+    },
+    "escolaridade": {
+        "ensino_fundamental_incompleto": "Ensino Fundamental Incompleto",
+        "ensino_fundamental_completo": "Ensino Fundamental Completo",
+        "ensino_medio_incompleto": "Ensino Médio Incompleto",
+        "ensino_medio_completo": "Ensino Médio Completo",
+        "ensino_superior_incompleto": "Ensino Superior Incompleto",
+        "ensino_superior_completo": "Ensino Superior Completo",
+        "pos-graduacao_incompleta": "Pós-Graduação Incompleta",
+        "pos-graduacao_completa": "Pós-Graduação Completa",
+        "mestrado": "Mestrado",
+        "doutorado": "Doutorado"
+    },
+    "estado_civil": {
+        "solteiro(a)": "Solteiro(a)",
+        "casado(a)": "Casado(a)",
+        "uniao_estavel": "União estável",
+        "separado(a)/divorciado(a)": "Separado(a) / Divorciado(a)",
+        "viuvo(a)": "Viúvo(a)"
+    },
+    "empregabilidade": {
+        "aposentado(a)/pensionista": "Aposentado(a)/Pensionista",
+        "aprendiz(com_remuneracao)": "Aprendiz (com remuneração)",
+        "assalariado(a)_com_registro": "Assalariado(a) COM REGISTRO em carteira",
+        "assalariado(a)_sem_registro": "Assalariado(a) SEM REGISTRO em carteira",
+        "autonomo(a)": "Autônomo(a)",
+        "desempregado(a)": "Desempregado(a)",
+        "do_lar(dona_de_casa)": "Do lar (dona de casa)",
+        "empresario": "Empresário(a)",
+        "estagiario(com_remuneração)": "Estagiário(a) (com remuneração)",
+        "free_lancer": "Free-lancer (\"bico\")",
+        "profissional_liberal": "Profissional Liberal",
+        "outra_situacao": "Outra situação"
+    },
+    "area_de_atuacao": {
+        "agronegocio": "Agronegócio",
+        "arquitetura_engenharia": "Arquitetura | Engenharia",
+        "artes": "Artes",
+        "autonomo": "Autônomo (prestador de serviços sem vínculo empregatício)",
+        "bem_estar": "Bem-Estar | Clínica | Hospitalar | Nutrição | Saúde",
+        "comercio": "Comércio",
+        "comunicacao": "Comunicação (Design | Fotografia | Jornal | Mídia Digital | Publicidade | Rádio | Televisão | Vídeo)",
+        "construcao_imobiliario": "Construção | Imobiliário | Incorporação | Infraestrutura",
+        "cultura_eventos_shows": "Cultura | Eventos | Shows",
+        "educacao": "Educação",
+        "esporte": "Esporte",
+        "estudante": "Estudante",
+        "forcas_armadas": "Forças Armadas (Aeronáutica/Exército/Marinha)",
+        "industria": "Indústria",
+        "liberal": "Liberal (Advogado | Consultor | Contador | Dentista | Economista | Médico | Veterinário | Outro)",
+        "prestacao_servicos": "Prestação de Serviços",
+        "seguranca_publica": "Segurança Pública (Bombeiros | Polícias Civil, Federal, Militar, Rod. Estadual, Rod. Federal | SAMU)",
+        "servico_publico": "Serviço Público (Municipal | Estadual | Federal)",
+        "tecnologia_informacao": "Tecnologia da Informação",
+        "turismo": "Turismo (Agência de Viagens | Consultoria | Gastronomia | Hotelaria | Locações | Transporte)",
+        "outra_area_setor": "Outra área/setor"
+    },
+    "renda_familiar": {
+        "ate_1320": "Até R$ 1.320,00",
+        "1321_2640": "Entre R$ 1.321,00 e R$ 2.640,00",
+        "2641_3960": "Entre R$ 2.641,00 e R$ 3.960,00",
+        "3961_6600": "Entre R$ 3.961,00 e R$ 6.600,00",
+        "6601_13200": "Entre R$ 6.601,00 e R$ 13.200,00",
+        "acima_13200": "Acima de R$ 13.200,00"
+    },
+    "fonte_de_informacao": {
+        "acessar_sites": "Acessar sites de notícias",
+        "assistir_tv": "Assistir televisão",
+        "conversar_pessoas": "Conversar com outras pessoas",
+        "ler_jornal": "Ler jornal impresso/online",
+        "midias_sociais": "Mídias sociais (exemplo: Facebook, Instagram, TikTok, WhatsApp etc.)",
+        "ouvir_radio": "Ouvir rádio",
+        "outra": "Nenhuma das anteriores / Outra"
+    },
+    "midias_sociais": {
+        "facebook": "Facebook",
+        "messenger": "Facebook Messenger",
+        "instagram": "Instagram",
+        "linkedin": "LinkedIn",
+        "pinterest": "Pinterest",
+        "snapchat": "Snapchat",
+        "tiktok": "TikTok",
+        "twitter": "Twitter",
+        "telegram": "Telegram",
+        "youtube": "Youtube",
+        "whatsapp": "WhatsApp",
+        "outra_rede_social": "Nenhuma das anteriores / Outra"
+    },
+    "local_de_residencia": {
+        "sudoeste_pr": "Eu resido numa cidade da região Sudoeste do Paraná",
+        "oeste_sc": "Eu resido numa cidade da região Oeste de Santa Catarina",
+        "outro_local_residencia": "Eu não resido no Sudoeste do Paraná ou no Oeste de Santa Catarina"
+    },
+    "cidade_spr": {
+        "ampere": "Ampére",
+        "barracao": "Barracão",
+        "bela_vista_caroba": "Bela Vista da Caroba",
+        "boa_esperanca_iguacu": "Boa Esperança do Iguaçu",
+        "bom_jesus_sul": "Bom Jesus do Sul",
+        "bom_sucesso_sul": "Bom Sucesso do Sul",
+        "capanema": "Capanema",
+        "chopinzinho": "Chopinzinho",
+        "clevelandia": "Clevelândia",
+        "coronel_domingos_soares": "Coronel Domingos Soares",
+        "coronel_vivida": "Coronel Vivida",
+        "cruzeiro_iguacu": "Cruzeiro do Iguaçu",
+        "dois_vizinhos": "Dois Vizinhos",
+        "eneas_marques": "Enéas Marques",
+        "flor_serra_sul": "Flor da Serra do Sul",
+        "francisco_beltrao": "Francisco Beltrão",
+        "honorio_serpa": "Honório Serpa",
+        "itapejara_oeste": "Itapejara do Oeste",
+        "manfrinopolis": "Manfrinópolis",
+        "mangueirinha": "Mangueirinha",
+        "mariopolis": "Mariópolis",
+        "marmeleiro": "Marmeleiro",
+        "nova_esperanca_sudoeste": "Nova Esperança do Sudoeste",
+        "nova_prata_iguacu": "Nova Prata do Iguaçu",
+        "palmas": "Palmas",
+        "pato_branco": "Pato Branco",
+        "perola_oeste": "Perola do Oeste",
+        "pinhal_sao_bento": "Pinhal do São Bento",
+        "planalto": "Planalto",
+        "pranchita": "Pranchita",
+        "realeza": "Realeza",
+        "renascenca": "Renascença",
+        "salgado_filho": "Salgado Filho",
+        "salto_lontra": "Salto do Lontra",
+        "santa_izabel_oeste": "Santa Izabel do Oeste",
+        "santo_antonio_sudoeste": "Santo Antônio do Sudoeste",
+        "sao_joao": "São João",
+        "sao_jorge_oeste": "São Jorge do Oeste",
+        "saudade_iguacu": "Saudade do Iguaçu",
+        "sulina": "Sulina",
+        "vere": "Verê",
+        "vitorino": "Vitorino"
+    },
+    "deslocamento_dv_fb_pb_spr": {
+        "com_muita_frequencia_spr": "Sim, com muita frequência",
+        "com_alguma_frequencia_spr": "Sim, com alguma frequência",
+        "com_pouca_frequencia_spr": "Sim, com pouca frequência",
+        "nao_preciso_me_deslocar_spr": "Não preciso me deslocar para essas cidades"
+    },
+    "cidade_osc": {
+        "abelardo_luz": "Abelardo Luz",
+        "aguas_de_chapeco": "Águas de Chapecó",
+        "aguas_frias": "Águas Frias",
+        "anchieta": "Anchieta",
+        "barra_bonita": "Barra Bonita",
+        "bom_jesus_do_oeste": "Bom Jesus do Oeste",
+        "campo_ere": "Campo Erê",
+        "chapeco": "Chapecó",
+        "cordilheira_alta": "Cordilheira Alta",
+        "coronel_freitas": "Coronel Freitas",
+        "coronel_martins": "Coronel Martins",
+        "cunha_pora": "Cunha Porã",
+        "dionisio_cerqueira": "Dionísio Cerqueira",
+        "entre_rios": "Entre Rios",
+        "faxinal_dos_guedes": "Faxinal dos Guedes",
+        "flor_do_sertao": "Flor do Sertão",
+        "formosa_do_sul": "Formosa do Sul",
+        "galvao": "Galvão",
+        "guaraciaba": "Guaraciaba",
+        "guarambu": "Guarambú",
+        "ipuacu": "Ipuaçu",
+        "iraceminha": "Iraceminha",
+        "irati": "Irati",
+        "jardinopolis": "Jardinópolis",
+        "jupia": "Jupiá",
+        "lajeado_grande": "Lajeado Grande",
+        "marema": "Marema",
+        "modelo": "Modelo",
+        "nova_itaberaba": "Nova Itaberaba",
+        "novo_horizonte": "Novo Horizonte",
+        "ouro_verde": "Ouro Verde",
+        "palma_sola": "Palma Sola",
+        "passos_maia": "Passos Maia",
+        "pinhalzinho": "Pinhalzinho",
+        "planalto_alegre": "Planalto Alegre",
+        "ponte_serrada": "Ponte Serrada",
+        "princesa": "Princesa",
+        "quilombo": "Quilombo",
+        "romelandia": "Romelândia",
+        "saltinho": "Saltinho",
+        "santa_terezinha_progresso": "Santa Terezinha do Progresso",
+        "santiago_do_sul": "Santiago do Sul",
+        "sao_bernardino": "São Bernardino",
+        "sao_carlos": "São Carlos",
+        "sao_domingos": "São Domingos",
+        "sao_jose_do_cedro": "São José do Cedro",
+        "sao_lourenco_do_oeste": "São Lourenço do Oeste",
+        "sao_miguel_da_boa_vista": "São Miguel da Boa Vista",
+        "sao_miguel_do_oeste": "São Miguel do Oeste",
+        "saudades": "Saudades",
+        "sul_brasil": "Sul Brasil",
+        "uniao_do_oeste": "União do Oeste",
+        "vargeao": "Vargeão",
+        "xanxere": "Xanxerê",
+        "xavantina": "Xavantina",
+        "xaxim": "Xaxim",
+        "sc_outra_cidade": "Outra cidade"
+    },
+    "desloca-se_para_cpc_dv_fb_osc": {
+        "com_muita_frequencia_osc": "Sim, com muita frequência",
+        "com_alguma_frequencia_osc": "Sim, com alguma frequência",
+        "com_pouca_frequencia_osc": "Sim, com pouca frequência",
+        "nao_preciso_deslocar_osc": "Não preciso me deslocar para essas cidades"
+    },
+    "desloca_para_florianopolis": {
+        "Preciso me deslocar para Florianópolis uma vez por semana": "Preciso me deslocar para Florianópolis uma vez por semana",
+        "Preciso me deslocar para Florianópolis até duas vezes por mês": "Preciso me deslocar para Florianópolis até duas vezes por mês",
+        "Preciso me deslocar para Florianópolis uma vez por mês": "Preciso me deslocar para Florianópolis uma vez por mês",
+        "Preciso me deslocar para Florianópolis uma vez a cada dois ou três meses": "Preciso me deslocar para Florianópolis uma vez a cada dois ou três meses",
+        "Preciso me deslocar para Florianópolis duas vezes por ano": "Preciso me deslocar para Florianópolis duas vezes por ano",
+        "Preciso me deslocar para Florianópolis uma vez por ano": "Preciso me deslocar para Florianópolis uma vez por ano",
+        "Não preciso me deslocar para Florianópolis": "Não preciso me deslocar para Florianópolis"
+    },
+    "permanencia_florianopolis": {
+        "apenas_um_dia_flo": "Apenas um dia",
+        "entre_um_e_dois_dias_flo": "Entre um e dois dias",
+        "entre_tres_e_cinco_dias_flo": "Entre três e cinco dias",
+        "ate_uma_semana_flo": "Até uma semana",
+        "depende_da_minha_agenda_de_compromissos_flo": "Depende da minha agenda de compromissos"
+    },
+    "local_hospedagem_florianopolis": {
+        "airbnb_flo": "Airbnb",
+        "apart-hotel_flat_flo": "Apart-Hotel/Flat",
+        "hotel_flo": "Hotel",
+        "pensao_flo": "Pensão",
+        "residencia_de_amigos_flo": "Residência de amigos",
+        "residencia_de_familiares_flo": "Residência de familiares",
+        "residencia_propria_flo": "Residência própria",
+        "outro_tipo_de_hospedagem_flo": "Outro tipo de hospedagem",
+        "nao_costumo_me_hospedar_em_florianopolis_flo": "Não costumo me hospedar em Florianópolis"
+    },
+    "meio_transporte_florianopolis": {
+        "onibus_flo": "Ônibus",
+        "aviao_flo": "Avião",
+        "veiculo_proprio_ou_empresa_flo": "Veículo (próprio ou da empresa)"
+    },
+    "realidade_linhas_onibus_flo": {
+        "minha_cidade_tem_linha_onibus_flo": "Minha cidade tem linha(s) de ônibus para Florianópolis",
+        "preciso_ir_outra_cidade_linha_onibus_flo": "Preciso ir até outra cidade para conseguir linha(s) de ônibus para Florianópolis"
+    },
+    "aeroporto_partida_flo": {
+        "aeroporto_chapeco_flo": "Aeroporto de Chapecó/SC",
+        "aeroporto_foz_do_iguacu_flo": "Aeroporto de Foz do Iguaçu/PR",
+        "aeroporto_pato_branco_executiva_flo": "Aeroporto Regional de Pato Branco, utilizando aeronave executiva/particular",
+        "outro_aeroporto_executiva_flo": "Outro aeroporto, utilizando aeronave executiva/particular",
+        "outro_aeroporto_comercial_flo": "Outro aeroporto, utilizando voo comercial"
+    },
+    "utilizaria_aeroporto_pb_flo": {
+        "utilizar_regularmente_flo": "Poderia utilizar regularmente",
+        "utilizar_determinadas_epocas_flo": "Poderia utilizar em determinadas épocas do ano",
+        "utilizar_eventualmente_flo": "Poderia utilizar eventualmente",
+        "nao_utilizaria_flo": "Não utilizaria",
+        "nao_sei_flo": "Não sei"
+    },
+    "fator_decisao_voo_pb_flo": {
+        "conveniencia_horario_flo": "Conveniência do horário de saída do voo",
+        "retorno_mesmo_dia_flo": "Possibilidade de retornar no mesmo dia, independente do preço da passagem",
+        "retorno_mesma_semana_flo": "Possibilidade de retornar na mesma semana, independente do preço da passagem",
+        "preco_passagem_flo": "Preço da passagem aérea",
+        "voo_direto_flo": "Voo direto, sem escala(s) ou conexão(ões)",
+        "outro_fator_flo": "Outro fator",
+        "nao_sei_decisão_voo_flo": "Não sei"
+    },
+    "desloca_para_sao_paulo": {
+        "uma_vez_por_semana_sp": "Preciso me deslocar para São Paulo uma vez por semana",
+        "ate_duas_vezes_por_mes_sp": "Preciso me deslocar para São Paulo até duas vezes por mês",
+        "uma_vez_por_mes_sp": "Preciso me deslocar para São Paulo uma vez por mês",
+        "uma_vez_a_cada_dois_ou_tres_meses_sp": "Preciso me deslocar para São Paulo uma vez a cada dois ou três meses",
+        "duas_vezes_por_ano_sp": "Preciso me deslocar para São Paulo duas vezes por ano",
+        "uma_vez_por_ano_sp": "Preciso me deslocar para São Paulo uma vez por ano",
+        "nao_preciso_deslocar_sp": "Não preciso me deslocar para São Paulo"
+    },
+    "permanencia_sao_paulo": {
+        "apenas_um_dia_sp": "Apenas um dia",
+        "entre_um_e_dois_dias_sp": "Entre um e dois dias",
+        "entre_tres_e_cinco_dias_sp": "Entre três e cinco dias",
+        "ate_uma_semana_sp": "Até uma semana",
+        "mais_de_uma_semana_sp": "Mais de uma semana",
+        "depende_da_minha_agenda_sp": "Depende da minha agenda de compromissos"
+    },
+    "local_hospedagem_sao_paulo": {
+        "airbnb_sp": "Airbnb",
+        "flat_apart_hotel_sp": "Flat/Apart-Hotel",
+        "hotel_sp": "Hotel",
+        "pensao_sp": "Pensão",
+        "residencia_amigos_sp": "Residência de amigos",
+        "residencia_familiares_sp": "Residência de familiares",
+        "residencia_propria_sp": "Residência própria",
+        "outro_tipo_hospedagem_sp": "Outro tipo de hospedagem",
+        "nao_costumo_me_hospedar_sp": "Não costumo me hospedar em São Paulo"
+    },
+    "meio_transporte_sao_paulo": {
+        "onibus_sp": "Ônibus",
+        "aviao_sp": "Avião",
+        "veiculo_sp": "Veículo (próprio ou da empresa)"
+    },
+    "realidade_linhas_onibus_sp": {
+        "linha_onibus_sp": "Minha cidade tem linha(s) de ônibus para São Paulo",
+        "outra_cidade_onibus_sp": "Preciso ir até outra cidade para conseguir linha(s) de ônibus para São Paulo"
+    },
+    "aeroporto_partida_sp": {
+        "cascavel_pr_sp": "Aeroporto de Cascavel/PR",
+        "chapeco_sc_sp": "Aeroporto de Chapecó/SC",
+        "foz_do_iguacu_pr_sp": "Aeroporto de Foz do Iguaçu/PR",
+        "guarapuava_pr_sp": "Aeroporto de Guarapuava/PR",
+        "pato_branco_executiva_sp": "Aeroporto de Pato Branco (aeronave executiva/particular)",
+        "sao_jose_pinhais_conexao_sp": "Aeroporto de São José dos Pinhais (com conexão após voo da Azul saindo de Pato Branco)",
+        "sao_jose_pinhais_sem_conexao_sp": "Aeroporto de São José dos Pinhais (sem ter feito conexão após voo da Azul saindo de Pato Branco)",
+        "outro_aeroporto_sp": "Outro aeroporto"
+    },
+    "utilizaria_aeroporto_pb_campinas": {
+        "utilizar_regularmente_sp_campinas": "Poderia utilizar regularmente",
+        "utilizar_eventualmente_sp_campinas": "Poderia utilizar eventualmente",
+        "nao_utilizaria_sp_campinas": "Não utilizaria",
+        "nao_sei_sp_campinas": "Não sei"
+    },
+    "utilizaria_aeroporto_pb_congonhas": {
+        "utilizar_regularmente_sp_congonhas": "Poderia utilizar regularmente",
+        "utilizar_eventualmente_sp_congonhas": "Poderia utilizar eventualmente",
+        "nao_utilizaria_sp_congonhas": "Não utilizaria",
+        "nao_sei_sp_congonhas": "Não sei"
+    },
+    "utilizaria_aeroporto_pb_guarulhos": {
+        "utilizar_regularmente_sp_guarulhos": "Poderia utilizar regularmente",
+        "utilizar_eventualmente_sp_guarulhos": "Poderia utilizar eventualmente",
+        "nao_utilizaria_sp_guarulhos": "Não utilizaria",
+        "nao_sei_sp_guarulhos": "Não sei"
+    },
+    "preferencia_aeroporto_destino_sp": {
+        "campinas_sp": "Campinas",
+        "congonhas_sp": "Congonhas",
+        "guarulhos_sp": "Guarulhos",
+        "qualquer_opcao_sp": "Qualquer uma das opções anteriores",
+        "nao_sei_sp_preferencia": "Não sei"
+    },
+    "fator_decisao_voo_pb_sp": {
+        "conveniencia_horario_sp": "Conveniência do horário de saída do voo",
+        "retorno_mesmo_dia_sp": "Possibilidade de retornar no mesmo dia, independente do preço da passagem",
+        "retorno_mesma_semana_sp": "Possibilidade de retornar na mesma semana, independente do preço da passagem",
+        "preco_passagem_sp": "Preço da passagem aérea",
+        "outro_fator_sp": "Outro fator",
+        "nao_sei_sp_fator": "Não sei"
+    },
+    "deslocar_para_curitiba": {
+        "uma_vez_semana_cwb": "Preciso me deslocar para Curitiba uma vez por semana",
+        "ate_duas_vezes_mes_cwb": "Preciso me deslocar para Curitiba até duas vezes por mês",
+        "uma_vez_mes_cwb": "Preciso me deslocar para Curitiba uma vez por mês",
+        "uma_vez_2_3_meses_cwb": "Preciso me deslocar para Curitiba uma vez a cada dois ou três meses",
+        "duas_vezes_ano_cwb": "Preciso me deslocar para Curitiba duas vezes por ano",
+        "uma_vez_ano_cwb": "Preciso me deslocar para Curitiba uma vez por ano",
+        "nao_preciso_deslocar_cwb": "Não preciso me deslocar para Curitiba"
+    },
+    "permanencia_curitiba": {
+        "um_dia_cwb": "Apenas um dia",
+        "entre_um_e_dois_dias_cwb": "Entre um e dois dias",
+        "entre_tres_e_cinco_dias_cwb": "Entre três e cinco dias",
+        "ate_uma_semana_cwb": "Até uma semana",
+        "mais_de_uma_semana_cwb": "Mais de uma semana",
+        "depende_agenda_compromissos_cwb": "Depende da minha agenda de compromissos"
+    },
+    "local_hospedagem_cwb": {
+        "airbnb_cwb": "Airbnb",
+        "flat_aparthotel_cwb": "Flat/Apart-Hotel",
+        "hotel_cwb": "Hotel",
+        "pensao_cwb": "Pensão",
+        "residencia_amigos_cwb": "Residência de amigos",
+        "residencia_familiares_cwb": "Residência de familiares",
+        "residencia_propria_cwb": "Residência própria",
+        "outro_tipo_hospedagem_cwb": "Outro tipo de hospedagem",
+        "nao_costumo_hospedar_cwb": "Não costumo me hospedar em Curitiba"
+    },
+    "meio_transporte_cwb": {
+        "aviao_cwb": "Avião",
+        "onibus_cwb": "Ônibus",
+        "veiculo_cwb": "Veículo (próprio ou da empresa)"
+    },
+    "realidade_linhas_onibus_cwb": {
+        "linha_curitiba": "Minha cidade tem linha(s) de ônibus para Curitiba",
+        "outra_cidade_onibus_curitiba": "Preciso ir até outra cidade para conseguir linha(s) de ônibus para Curitiba"
+    },
+    "uso_azul_aeroporto_pato_branco": {
+        "sim_cwb": "Sim",
+        "nao_cwb": "Não"
+    },
+    "meio_transporte_acesso_aeroporto_cwb": {
+        "carona_cwb": "Carona",
+        "veiculo_alugado_cwb": "Veículo alugado",
+        "veiculo_aplicativo_cwb": "Veículo de aplicativo (exemplo: Garupa, Urbano Norte etc.)",
+        "veiculo_proprio_cwb": "Veículo próprio",
+        "micro_onibus_onibus_van_cwb": "Micro Ônibus/Ônibus/Van fretado",
+        "taxi_cwb": "Táxi",
+        "outro_transporte_cwb": "Outro transporte"
+    },
+    "tempo_deslocamento_aeroporto_cwb": {
+        "menos_15_minutos_cwb": "Menos de 15 minutos",
+        "16_30_minutos_cwb": "Entre 16 e 30 minutos",
+        "31_59_minutos_cwb": "Entre 31 e 59 minutos",
+        "uma_hora_hora_meia_cwb": "Entre uma hora e uma hora e meia",
+        "mais_hora_meia_cwb": "Mais de uma hora e meia",
+        "nao_lembro_deslocamento_cwb": "Não me lembro ao certo"
+    },
+    "tempo_antecedencia_embarque_cwb": {
+        "menos_uma_hora_cwb": "Menos de uma hora",
+        "mais_uma_hora_cwb": "Mais de uma hora",
+        "nao_lembro_embarque_cwb": "Não me lembro ao certo"
+    },
+    "checkin_prioritario_cwb": {
+        "checkin_aeroporto_cwb": "Na hora, no aeroporto, no balcão da companhia aérea",
+        "checkin_website_cwb": "Antes, usando o website da companhia aérea",
+        "checkin_app_cwb": "Antes, usando o aplicativo da companhia aérea no celular",
+        "checkin_depende_cwb": "Depende, não costumo seguir um padrão"
+    },
+    "consumo_aeroporto_cwb": {
+        "sim_consumo_cwb": "Sim",
+        "nao_consumo_cwb": "Não",
+        "as_vezes_consumo_cwb": "Às vezes"
+    },
+    "despacho_bagagem_azul_cwb": {
+        "sim_sempre_despacho_cwb": "Sim, sempre despachei/despacho bagagem",
+        "depende_despacho_cwb": "Depende, às vezes sim outras vezes não",
+        "nao_despacho_cwb": "Não, não despachei/despacho bagagem"
+    },
+    "antecedencia_compra_passagem_azul_cwb": {
+        "menos_30_dias_cwb": "Geralmente com menos de 30 dias de antecedência",
+        "30_59_dias_cwb": "Geralmente com 30 e 59 dias de antecedência",
+        "60_89_dias_cwb": "Geralmente com 60 e 89 dias de antecedência",
+        "90_119_dias_cwb": "Geralmente com 90 e 119 dias de antecedência",
+        "120_149_dias_cwb": "Geralmente com 120 e 149 dias de antecedência",
+        "150_dias_mais_cwb": "Geralmente com 150 dias ou mais de antecedência",
+        "nao_lembro_antecedencia_cwb": "Não lembro ao certo"
+    },
+    "pagamento_passagem_cwb": {
+        "eu_mesmo_cwb": "Eu mesmo(a) paguei",
+        "empresa_instituicao_cwb": "A empresa/instituição na qual eu trabalho é que pagou",
+        "familiar_amigo_cwb": "Um familiar/amigo pagou",
+        "nao_lembro_compra_cwb": "Não lembro ao certo"
+    },
+    "numero_viagens_cwb": {
+        "uma_vez_cwb": "Uma vez",
+        "entre_duas_cinco_cwb": "Entre duas e cinco vezes",
+        "entre_seis_dez_cwb": "Entre seis e 10 vezes",
+        "mais_de_10_cwb": "Mais de 10 vezes"
+    },
+    "acompanhamento_voo": {
+        "geralmente_sozinho_cwb": "Geralmente sozinho(a)",
+        "geralmente_acompanhado_familiares_cwb": "Geralmente acompanhado(a) de familiares",
+        "geralmente_acompanhado_colegas_trabalho_cwb": "Geralmente acompanhado(a) de colegas de trabalho"
+      },
+      "motivo_viagem_cwb": {
+        "agenda_trabalho_cwb": "Agenda de trabalho / negócios",
+        "agenda_pessoal_cwb": "Agenda pessoal (estudos, família, lazer, turismo etc.) em Curitiba",
+        "questoes_saude_cwb": "Questões de saúde",
+        "outro_motivo_cwb": "Outro motivo"
+      },
+      "necessidade_conexao_cwb": {
+        "sim_conexao_cwb": "Sim",
+        "nao_conexao_cwb": "Não"
+      },
+      "destino_conexoes_cwb": {
+        "brasilia_destino_conexoes_cwb": "Brasília",
+        "nordeste_destino_conexoes_cwb": "Nordeste do Brasil",
+        "porto_alegre_destino_conexoes_cwb": "Porto Alegre",
+        "rio_galeao_destino_conexoes_cwb": "Rio de Janeiro (Galeão)",
+        "rio_santos_dumont_destino_conexoes_cwb": "Rio de Janeiro (Santos Dumont)",
+        "sao_paulo_congonhas_destino_conexoes_cwb": "São Paulo (Congonhas)",
+        "sao_paulo_guarulhos_destino_conexoes_cwb": "São Paulo (Guarulhos)"
+      },
+      "meio_transporte_pb_cwb": {
+        "nao_precisei_pb_cwb": "Não precisei fazer isso",
+        "veiculo_proprio_pb_cwb": "Sim, e utilizei veículo próprio",
+        "veiculo_empresa_pb_cwb": "Sim, e utilizei veículo da empresa/instituição na qual eu trabalho",
+        "veiculo_alugado_pb_cwb": "Sim, e utilizei veículo alugado",
+        "veiculo_aplicativo_pb_cwb": "Sim, e utilizei veículo de aplicativo (ex.: Garupa, Urbano Norte etc.)",
+        "onibus_interurbano_pb_cwb": "Sim, e utilizei ônibus interurbano",
+        "motocicleta_pb_cwb": "Sim, e utilizei motocicleta",
+        "outro_meio_pb_cwb": "Sim, e utilizei outro meio de transporte"
+      },
+      "fator_decisao_voo_mesmo_dia_cwb": {
+        "regularmente_cwb": "Poderia utilizar regularmente",
+        "eventualmente_cwb": "Poderia utilizar eventualmente",
+        "nao_utilizaria_cwb": "Não utilizaria",
+        "nao_sei_voo_mesmo_dia_cwb": "Não sei"
+      },
+      "fator_decisao_voo_pb_cwb": {
+        "conveniencia_horario_cwb": "Conveniência do horário de saída do voo",
+        "preco_passagem_cwb": "Preço da passagem aérea",
+        "voo_direto_cwb": "Voo direto, sem escala(s) ou conexão(ões)",
+        "outro_fator_cwb": "Outro fator",
+        "nao_sei_cwb": "Não sei"
+      }
 }
