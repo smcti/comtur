@@ -8,7 +8,7 @@
     "1": {
         "type": "radio",
         "title": "Perfil - Gênero",
-        "subtitle": "Por favor, informe seu <b>gênero</b>",
+        "subtitle": "Por favor, informe seu <b>gênero.</b>",
         "required": true,
         "name": "genero",
         "data": [
@@ -37,37 +37,37 @@
         "name": "faixa_etaria",
         "data": [
             {
-                "value": "16 a 17 anos",
+                "value": "16_a_17 anos",
                 "label": "16 a 17 anos",
                 "goto": "60"
             },
             {
-                "value": "18 a 24 anos",
+                "value": "18_a_24 anos",
                 "label": "18 a 24 anos",
                 "goto": "3"
             },
             {
-                "value": "25 a 34 anos",
+                "value": "25_a_34 anos",
                 "label": "25 a 34 anos",
                 "goto": "3"
             },
             {
-                "value": "35 a 44 anos",
+                "value": "35_a_44 anos",
                 "label": "35 a 44 anos",
                 "goto": "3"
             },
             {
-                "value": "45 a 54 anos",
+                "value": "45_a_54 anos",
                 "label": "45 a 54 anos",
                 "goto": "3"
             },
             {
-                "value": "55 a 64 anos",
+                "value": "55_a_64 anos",
                 "label": "55 a 64 anos",
                 "goto": "3"
             },
             {
-                "value": "65 anos ou mais",
+                "value": "65_anos_ou_mais",
                 "label": "65 anos ou mais",
                 "goto": "3"
             }
@@ -75,7 +75,7 @@
     },
     "3": {
         "type": "radio",
-        "title": "Perfil - Escolaridade",
+        "title": "Perfil - Escolaridade.",
         "subtitle": "Por favor, informe <b>sua escolaridade</b>",
         "required": true,
         "name": "escolaridade",
@@ -135,7 +135,7 @@
     "4": {
         "type": "radio",
         "title": "Perfil - Idade",
-        "subtitle": "Por favor, informe seu <b>estado civil</b>",
+        "subtitle": "Por favor, informe <b>seu estado civil</b>",
         "required": true,
         "name": "estado_civil",
         "data": [
@@ -776,7 +776,7 @@
     "13": {
         "type": "checkbox",
         "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
-        "subtitle": "Na questão anterior você respondeu que eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Francisco Beltrão e/ou Pato Branco ao longo do ano. Qual ou quais as principais razões desse(s) deslocamento(s)? Você pode assinalar mais que uma resposta.",
+        "subtitle": "Na questão anterior você respondeu que eventualmente precisa se <b>deslocar do seu local de residência para Dois Vizinhos e/ou Francisco Beltrão e/ou Pato Branco</b> ao longo do ano. <b>Qual ou quais as principais razões desse(s) deslocamento(s)?</b> Você pode assinalar mais que uma resposta.",
         "required": false,
         "name": "local_de_residencia_spr",
         "data": [
@@ -1339,7 +1339,7 @@
     "19": {
         "type": "radio",
         "title": "Deslocamento - Florianópolis - Frequência",
-        "subtitle": "Ao longo do ano você eventualmente precisa se deslocar do seu local de residência para FLORIANÓPOLIS?",
+        "subtitle": "Ao longo do ano você eventualmente precisa se <b>deslocar do seu local de residência para FLORIANÓPOLIS?</b>",
         "required": false,
         "name": "desloca_para_florianopolis",
         "data": [
@@ -1471,7 +1471,7 @@
     "22": {
         "type": "radio",
         "title": "Deslocamento - Florianópolis - Meio de Transporte",
-        "subtitle": "Quando você precisa se deslocar para Florianópolis, qual o meio de transporte prioritário que utiliza?",
+        "subtitle": "Quando você precisa se deslocar para Florianópolis, qual o <b>meio de transporte prioritário</b> que utiliza?",
         "required": false,
         "name": "meio_transporte_florianopolis",
         "data": [
@@ -1514,7 +1514,7 @@
     "24": {
         "type": "radio",
         "title": "Deslocamento - Florianópolis - Avião",
-        "subtitle": "Você informou que quando precisa se deslocar para Florianópolis o seu meio de transporte prioritário é avião. Por favor, leia com atenção as alternativas e informe de qual aeroporto é a sua partida.",
+        "subtitle": "Você informou que quando precisa se deslocar para Florianópolis o seu meio de transporte prioritário é <b>avião</b>. Por favor, <u>leia com atenção as alternativas</u> e <b>informe de qual aeroporto é a sua partida.</b>",
         "required": false,
         "name": "aeroporto_partida_flo",
         "data": [
@@ -1548,7 +1548,7 @@
     "25": {
         "type": "radio",
         "title": "Deslocamento - Florianópolis - Avião - Eventual Voo",
-        "subtitle": "Caso uma companhia aérea disponibilizasse voo saindo do Aeroporto Regional de Pato Branco para FLORIANÓPOLIS, qual a probabilidade de você utilizar esse voo?",
+        "subtitle": "Caso uma companhia aérea disponibilizasse <b>voo saindo do Aeroporto Regional de Pato Branco para FLORIANÓPOLIS</b>, qual a probabilidade de você utilizar esse voo?",
         "required": false,
         "name": "utilizaria_aeroporto_pb_flo",
         "data": [
@@ -1582,7 +1582,7 @@
     "26": {
         "type": "radio",
         "title": "Deslocamento - Florianópolis - Avião - Fator de Decisão",
-        "subtitle": "Caso uma companhia aérea disponibilizasse voo saindo do Aeroporto Regional de Pato Branco para FLORIANÓPOLIS, qual o fator mais importante para você usar esse voo?",
+        "subtitle": "Caso uma companhia aérea disponibilizasse <b>voo saindo do Aeroporto Regional de Pato Branco para FLORIANÓPOLIS</b>, qual o <b><u>fator mais importante</u></b> para você usar esse voo?",
         "required": false,
         "name": "fator_decisao_voo_pb_flo",
         "data": [
@@ -1709,7 +1709,7 @@
     "29": {
         "type": "radio",
         "title": "Deslocamento - São Paulo - Hospedagem",
-        "subtitle": "Pensando em quando você está em São Paulo, por gentileza, informe onde prioritariamente você costuma se hospedar.",
+        "subtitle": "Pensando em quando você está em São Paulo, por gentileza, <b>informe onde prioritariamente você costuma se hospedar.</b>",
         "required": false,
         "name": "local_hospedagem_sao_paulo",
         "data": [
@@ -1806,7 +1806,7 @@
     "32": {
         "type": "radio",
         "title": "Deslocamento - São Paulo - Avião",
-        "subtitle": "Você informou que quando precisa se deslocar para São Paulo o seu meio de transporte prioritário é avião. Por favor, leia com atenção as alternativas e informe qual aeroporto você utiliza como ponto de partida.",
+        "subtitle": "Você informou que quando precisa se deslocar para São Paulo o seu meio de transporte prioritário é <b>avião</b>. Por favor, <u>leia com atenção as alternativas</u> e <b>informe qual aeroporto você utiliza como ponto de partida.</b>",
         "required": false,
         "name": "aeroporto_partida_sp",
         "data": [
@@ -1942,7 +1942,7 @@
     "36": {
         "type": "radio",
         "title": "Deslocamento - São Paulo -  Avião - Preferência Campinas / Congonhas / Guarulhos",
-        "subtitle": "Caso uma companhia aérea disponibilizasse voo saindo do Aeroporto Regional de Pato Branco para SÂO PAULO, qual sua preferência pelo aeroporto de destino?",
+        "subtitle": "Caso uma companhia aérea disponibilizasse <b>voo saindo do Aeroporto Regional de Pato Branco para SÂO PAULO, <u>qual sua preferência pelo aeroporto de destino</u>?</b>",
         "required": false,
         "name": "preferencia_aeroporto_destino_sp",
         "data": [
@@ -2350,7 +2350,7 @@
     "48": {
         "type": "radio",
         "title": "SBPO - Uso do Aeroporto - Espera",
-        "subtitle": "De modo geral, você consumiu e/ou costuma consumir algo no aeroporto (café, água etc.) antes do embarque?",
+        "subtitle": "De modo geral, <b>você consumiu e/ou costuma consumir algo no aeroporto (café, água etc.) antes do embarque?</b>",
         "required": false,
         "name": "consumo_aeroporto_cwb",
         "data": [
@@ -2524,7 +2524,7 @@
     "54": {
         "type": "radio",
         "title": "SBPO - Uso do Aeroporto - Motivo da Viagem",
-        "subtitle": "Por favor, leia com atenção e selecione a opção que melhor representa a razão que MAIS MOTIVOU sua(s) viagem(ns) quando utilizou o voo da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba no ano de 2022.",
+        "subtitle": "Por favor, <u>leia com atenção</u> e <b>selecione a opção que melhor representa a razão que MAIS MOTIVOU sua(s) viagem(ns)</b> quando utilizou o voo da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba no ano de 2022.",
         "required": false,
         "name": "motivo_viagem_cwb",
         "data": [
@@ -2553,7 +2553,7 @@
     "55": {
         "type": "radio",
         "title": "SBPO - Uso do Aeroporto - Necessidade de Conexão",
-        "subtitle": "Quando você utilizou o(s) voo(s) da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba no ano de 2022, em alguma(s) ocasião(ões) precisou fazer conexão para outro aeroporto?",
+        "subtitle": "Quando você utilizou o(s) voo(s) da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba no ano de 2022, <b>em alguma(s) ocasião(ões) precisou fazer conexão para outro aeroporto?</b>",
         "required": false,
         "name": "necessidade_conexao_cwb",
         "data": [
