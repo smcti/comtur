@@ -1860,7 +1860,7 @@
     "33": {
         "type": "radio",
         "title": "Deslocamento - São Paulo - Avião - Campinas/SP",
-        "subtitle": "Caso uma companhia aérea disponibilizasse <b>voo saindo do Aeroporto Regional de Pato Branco para CAMPINAS/SP (com serviço de <u><em>transfer<em> para os aeroportos de Congonhas e/ou Guarulhos</u>)</b>, qual a probabilidade de você utilizar esse voo?",
+        "subtitle": "Caso uma companhia aérea disponibilizasse <b>voo saindo do Aeroporto Regional de Pato Branco para CAMPINAS/SP (com serviço de <u><em>transfer</em> para os aeroportos de Congonhas e/ou Guarulhos</u>)</b>, qual a probabilidade de você utilizar esse voo?",
         "required": false,
         "name": "utilizaria_aeroporto_pb_campinas",
         "data": [
@@ -1977,11 +1977,5 @@
                 "goto": "37"
             }
         ]
-    }
-    
-    
-    
-    
-    
-  
+    }  
 }
