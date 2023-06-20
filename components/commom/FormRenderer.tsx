@@ -25,7 +25,7 @@ const submit = async (event: any) => {
     for (let pair of formData.entries()) {
         formDataObject[pair[0]] = pair[1];
     }
-    const url = 'http://localhost:3000/api/sheet';
+    const url = 'http://192.168.1.63:3000/api/sheet';
 
     try {
         const response = await fetch(url, {

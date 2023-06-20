@@ -4,6 +4,8 @@ import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 
 export const metadata = {
+  title: 'COMTUR',
+  description: 'Página inicial do Conselho Municipal de Turismo',
   icons: [
     {
       rel: 'icon',
