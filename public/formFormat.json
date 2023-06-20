@@ -2580,6 +2580,7 @@
         "subtitle": "Você informou que a <b>razão das suas viagens</b> quando utilizou o voo da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba no ano de 2022 <u>incluíram fazer conexões para outros aeroportos</u>. Por favor, informe <b>o(s) destino(s)</b> para onde precisou fazer conexões (você pode selecionar mais de uma alternativa):",
         "required": false,
         "name": "destino_conexoes_cwb",
+        "goto": "58",
         "data": [
             {
                 "value": "brasilia_cwb",
@@ -2614,7 +2615,7 @@
     "57": {
         "type": "radio",
         "title": "SBPO - Uso do Aeroporto - Alternativa de Transporte",
-        "subtitle": "Nos últimos 12 (doze) meses você precisou fazer o trajeto da sua cidade até Curitiba <b>utilizando outro meio de transporte?</b> Por gentileza, leia com atenção e selecione a alternativa que <u>prioritariamente</b> melhor represente sua resposta.",
+        "subtitle": "Nos últimos 12 (doze) meses você precisou fazer o trajeto da sua cidade até Curitiba <b>utilizando outro meio de transporte?</b> Por gentileza, leia com atenção e selecione a alternativa que <u>prioritariamente</u> melhor represente sua resposta.",
         "required": false,
         "name": "meio_transporte_pb_cwb",
         "data": [
@@ -2735,7 +2736,7 @@
     "61": {
         "type": "page",
         "title": "Conclusão",
-        "subtitle": "<p>Obrigado por participar desta pesquisa",
+        "subtitle": "<p>Obrigado por participar desta pesquisa</p>",
         "goto": "1"
     }
 }
