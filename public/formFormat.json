@@ -52,11 +52,6 @@
                 "goto": "3"
             },
             {
-                "value": "25 a 34 anos",
-                "label": "25 a 34 anos",
-                "goto": "3"
-            },
-            {
                 "value": "35 a 44 anos",
                 "label": "35 a 44 anos",
                 "goto": "3"
@@ -500,7 +495,7 @@
                 "goto": "10"
             },
             {
-                "value": "outra",
+                "value": "outra_rede_social",
                 "label": "Nenhuma das anteriores / Outra",
                 "goto": "10"
             }
@@ -1770,7 +1765,7 @@
         "title": "Deslocamento - São Paulo - Meio de transporte",
         "subtitle": "Quando você precisa se deslocar para São Paulo, qual o <b>meio de transporte prioritário</b> que utiliza?",
         "required": false,
-        "name": "meio_transporte_sp",
+        "name": "meio_transporte_sao_paulo",
         "data": [
             {
                 "value": "onibus_sp",
@@ -1794,7 +1789,7 @@
         "title": "Deslocamento - São Paulo - Ônibus",
         "subtitle": "Você informou que quando precisa se deslocar para São Paulo o seu meio de transporte prioritário é ônibus. Por favor, <u>leia com atenção as alternativas</u> e <b>informe qual delas representa a realidade do seu local de residência.</b>",
         "required": false,
-        "name": "realidade_linhas_onibus_flo",
+        "name": "realidade_linhas_onibus_sp",
         "data": [
             {
                 "value": "linha_onibus_sp",
@@ -1917,7 +1912,7 @@
     },
     "35": {
         "type": "radio",
-        "title": "",
+        "title": "Deslocamento - São Paulo - Avião - Aeroporto de Guarulhos",
         "subtitle": "Caso uma companhia aérea disponibilizasse <b>voo saindo do Aeroporto Regional de Pato Branco para SÃO PAULO para o <u>aeroporto de Guarulhos</u></b>, qual a probabilidade de você utilizar esse voo?",
         "required": false,
         "name": "utilizaria_aeroporto_pb_guarulhos",
