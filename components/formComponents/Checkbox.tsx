@@ -26,10 +26,10 @@ const Checkbox = (props: any) => {
             <tr className='after:content-[""] after:block after:py-5' key={index}>
               {Object.values(item).map((subItem: any, subIndex: any) => {
                 return (
-                  <td key={subIndex}>                    
+                  <td key={subIndex}>
                     {
-                      subIndex == 0 ? 
-                        subItem.title : 
+                      subIndex == 0 ?
+                        subItem.title :
                           <input className="hover:cursor-pointer w-full h-full scale-125" type="checkbox" id={subItem.value} name={subItem.value} step={props.goTo} value={subItem.value}></input>
                     }
                   </td>

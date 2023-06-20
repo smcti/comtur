@@ -10,6 +10,7 @@ import {handlePagesFw, handlePagesBw} from '@utils/helpers/pagination'
 import ProgressBar from '@components/ui/ProgressBar';
 import Page from '@components/formComponents/Page';
 import Checkbox2 from '@components/formComponents/Checkbox2';
+import Email from '@components/formComponents/Email';
 
 const keys = Object.keys(formFormat);
 const pages = keys.length;
@@ -146,8 +147,11 @@ const FormRenderer = (props: any) => {
                                         <Checkbox data={item.data} name={item.name} goTo={item.goto}/> :
                                             item.type == 'text' ?
                                                 <Text goTo={item.goto} name={item.name} placeholder={item.placeholder}/> :
-                                                    <Page goTo={item.goto} name={item.name}/> ?
-                                                        <Checkbox2 data={item.data} name={item.name} />
+                                                    item.type == 'checkbox2' ?
+                                                        <Checkbox2 data={item.data} name={item.name} /> :
+                                                            item.type == 'checkbox2' ?
+                                                                <Email goTo={item.goto} name={item.name}/> :
+                                                                    <Page goTo={item.goto} name={item.name}/> 
 
                             }
                             <div className='flex flex-row items-center gap-4 text-red-500 hidden' id={`err-${index}`}>

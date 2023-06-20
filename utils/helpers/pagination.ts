@@ -23,7 +23,7 @@ export const getCurrentPage = () => {
     for (let j = 0; j < childestNode.length; j++) {
       const child = childestNode[j];
 
-      if (child.type === "radio" && child.checked) {
+      if ((child.type === "radio" || child.type === "checkbox") && child.checked) {
         return child.step;
       }
 
