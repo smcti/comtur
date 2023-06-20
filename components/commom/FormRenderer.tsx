@@ -25,7 +25,6 @@ const submit = async (event: any) => {
     for(let pair of formData.entries()) {
         formDataObject[pair[0]] = pair[1];
     }
-    formDataObject.email = "luizeduardockramer@gmail.com"
     const url = 'http://localhost:3000/api/sheet'; 
 
     try {
