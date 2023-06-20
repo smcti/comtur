@@ -10,11 +10,20 @@ export const getCurrentPage = () => {
   const element: any = document.getElementById(String(queue.at(-1)));
   const childNodes = element.children[2].children;
 
-  if ((element.children[2].type === 'text' || element.children[2].type === 'email') && element.children[2].value.replace(/[^a-z1-9]/gi, "").length >= 1) {
+  if (element.children[2].type === 'email') {
+    var email = element.children[2].value;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    if (emailRegex.test(email)) {
+      return element.children[2].step;
+    }    
+  }
+
+  if ((element.children[2].type === 'text') && element.children[2].value.replace(/[^a-z1-9]/gi, "").length >= 1) {
     return element.children[2].step;
   }
 
-  if ((element.children[2].type === 'text' || element.children[2].type === 'email') && element.children[2].classList.contains('hidden')) {
+  if ((element.children[2].type === 'text') && element.children[2].classList.contains('hidden')) {
     return element.children[2].step;
   }
 
