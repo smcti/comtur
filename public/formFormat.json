@@ -1521,7 +1521,7 @@
         "title": "Deslocamento - Florianópolis - Avião",
         "subtitle": "Você informou que quando precisa se deslocar para Florianópolis o seu meio de transporte prioritário é avião. Por favor, leia com atenção as alternativas e informe de qual aeroporto é a sua partida.",
         "required": false,
-        "name": "aeroporto_flo",
+        "name": "aeroporto_partida_flo",
         "data": [
             {
                 "value": "aeroporto_chapeco_flo",
@@ -1789,18 +1789,199 @@
             }
         ]
     },
-    "x": {
+    "31": {
         "type": "radio",
-        "title": "",
-        "subtitle": "",
+        "title": "Deslocamento - São Paulo - Ônibus",
+        "subtitle": "Você informou que quando precisa se deslocar para São Paulo o seu meio de transporte prioritário é ônibus. Por favor, <u>leia com atenção as alternativas</u> e <b>informe qual delas representa a realidade do seu local de residência.</b>",
         "required": false,
-        "name": "",
+        "name": "realidade_linhas_onibus_flo",
         "data": [
             {
-                "value": "",
-                "label": "",
-                "goto": ""
+                "value": "linha_onibus_sp",
+                "label": "Minha cidade tem linha(s) de ônibus para São Paulo",
+                "goto": "33"
+            },
+            {
+                "value": "outra_cidade_onibus_sp",
+                "label": "Preciso ir até outra cidade para conseguir linha(s) de ônibus para São Paulo",
+                "goto": "33"
+            }
+        ]
+    },
+    "32": {
+        "type": "radio",
+        "title": "Deslocamento - São Paulo - Avião",
+        "subtitle": "Você informou que quando precisa se deslocar para São Paulo o seu meio de transporte prioritário é avião. Por favor, leia com atenção as alternativas e informe qual aeroporto você utiliza como ponto de partida.",
+        "required": false,
+        "name": "aeroporto_partida_sp",
+        "data": [
+            {
+                "value": "cascavel_pr_sp",
+                "label": "Aeroporto de Cascavel/PR",
+                "goto": "33"
+            },
+            {
+                "value": "chapeco_sc_sp",
+                "label": "Aeroporto de Chapecó/SC",
+                "goto": "33"
+            },
+            {
+                "value": "foz_do_iguacu_pr_sp",
+                "label": "Aeroporto de Foz do Iguaçu/PR",
+                "goto": "33"
+            },
+            {
+                "value": "guarapuava_pr_sp",
+                "label": "Aeroporto de Guarapuava/PR",
+                "goto": "33"
+            },
+            {
+                "value": "pato_branco_executiva_sp",
+                "label": "Aeroporto de Pato Branco (aeronave executiva/particular)",
+                "goto": "33"
+            },
+            {
+                "value": "sao_jose_pinhais_conexao_sp",
+                "label": "Aeroporto de São José dos Pinhais (com conexão após voo da Azul saindo de Pato Branco)",
+                "goto": "33"
+            },
+            {
+                "value": "sao_jose_pinhais_sem_conexao_sp",
+                "label": "Aeroporto de São José dos Pinhais (sem ter feito conexão após voo da Azul saindo de Pato Branco)",
+                "goto": "33"
+            },
+            {
+                "value": "outro_aeroporto_sp",
+                "label": "Outro aeroporto",
+                "goto": "33"
+            }
+        ]
+    },
+    "33": {
+        "type": "radio",
+        "title": "Deslocamento - São Paulo - Avião - Campinas/SP",
+        "subtitle": "Caso uma companhia aérea disponibilizasse <b>voo saindo do Aeroporto Regional de Pato Branco para CAMPINAS/SP (com serviço de <u><em>transfer<em> para os aeroportos de Congonhas e/ou Guarulhos</u>)</b>, qual a probabilidade de você utilizar esse voo?",
+        "required": false,
+        "name": "utilizaria_aeroporto_pb_campinas",
+        "data": [
+            {
+                "value": "utilizar_regularmente_sp_campinas",
+                "label": "Poderia utilizar regularmente",
+                "goto": "34"
+            },
+            {
+                "value": "utilizar_eventualmente_sp_campinas",
+                "label": "Poderia utilizar eventualmente",
+                "goto": "34"
+            },
+            {
+                "value": "nao_utilizaria_sp_campinas",
+                "label": "Não utilizaria",
+                "goto": "34"
+            },
+            {
+                "value": "nao_sei_sp_campinas",
+                "label": "Não sei",
+                "goto": "34"
+            }
+        ]
+    },
+    "34": {
+        "type": "radio",
+        "title": "Deslocamento - São Paulo - Avião - Aeroporto de Congonhas",
+        "subtitle": "Caso uma companhia aérea disponibilizasse <b>voo saindo do Aeroporto Regional de Pato Branco para SÃO PAULO para o <u>aeroporto de Congonhas</u></b>, qual a probabilidade de você utilizar esse voo?",
+        "required": false,
+        "name": "utilizaria_aeroporto_pb_congonhas",
+        "data": [
+            {
+                "value": "utilizar_regularmente_sp_congonhas",
+                "label": "Poderia utilizar regularmente",
+                "goto": "35"
+            },
+            {
+                "value": "utilizar_eventualmente_sp_congonhas",
+                "label": "Poderia utilizar eventualmente",
+                "goto": "35"
+            },
+            {
+                "value": "nao_utilizaria_sp_congonhas",
+                "label": "Não utilizaria",
+                "goto": "35"
+            },
+            {
+                "value": "nao_sei_sp_congonhas",
+                "label": "Não sei",
+                "goto": "35"
+            }
+        ]
+    },
+    "35": {
+        "type": "radio",
+        "title": "",
+        "subtitle": "Caso uma companhia aérea disponibilizasse <b>voo saindo do Aeroporto Regional de Pato Branco para SÃO PAULO para o <u>aeroporto de Guarulhos</u></b>, qual a probabilidade de você utilizar esse voo?",
+        "required": false,
+        "name": "utilizaria_aeroporto_pb_guarulhos",
+        "data": [
+            {
+                "value": "utilizar_regularmente_sp_guarulhos",
+                "label": "Poderia utilizar regularmente",
+                "goto": "36"
+            },
+            {
+                "value": "utilizar_eventualmente_sp_guarulhos",
+                "label": "Poderia utilizar eventualmente",
+                "goto": "36"
+            },
+            {
+                "value": "nao_utilizaria_sp_guarulhos",
+                "label": "Não utilizaria",
+                "goto": "36"
+            },
+            {
+                "value": "nao_sei_sp_guarulhos",
+                "label": "Não sei",
+                "goto": "36"
+            }
+        ]
+    },
+    "36": {
+        "type": "radio",
+        "title": "Deslocamento - São Paulo -  Avião - Preferência Campinas / Congonhas / Guarulhos",
+        "subtitle": "Caso uma companhia aérea disponibilizasse voo saindo do Aeroporto Regional de Pato Branco para SÂO PAULO, qual sua preferência pelo aeroporto de destino?",
+        "required": false,
+        "name": "preferencia_aeroporto_destino_sp",
+        "data": [
+            {
+                "value": "campinas_sp",
+                "label": "Campinas",
+                "goto": "37"
+            },
+            {
+                "value": "congonhas_sp",
+                "label": "Congonhas",
+                "goto": "37"
+            },
+            {
+                "value": "guarulhos_sp",
+                "label": "Guarulhos",
+                "goto": "37"
+            },
+            {
+                "value": "qualquer_opcao_sp",
+                "label": "Qualquer uma das opções anteriores",
+                "goto": "37"
+            },
+            {
+                "value": "nao_sei_sp_preferencia",
+                "label": "Não sei",
+                "goto": "37"
             }
         ]
     }
+    
+    
+    
+    
+    
+  
 }
