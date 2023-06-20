@@ -1,0 +1,16 @@
+{
+    "x": {
+        "type": "radio",
+        "title": "",
+        "subtitle": "",
+        "required": false,
+        "name": "",
+        "data": [
+            {
+                "value": "",
+                "label": "",
+                "goto": ""
+            }
+        ]
+    }
+}
