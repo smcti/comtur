@@ -2,11 +2,12 @@ import { NextResponse } from 'next/server'
 const getAuthSheets = require('utils/helpers/sheetsAuth.ts');
 const sheets = require('utils/helpers/sheets.ts');
 const time = require("utils/helpers/datetime.ts");
+const keyMapping = require('public/keyMapping.json');
 
 export async function POST(req: Request) {
     try {
         const { googleSheets, auth, spreadsheetId } = await getAuthSheets();
-        const values = await req.json();
+        let values = await req.json();
         const headerRange = "COMTUR!1:1"; // Range to retrieve the header row
         const response = await googleSheets.spreadsheets.values.get({
             auth,
@@ -27,6 +28,7 @@ export async function POST(req: Request) {
           
             values[checkboxKey] = matchingValues.join(", ");
           });
+
         if (!values.email) {
             return NextResponse.json({
                 message: "Email não inserido",
@@ -58,6 +60,7 @@ export async function POST(req: Request) {
 
 
         values['regDate'] = time.now();
+        values = sheets.updateValues(values, keyMapping)
         const headers = response.data.values[0];
         const headersObject: Record<string, any> = {};
         headers.forEach((header: string) => {
