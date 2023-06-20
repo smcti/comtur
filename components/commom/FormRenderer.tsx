@@ -25,7 +25,7 @@ const submit = async (event: any) => {
     for (let pair of formData.entries()) {
         formDataObject[pair[0]] = pair[1];
     }
-    const url: any = `${process.env.API_URL}sheet`;
+    const url: any = process.env.API_URL;
 
     try {
         const response = await fetch(url, {
