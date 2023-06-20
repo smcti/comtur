@@ -2577,7 +2577,7 @@
     "56": {
         "type": "checkbox2",
         "title": "SBPO - Uso do Aeroporto - Destino das Conexões",
-        "subtitle": "Você informou que a razão das suas viagens quando utilizou o voo da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba no ano de 2022 incluíram fazer conexões para outros aeroportos. Por favor, informe o(s) destino(s) para onde precisou fazer conexões (você pode selecionar mais de uma alternativa):",
+        "subtitle": "Você informou que a <b>razão das suas viagens</b> quando utilizou o voo da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba no ano de 2022 <u>incluíram fazer conexões para outros aeroportos</u>. Por favor, informe <b>o(s) destino(s)</b> para onde precisou fazer conexões (você pode selecionar mais de uma alternativa):",
         "required": false,
         "name": "destino_conexoes_cwb",
         "data": [
@@ -2610,5 +2610,132 @@
                 "label": "São Paulo (Guarulhos)"
             }
         ]
+    },
+    "57": {
+        "type": "radio",
+        "title": "SBPO - Uso do Aeroporto - Alternativa de Transporte",
+        "subtitle": "Nos últimos 12 (doze) meses você precisou fazer o trajeto da sua cidade até Curitiba <b>utilizando outro meio de transporte?</b> Por gentileza, leia com atenção e selecione a alternativa que <u>prioritariamente</b> melhor represente sua resposta.",
+        "required": false,
+        "name": "meio_transporte_pb_cwb",
+        "data": [
+            {
+                "value": "nao_precisei_pb_cwb",
+                "label": "Não precisei fazer isso",
+                "goto": "58"
+            },
+            {
+                "value": "veiculo_proprio_pb_cwb",
+                "label": "Sim, e utilizei veículo próprio",
+                "goto": "58"
+            },
+            {
+                "value": "veiculo_empresa_pb_cwb",
+                "label": "Sim, e utilizei veículo da empresa/instituição na qual eu trabalho",
+                "goto": "58"
+            },
+            {
+                "value": "veiculo_alugado_pb_cwb",
+                "label": "Sim, e utilizei veículo alugado",
+                "goto": "58"
+            },
+            {
+                "value": "veiculo_aplicativo_pb_cwb",
+                "label": "Sim, e utilizei veículo de aplicativo (ex.: Garupa, Urbano Norte etc.)",
+                "goto": "58"
+            },
+            {
+                "value": "onibus_interurbano_pb_cwb",
+                "label": "Sim, e utilizei ônibus interurbano",
+                "goto": "58"
+            },
+            {
+                "value": "motocicleta_pb_cwb",
+                "label": "Sim, e utilizei motocicleta",
+                "goto": "58"
+            },
+            {
+                "value": "outro_meio_pb_cwb",
+                "label": "Sim, e utilizei outro meio de transporte",
+                "goto": "58"
+            }
+        ]
+    },
+    "58": {
+        "type": "radio",
+        "title": "SBPO - Uso do Aeroporto - Voo para Curitiba com Saída e Retorno no Mesmo Dia",
+        "subtitle": "Caso uma companhia aérea disponibilizasse  <b>voo saindo do Aeroporto Regional de Pato Branco para CURITIBA <u>com saída e retorno no mesmo dia</u></b> (exemplo: saída pela manhã, retorno final da tarde ou a noite), <b>qual a probabilidade de você utilizar esse voo?</b>",
+        "required": false,
+        "name": "fator_decisao_voo_mesmo_dia_cwb",
+        "data": [
+            {
+                "value": "regularmente_cwb",
+                "label": "Poderia utilizar regularmente",
+                "goto": "59"
+            },
+            {
+                "value": "eventualmente_cwb",
+                "label": "Poderia utilizar eventualmente",
+                "goto": "59"
+            },
+            {
+                "value": "nao_utilizaria_cwb",
+                "label": "Não utilizaria",
+                "goto": "59"
+            },
+            {
+                "value": "nao_sei_voo_mesmo_dia_cwb",
+                "label": "Não sei",
+                "goto": "59"
+            }
+        ]
+    },
+    "59": {
+        "type": "radio",
+        "title": "Deslocamento - Curitiba - Avião - Fator de Decisão",
+        "subtitle": " Caso uma companhia aérea disponibilizasse <b>voo saindo do Aeroporto Regional de Pato Branco para CURITIBA com saída e retorno no mesmo dia</b> (exemplo: saída pela manhã, retorno final da tarde ou a noite)  , qual o <u><b>fator mais importante</b></u> para você usar esse voo?",
+        "required": false,
+        "name": "fator_decisao_voo_pb_flo",
+        "data": [
+            {
+                "value": "conveniencia_horario_cwb",
+                "label": "Conveniência do horário de saída do voo",
+                "goto": "60"
+            },
+            {
+                "value": "preco_passagem_cwb",
+                "label": "Preço da passagem aérea",
+                "goto": "60"
+            },
+            {
+                "value": "voo_direto_cwb",
+                "label": "Voo direto, sem escala(s) ou conexão(ões)",
+                "goto": "60"
+            },
+            {
+                "value": "outro_fator_cwb",
+                "label": "Outro fator",
+                "goto": "60"
+            },
+            {
+                "value": "nao_sei_cwb",
+                "label": "Não sei",
+                "goto": "60"
+            }
+        ]
+    },
+    "60": {
+        "type": "email",
+        "title": "Perfil - email",
+        "subtitle": "Por favor, insira seu email",
+        "placeholder": "email",
+        "required": false,
+        "name": "email",
+        "goto": "61"
+    },
+    "61": {
+        "type": "page",
+        "title": "Conclusão",
+        "subtitle": "<p>Obrigado por participar desta pesquisa",
+        "goto": "1"
     }
 }
