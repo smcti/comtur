@@ -12,5 +12,23 @@
                 "goto": ""
             }
         ]
+    },
+    "y": {
+        "type": "text",
+        "title": "Perfil - Local de Residência (Oeste de Santa Catarina)",
+        "subtitle": "Na questão anterior você informou que <u>reside em <b>outra cidade da região Oeste de Santa Catarina</b></u> que não consta na lista de opções. Por gentileza, informe o nome da cidade na qual você reside",
+        "placeholder": "Cidade em que você reside",
+        "required": false,
+        "name": "cidade_osc_outra",
+        "goto": "19"
+    },
+    "z": {
+        "type": "email",
+        "title": "Perfil - email",
+        "subtitle": "Por favor, insira seu email",
+        "placeholder": "email",
+        "required": false,
+        "name": "email",
+        "goto": "19"
     }
 }
