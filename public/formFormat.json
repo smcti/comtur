@@ -39,7 +39,7 @@
             {
                 "value": "16 a 17 anos",
                 "label": "16 a 17 anos",
-                "goto": "13"
+                "goto": "60"
             },
             {
                 "value": "18 a 24 anos",
@@ -1977,5 +1977,638 @@
                 "goto": "37"
             }
         ]
-    }  
+    },
+    "37": {
+        "type": "radio",
+        "title": "Deslocamento - São Paulo - Avião - Fator de Decisão",
+        "subtitle": "Caso uma companhia aérea disponibilizasse <b>voo saindo do Aeroporto Regional de Pato Branco para SÃO PAULO (podendo ser para o aeroporto de Campinas, ou o aeroporto de Congonhas ou o aeroporto de Guarulhos)</b>, qual o <b>fator mais importante</b> para você usar esse voo?",
+        "required": false,
+        "name": "fator_decisao_voo_pb_sp",
+        "data": [
+            {
+                "value": "conveniencia_horario_sp",
+                "label": "Conveniência do horário de saída do voo",
+                "goto": "38"
+            },
+            {
+                "value": "retorno_mesmo_dia_sp",
+                "label": "Possibilidade de retornar no mesmo dia, independente do preço da passagem",
+                "goto": "38"
+            },
+            {
+                "value": "retorno_mesma_semana_sp",
+                "label": "Possibilidade de retornar na mesma semana, independente do preço da passagem",
+                "goto": "38"
+            },
+            {
+                "value": "preco_passagem_sp",
+                "label": "Preço da passagem aérea",
+                "goto": "38"
+            },
+            {
+                "value": "outro_fator_sp",
+                "label": "Outro fator",
+                "goto": "38"
+            },
+            {
+                "value": "nao_sei_sp_fator",
+                "label": "Não sei",
+                "goto": "38"
+            }
+        ]
+    },
+    "38": {
+        "type": "radio",
+        "title": "Deslocamento - Curitiba - Frequência",
+        "subtitle": "Ao longo do ano você eventualmente precisa se <b>deslocar do seu local de residência para CURITIBA?</b>",
+        "required": false,
+        "name": "deslocar_para_curitiba",
+        "data": [
+            {
+                "value": "uma_vez_semana_cwb",
+                "label": "Preciso me deslocar para Curitiba uma vez por semana",
+                "goto": "39"
+            },
+            {
+                "value": "ate_duas_vezes_mes_cwb",
+                "label": "Preciso me deslocar para Curitiba até duas vezes por mês",
+                "goto": "39"
+            },
+            {
+                "value": "uma_vez_mes_cwb",
+                "label": "Preciso me deslocar para Curitiba uma vez por mês",
+                "goto": "39"
+            },
+            {
+                "value": "uma_vez_2_3_meses_cwb",
+                "label": "Preciso me deslocar para Curitiba uma vez a cada dois ou três meses",
+                "goto": "39"
+            },
+            {
+                "value": "duas_vezes_ano_cwb",
+                "label": "Preciso me deslocar para Curitiba duas vezes por ano",
+                "goto": "39"
+            },
+            {
+                "value": "uma_vez_ano_cwb",
+                "label": "Preciso me deslocar para Curitiba uma vez por ano",
+                "goto": "39"
+            },
+            {
+                "value": "nao_preciso_deslocar_cwb",
+                "label": "Não preciso me deslocar para Curitiba",
+                "goto": "60"
+            }
+        ]
+    },
+    "39": {
+        "type": "radio",
+        "title": "Deslocamento - Curitiba - Permanência",
+        "subtitle": "Na questão anterior você respondeu que ao longo do ano eventualmente precisa se deslocar para  Curitiba. Pensando nessa(s) circunstância(s), por gentileza, informe <b>quanto tempo <u>geralmente</u></b> você costuma permanecer em Curitiba quando faz esse(s) deslocamento(s). ",
+        "required": false,
+        "name": "permanencia_curitiba",
+        "data": [
+            {
+                "value": "um_dia_cwb",
+                "label": "Apenas um dia",
+                "goto": "40"
+            },
+            {
+                "value": "entre_um_e_dois_dias_cwb",
+                "label": "Entre um e dois dias",
+                "goto": "40"
+            },
+            {
+                "value": "entre_tres_e_cinco_dias_cwb",
+                "label": "Entre três e cinco dias",
+                "goto": "40"
+            },
+            {
+                "value": "ate_uma_semana_cwb",
+                "label": "Até uma semana",
+                "goto": "40"
+            },
+            {
+                "value": "mais_de_uma_semana_cwb",
+                "label": "Mais de uma semana",
+                "goto": "40"
+            },
+            {
+                "value": "depende_agenda_compromissos_cwb",
+                "label": "Depende da minha agenda de compromissos",
+                "goto": "40"
+            }
+        ]
+    },
+    "40": {
+        "type": "radio",
+        "title": "Deslocamento - Curitiba - Hospedagem",
+        "subtitle": "Pensando em quando você está em Curitiba por gentileza <b>informe onde <u>prioritariamente</u> você costuma se hospedar.</b>",
+        "required": false,
+        "name": "local_hospedagem_cwb",
+        "data": [
+            {
+                "value": "airbnb_cwb",
+                "label": "Airbnb",
+                "goto": "41"
+            },
+            {
+                "value": "flat_aparthotel_cwb",
+                "label": "Flat/Apart-Hotel",
+                "goto": "41"
+            },
+            {
+                "value": "hotel_cwb",
+                "label": "Hotel",
+                "goto": "41"
+            },
+            {
+                "value": "pensao_cwb",
+                "label": "Pensão",
+                "goto": "41"
+            },
+            {
+                "value": "residencia_amigos_cwb",
+                "label": "Residência de amigos",
+                "goto": "41"
+            },
+            {
+                "value": "residencia_familiares_cwb",
+                "label": "Residência de familiares",
+                "goto": "41"
+            },
+            {
+                "value": "residencia_propria_cwb",
+                "label": "Residência própria",
+                "goto": "41"
+            },
+            {
+                "value": "outro_tipo_hospedagem_cwb",
+                "label": "Outro tipo de hospedagem",
+                "goto": "41"
+            },
+            {
+                "value": "nao_costumo_hospedar_cwb",
+                "label": "Não costumo me hospedar em Curitiba",
+                "goto": "41"
+            }
+        ]
+    },
+    "41": {
+        "type": "radio",
+        "title": "Deslocamento - Curitiba - Meio de Transporte",
+        "subtitle": "Quando você precisa se deslocar para Curitiba, qual o <b>meio de transporte prioritário</b> que utiliza?",
+        "required": false,
+        "name": "meio_transporte_cwb",
+        "data": [
+            {
+                "value": "aviao_cwb",
+                "label": "Avião",
+                "goto": "43"
+            },
+            {
+                "value": "onibus_cwb",
+                "label": "Ônibus",
+                "goto": "42"
+            },
+            {
+                "value": "veiculo_cwb",
+                "label": "Veículo (próprio ou da empresa)",
+                "goto": "58"
+            }
+        ]
+    },
+    "42": {
+        "type": "radio",
+        "title": "Deslocamento - Curitiba - Ônibus",
+        "subtitle": "Você informou que quando precisa se deslocar para Curitiba o seu meio de transporte prioritário é <b>ônibus</b>. Por favor, <u>leia com atenção as alternativas</u> e <b>informe qual delas representa a realidade do seu local de residência.</b>",
+        "required": false,
+        "name": "",
+        "data": [
+            {
+                "value": "linha_curitiba",
+                "label": "Minha cidade tem linha(s) de ônibus para Curitiba",
+                "goto": "58"
+            },
+            {
+                "value": "outra_cidade_onibus_curitiba",
+                "label": "Preciso ir até outra cidade para conseguir linha(s) de ônibus para Curitiba",
+                "goto": "58"
+            }
+        ]
+    },
+    "43": {
+        "type": "radio",
+        "title": "SBPO - Uso do Aeroporto",
+        "subtitle": "Na questão anterior você respondeu que quando precisa se deslocar para Curitiba o seu meio de transporte prioritário é avião. Durante o ano de 2022 você utilizou os voos da Azul Linhas Aéreas Brasileiras no Aeroporto Regional de Pato Branco para se deslocar até Curitiba?",
+        "required": false,
+        "name": "uso_azul_aeroporto_pato_branco",
+        "data": [
+            {
+                "value": "sim_cwb",
+                "label": "Sim",
+                "goto": "44"
+            },
+            {
+                "value": "nao_cwb",
+                "label": "Não",
+                "goto": "57"
+            }
+        ]
+    },
+    "44": {
+        "type": "radio",
+        "title": "SBPO - Uso do Aeroporto - Meio de Transporte para Acesso",
+        "subtitle": "Quando você se deslocou de sua residência até o Aeroporto Regional de Pato Branco, qual o <b>meio de transporte</b> que utilizou para chegar ao aeroporto?",
+        "required": false,
+        "name": "meio_transporte_acesso_aeroporto_cwb",
+        "data": [
+            {
+                "value": "carona_cwb",
+                "label": "Carona",
+                "goto": "45"
+            },
+            {
+                "value": "veiculo_alugado_cwb",
+                "label": "Veículo alugado",
+                "goto": "45"
+            },
+            {
+                "value": "veiculo_aplicativo_cwb",
+                "label": "Veículo de aplicativo (exemplo: Garupa, Urbano Norte etc.)",
+                "goto": "45"
+            },
+            {
+                "value": "veiculo_proprio_cwb",
+                "label": "Veículo próprio",
+                "goto": "45"
+            },
+            {
+                "value": "micro_onibus_onibus_van_cwb",
+                "label": "Micro Ônibus/Ônibus/Van fretado",
+                "goto": "45"
+            },
+            {
+                "value": "taxi_cwb",
+                "label": "Táxi",
+                "goto": "45"
+            },
+            {
+                "value": "outro_transporte_cwb",
+                "label": "Outro transporte",
+                "goto": "45"
+            }
+        ]
+    },
+    "45": {
+        "type": "radio",
+        "title": "SBPO - Uso do Aeroporto - Tempo de Deslocamento",
+        "subtitle": "De modo geral, mais ou menos, <b>quanto tempo você demorou no seu deslocamento</b> para chegar ao Aeroporto Regional de Pato Branco?",
+        "required": false,
+        "name": "tempo_deslocamento_aeroporto_cwb",
+        "data": [
+            {
+                "value": "menos_15_minutos_cwb",
+                "label": "Menos de 15 minutos",
+                "goto": "46"
+            },
+            {
+                "value": "16_30_minutos_cwb",
+                "label": "Entre 16 e 30 minutos",
+                "goto": "46"
+            },
+            {
+                "value": "31_59_minutos_cwb",
+                "label": "Entre 31 e 59 minutos",
+                "goto": "46"
+            },
+            {
+                "value": "uma_hora_hora_meia_cwb",
+                "label": "Entre uma hora e uma hora e meia",
+                "goto": "46"
+            },
+            {
+                "value": "mais_hora_meia_cwb",
+                "label": "Mais de uma hora e meia",
+                "goto": "46"
+            },
+            {
+                "value": "nao_lembro_deslocamento_cwb",
+                "label": "Não me lembro ao certo",
+                "goto": "46"
+            }
+        ]
+    },
+    "46": {
+        "type": "radio",
+        "title": "SBPO - Uso do Aeroporto - Tempo de Antecedência ao Embarque",
+        "subtitle": "De modo geral, mais ou menos, <b>com quanto tempo de antecedência ao embarque você chegou</b> ao Aeroporto Regional de Pato Branco?",
+        "required": false,
+        "name": "tempo_antecedencia_embarque_cwb",
+        "data": [
+            {
+                "value": "menos_uma_hora_cwb",
+                "label": "Menos de uma hora",
+                "goto": "47"
+            },
+            {
+                "value": "mais_uma_hora_cwb",
+                "label": "Mais de uma hora",
+                "goto": "47"
+            },
+            {
+                "value": "nao_lembro_embarque_cwb",
+                "label": "Não me lembro ao certo",
+                "goto": "47"
+            }
+        ]
+    },
+    "47": {
+        "type": "radio",
+        "title": "SBPO - Uso do Aeroporto - Check-In",
+        "subtitle": "De modo geral, <b>com você fez e/ou costuma fazer, prioritariamente, o check-in antes do embarque?</b>",
+        "required": false,
+        "name": "checkin_prioritario_cwb",
+        "data": [
+            {
+                "value": "checkin_aeroporto_cwb",
+                "label": "Na hora, no aeroporto, no balcão da companhia aérea",
+                "goto": "48"
+            },
+            {
+                "value": "checkin_website_cwb",
+                "label": "Antes, usando o website da companhia aérea",
+                "goto": "48"
+            },
+            {
+                "value": "checkin_app_cwb",
+                "label": "Antes, usando o aplicativo da companhia aérea no celular",
+                "goto": "48"
+            },
+            {
+                "value": "checkin_depende_cwb",
+                "label": "Depende, não costumo seguir um padrão",
+                "goto": "48"
+            }
+        ]
+    },
+    "48": {
+        "type": "radio",
+        "title": "SBPO - Uso do Aeroporto - Espera",
+        "subtitle": "De modo geral, você consumiu e/ou costuma consumir algo no aeroporto (café, água etc.) antes do embarque?",
+        "required": false,
+        "name": "consumo_aeroporto_cwb",
+        "data": [
+            {
+                "value": "sim_consumo_cwb",
+                "label": "Sim",
+                "goto": "49"
+            },
+            {
+                "value": "nao_consumo_cwb",
+                "label": "Não",
+                "goto": "49"
+            },
+            {
+                "value": "as_vezes_consumo_cwb",
+                "label": "Às vezes",
+                "goto": "49"
+            }
+        ]
+    },
+    "49": {
+        "type": "radio",
+        "title": "SBPO - Uso do Aeroporto - Despacho de Bagagem",
+        "subtitle": "De modo geral, <b>você despachou ou costuma despachar bagagem nos voos da Azul Linhas Aéreas Brasileiras</b> no Aeroporto Regional de Pato Branco?",
+        "required": false,
+        "name": "despacho_bagagem_azul_cwb",
+        "data": [
+            {
+                "value": "sim_sempre_despacho_cwb",
+                "label": "Sim, sempre despachei/despacho bagagem",
+                "goto": "50"
+            },
+            {
+                "value": "depende_despacho_cwb",
+                "label": "Depende, às vezes sim outras vezes não",
+                "goto": "50"
+            },
+            {
+                "value": "nao_despacho_cwb",
+                "label": "Não, não despachei/despacho bagagem",
+                "goto": "50"
+            }
+        ]
+    },
+    "50": {
+        "type": "radio",
+        "title": "SBPO - Uso do Aeroporto - Antecedência de Compra de Passagem",
+        "subtitle": "De modo geral, <b>com quanto tempo de antecedência você comprou a(s) passagem(ns) da Azul Linhas Aéreas Brasileiras</b>?",
+        "required": false,
+        "name": "antecedencia_compra_passagem_azul_cwb",
+        "data": [
+            {
+                "value": "menos_30_dias_cwb",
+                "label": "Geralmente com menos de 30 dias de antecedência",
+                "goto": "51"
+            },
+            {
+                "value": "30_59_dias_cwb",
+                "label": "Geralmente com 30 e 59 dias de antecedência",
+                "goto": "51"
+            },
+            {
+                "value": "60_89_dias_cwb",
+                "label": "Geralmente com 60 e 89 dias de antecedência",
+                "goto": "51"
+            },
+            {
+                "value": "90_119_dias_cwb",
+                "label": "Geralmente com 90 e 119 dias de antecedência",
+                "goto": "51"
+            },
+            {
+                "value": "120_149_dias_cwb",
+                "label": "Geralmente com 120 e 149 dias de antecedência",
+                "goto": "51"
+            },
+            {
+                "value": "150_dias_mais_cwb",
+                "label": "Geralmente com 150 dias ou mais de antecedência",
+                "goto": "51"
+            },
+            {
+                "value": "nao_lembro_antecedencia_cwb",
+                "label": "Não lembro ao certo",
+                "goto": "51"
+            }
+        ]
+    },
+    "51": {
+        "type": "radio",
+        "title": "SBPO - Uso do Aeroporto - Pagamento da Passagem",
+        "subtitle": "Por gentileza informe quem, na maioria das vezes, <b>pagou pela(s) passagem(ns) da Azul Linhas Aéreas Brasileiras</b> quando você viajou para Curitiba a partir do Aeroporto Regional de Pato Branco.",
+        "required": false,
+        "name": "pagamento_passagem_cwb",
+        "data": [
+            {
+                "value": "eu_mesmo_cwb",
+                "label": "Eu mesmo(a) paguei",
+                "goto": "52"
+            },
+            {
+                "value": "empresa_instituicao_cwb",
+                "label": "A empresa/instituição na qual eu trabalho é que pagou",
+                "goto": "52"
+            },
+            {
+                "value": "familiar_amigo_cwb",
+                "label": "Um familiar/amigo pagou",
+                "goto": "52"
+            },
+            {
+                "value": "nao_lembro_compra_cwb",
+                "label": "Não lembro ao certo",
+                "goto": "52"
+            }
+        ]
+    },
+    "52": {
+        "type": "radio",
+        "title": "SBPO - Uso do Aeroporto - Número de Viagens",
+        "subtitle": "Ao longo de 2022 <b>quantas vezes aproximadamente</b> você utilizou o voo da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba?",
+        "required": false,
+        "name": "numero_viagens_cwb",
+        "data": [
+            {
+                "value": "uma_vez_cwb",
+                "label": "Uma vez",
+                "goto": "53"
+            },
+            {
+                "value": "entre_duas_cinco_cwb",
+                "label": "Entre duas e cinco vezes",
+                "goto": "53"
+            },
+            {
+                "value": "entre_seis_dez_cwb",
+                "label": "Entre seis e 10 vezes",
+                "goto": "53"
+            },
+            {
+                "value": "mais_de_10_cwb",
+                "label": "Mais de 10 vezes",
+                "goto": "53"
+            }
+        ]
+    },
+    "53": {
+        "type": "radio",
+        "title": "SBPO - Uso do Aeroporto - Condição de Passageiro",
+        "subtitle": "Por favor, selecione a <b>opção que melhor representa a sua condição de passageiro</b> quando utilizou o voo da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba no ano de 2022.",
+        "required": false,
+        "name": "acompanhamento_voo",
+        "data": [
+            {
+                "value": "geralmente_sozinho_cwb",
+                "label": "Geralmente sozinho(a)",
+                "goto": "54"
+            },
+            {
+                "value": "geralmente_acompanhado_familiares_cwb",
+                "label": "Geralmente acompanhado(a) de familiares",
+                "goto": "54"
+            },
+            {
+                "value": "geralmente_acompanhado_colegas_trabalho_cwb",
+                "label": "Geralmente acompanhado(a) de colegas de trabalho",
+                "goto": "54"
+            }
+        ]
+    },
+    "54": {
+        "type": "radio",
+        "title": "SBPO - Uso do Aeroporto - Motivo da Viagem",
+        "subtitle": "Por favor, leia com atenção e selecione a opção que melhor representa a razão que MAIS MOTIVOU sua(s) viagem(ns) quando utilizou o voo da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba no ano de 2022.",
+        "required": false,
+        "name": "motivo_viagem_cwb",
+        "data": [
+            {
+                "value": "agenda_trabalho_cwb",
+                "label": "Agenda de trabalho / negócios",
+                "goto": "55"
+            },
+            {
+                "value": "agenda_pessoal_cwb",
+                "label": "Agenda pessoal (estudos, família, lazer, turismo etc.) em Curitiba",
+                "goto": "55"
+            },
+            {
+                "value": "questoes_saude_cwb",
+                "label": "Questões de saúde",
+                "goto": "55"
+            },
+            {
+                "value": "outro_motivo_cwb",
+                "label": "Outro motivo",
+                "goto": "55"
+            }
+        ]
+    },
+    "55": {
+        "type": "radio",
+        "title": "SBPO - Uso do Aeroporto - Necessidade de Conexão",
+        "subtitle": "Quando você utilizou o(s) voo(s) da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba no ano de 2022, em alguma(s) ocasião(ões) precisou fazer conexão para outro aeroporto?",
+        "required": false,
+        "name": "necessidade_conexao_cwb",
+        "data": [
+            {
+                "value": "sim_conexao_cwb",
+                "label": "Sim",
+                "goto": "56"
+            },
+            {
+                "value": "nao_conexao_cwb",
+                "label": "Não",
+                "goto": "57"
+            }
+        ]
+    },
+    "56": {
+        "type": "checkbox2",
+        "title": "SBPO - Uso do Aeroporto - Destino das Conexões",
+        "subtitle": "Você informou que a razão das suas viagens quando utilizou o voo da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba no ano de 2022 incluíram fazer conexões para outros aeroportos. Por favor, informe o(s) destino(s) para onde precisou fazer conexões (você pode selecionar mais de uma alternativa):",
+        "required": false,
+        "name": "destino_conexoes_cwb",
+        "data": [
+            {
+                "value": "brasilia_cwb",
+                "label": "Brasília"
+            },
+            {
+                "value": "nordeste_cwb",
+                "label": "Nordeste do Brasil"
+            },
+            {
+                "value": "porto_alegre_cwb",
+                "label": "Porto Alegre"
+            },
+            {
+                "value": "rio_galeao_cwb",
+                "label": "Rio de Janeiro (Galeão)"
+            },
+            {
+                "value": "rio_santos_dumont_cwb",
+                "label": "Rio de Janeiro (Santos Dumont)"
+            },
+            {
+                "value": "sao_paulo_congonhas_cwb",
+                "label": "São Paulo (Congonhas)"
+            },
+            {
+                "value": "sao_paulo_guarulhos_cwb",
+                "label": "São Paulo (Guarulhos)"
+            }
+        ]
+    }
 }
