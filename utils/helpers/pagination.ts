@@ -4,16 +4,17 @@ const queue: number[] = [0];
 // are marked, and return the page it goes to.
 // I'm hacking storing this information in the step field of the buttons
 // It's a temporary fix
+
 export const getCurrentPage = () => {
   // The forth node is the node responsible for the inputs
   const element: any = document.getElementById(String(queue.at(-1)));
   const childNodes = element.children[2].children;
   
-  if (element.children[2].type === 'text' && element.children[2].value.replace(/[^a-z1-9]/gi, "").length >= 1) {
+  if ((element.children[2].type === 'text' || element.children[2].type === 'email') && element.children[2].value.replace(/[^a-z1-9]/gi, "").length >= 1) {
     return element.children[2].step;
   }
 
-  if (element.children[2].type === 'text' && element.children[2].classList.contains('hidden')) {
+  if ((element.children[2].type === 'text' || element.children[2].type === 'email') && element.children[2].classList.contains('hidden')) {
     return element.children[2].step;
   }
 

@@ -148,9 +148,9 @@ const FormRenderer = (props: any) => {
                                             item.type == 'text' ?
                                                 <Text goTo={item.goto} name={item.name} placeholder={item.placeholder}/> :
                                                     item.type == 'checkbox2' ?
-                                                        <Checkbox2 data={item.data} name={item.name} /> :
-                                                            item.type == 'checkbox2' ?
-                                                                <Email goTo={item.goto} name={item.name}/> :
+                                                        <Checkbox2 goTo={item.goto} data={item.data} name={item.name} /> :
+                                                            item.type == 'email' ?
+                                                                <Email goTo={item.goto} name={item.name} placeholder={item.placeholder}/> :
                                                                     <Page goTo={item.goto} name={item.name}/> 
 
                             }
