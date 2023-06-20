@@ -14,9 +14,11 @@ export async function POST(req: Request) {
             range: headerRange,
         });
 
+
         const checkbox_keys = [
             "spr_acesso_saude", "spr_compras", "spr_estudos", "spr_negocios_trabalho", "spr_outro",
-            "osc_acesso_saude", "osc_compras", "osc_estudos", "osc_negocios_trabalho", "osc_outro"
+            "osc_acesso_saude", "osc_compras", "osc_estudos", "osc_negocios_trabalho", "osc_outro",
+            "destino_conexoes_cwb"
         ];
         checkbox_keys.forEach(checkboxKey => {
             const matchingValues = Object.entries(values)
@@ -25,7 +27,6 @@ export async function POST(req: Request) {
           
             values[checkboxKey] = matchingValues.join(", ");
           });
-
         if (!values.email) {
             return NextResponse.json({
                 message: "Email não inserido",
@@ -56,7 +57,7 @@ export async function POST(req: Request) {
         }
 
 
-        values['data e hora'] = time.now();
+        values['regDate'] = time.now();
         const headers = response.data.values[0];
         const headersObject: Record<string, any> = {};
         headers.forEach((header: string) => {

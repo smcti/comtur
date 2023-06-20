@@ -1333,7 +1333,7 @@
         "subtitle": "Na questão anterior você informou que <u>não reside no Sudoeste do Paraná nem no Oeste de Santa Catarina</u>. Por gentileza, <b>informe o nome da cidade na qual você reside.</b>",
         "placeholder": "Sua resposta",
         "required": false,
-        "name": "outra_cidade",
+        "name": "cidade_osc_outra",
         "goto": "19"
     },
     "19": {
@@ -2578,31 +2578,31 @@
         "goto": "58",
         "data": [
             {
-                "value": "brasilia_cwb",
+                "value": "brasilia_destino_conexoes_cwb",
                 "label": "Brasília"
             },
             {
-                "value": "nordeste_cwb",
+                "value": "nordeste_destino_conexoes_cwb",
                 "label": "Nordeste do Brasil"
             },
             {
-                "value": "porto_alegre_cwb",
+                "value": "porto_alegre_destino_conexoes_cwb",
                 "label": "Porto Alegre"
             },
             {
-                "value": "rio_galeao_cwb",
+                "value": "rio_galeao_destino_conexoes_cwb",
                 "label": "Rio de Janeiro (Galeão)"
             },
             {
-                "value": "rio_santos_dumont_cwb",
+                "value": "rio_santos_dumont_destino_conexoes_cwb",
                 "label": "Rio de Janeiro (Santos Dumont)"
             },
             {
-                "value": "sao_paulo_congonhas_cwb",
+                "value": "sao_paulo_congonhas_destino_conexoes_cwb",
                 "label": "São Paulo (Congonhas)"
             },
             {
-                "value": "sao_paulo_guarulhos_cwb",
+                "value": "sao_paulo_guarulhos_destino_conexoes_cwb",
                 "label": "São Paulo (Guarulhos)"
             }
         ]
