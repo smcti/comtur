@@ -4,8 +4,8 @@ const Radio = (props: any) => {
       {Object.values(props.data).map((item: any, index: any) => {
         return (
           <div key={index} className="flex flex-row gap-4">
-            <input className="scale-125" type="radio" id={item.value} name={props.name} value={item.value} required={props.required} step={item.goto}/>
-            <label htmlFor={item.value}>{item.label}</label>
+            <input className="hover:cursor-pointer scale-125" type="radio" id={item.value} name={props.name} value={item.value} required={props.required} step={item.goto}/>
+            <label className="hover:cursor-pointer" htmlFor={item.value}>{item.label}</label>
           </div>
         )
       })}

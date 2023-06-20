@@ -127,15 +127,16 @@ const FormRenderer = (props: any) => {
         <div>
             <ProgressBar pageTotal={pages} page={Number(page) + 1}/>
             <form id='form' className='section-default flex flex-col gap-4 py-32'>
+            <h1 className='text-2xl font-bold'>Desafios no deslocamento para grandes centros</h1>
                 {Object.values(formFormat).map((item: any, index: any) => {
 
                     return (
-                        <fieldset key={index} id={String(Object.keys(formFormat)[index])} className={`bg-white relative border rounded-md p-4 flex flex-col gap-8 ${index != 0 ? 'hidden' : ''}`} >
+                        <fieldset key={index} id={String(Object.keys(formFormat)[index])} className={`bg-white relative border rounded-md p-6 py-12 flex flex-col gap-8 ${index != 0 ? 'hidden' : ''}`} >
                             <div className='flex flex-row justify-between gap-4'>
                                 <div className='font-bold'>{item.title}</div>
                                 {index != 0 ? <h1 className='leading-5 min-w-[32px] h-8 bg-cello-800 text-zircon-50 flex items-center justify-center rounded-full'>{Number(keys[index])}</h1> : ''}
                             </div>
-                            <div className='leading-8 flex flex-col gap-4 text-justify hyphens-auto' dangerouslySetInnerHTML={{ __html: item.subtitle }}></div>
+                            <div className={`leading-8 text-justify hyphens-auto ${index == 0 ? 'flex flex-col gap-4' : ''}`} dangerouslySetInnerHTML={{ __html: item.subtitle }}></div>
                             {
                                 item.type == 'radio' ?
                                     <Radio data={item.data} name={item.name} required={item.required} /> :
@@ -147,7 +148,7 @@ const FormRenderer = (props: any) => {
 
                             }
                             <div className='flex flex-row items-center gap-4 text-red-500 hidden' id={`err-${index}`}>
-                                <div><LuAlertCircle /></div> Por favor, preencha o campo acima antes de avançar</div>
+                                <div><LuAlertCircle /></div>Por favor, preencha o campo acima antes de avançar</div>
                         </fieldset>
                     )
                 })}
