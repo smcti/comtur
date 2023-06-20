@@ -9,7 +9,7 @@ export const getCurrentPage = () => {
   // The forth node is the node responsible for the inputs
   const element: any = document.getElementById(String(queue.at(-1)));
   const childNodes = element.children[2].children;
-  
+
   if ((element.children[2].type === 'text' || element.children[2].type === 'email') && element.children[2].value.replace(/[^a-z1-9]/gi, "").length >= 1) {
     return element.children[2].step;
   }
@@ -51,7 +51,7 @@ export const handlePagesFw = () => {
     queue.push(Number(pageTo));
     const pageToggle = document.getElementById(String(page)) as HTMLButtonElement | null;
     const pageToggleBack = document.getElementById(String(queue.at(-1))) as HTMLButtonElement | null;
-    
+
     if (pageToggle) {
       pageToggle.classList.toggle('hidden');
     }
