@@ -6,7 +6,7 @@ import formFormat from '@public/formFormat.json';
 import Checkbox from '@components/formComponents/Checkbox';
 import Radio from '@components/formComponents/Radio';
 import Text from '@components/formComponents/Text';
-import {handlePagesFw, handlePagesBw} from '@utils/helpers/pagination'
+import { handlePagesFw, handlePagesBw } from '@utils/helpers/pagination'
 import ProgressBar from '@components/ui/ProgressBar';
 import Page from '@components/formComponents/Page';
 import Checkbox2 from '@components/formComponents/Checkbox2';
@@ -20,35 +20,35 @@ const submit = async (event: any) => {
     const form: any = document.getElementById('form');
 
     const formData = new FormData(form);
-    
-    let formDataObject:Record<string, any>  = {};
-    for(let pair of formData.entries()) {
+
+    let formDataObject: Record<string, any> = {};
+    for (let pair of formData.entries()) {
         formDataObject[pair[0]] = pair[1];
     }
-    const url = 'http://localhost:3000/api/sheet'; 
+    const url = 'http://localhost:3000/api/sheet';
 
     try {
         const response = await fetch(url, {
-          method: 'POST',
-          body: JSON.stringify(formDataObject),
-          headers: {
-            'Content-Type': 'application/json',
-          },
+            method: 'POST',
+            body: JSON.stringify(formDataObject),
+            headers: {
+                'Content-Type': 'application/json',
+            },
         });
-    
+
         if (!response.ok) {
-          throw new Error('Request failed');
+            throw new Error('Request failed');
         }
-    
+
         // Handle the response here, e.g., parse JSON or check status
         const responseData = await response.json();
         window.location.replace('/obrigado')
         console.log(responseData);
-      } catch (error) {
+    } catch (error) {
         console.error(error);
-      }
+    }
 }
-    
+
 
 // Renders the form with the data provided by the form json
 // Only necessary props are passed to the inputs
@@ -68,13 +68,13 @@ const FormRenderer = (props: any) => {
             element?.classList.remove('border-red-300');
             errMessage?.classList.add('hidden');
         }
-        
-        let myPage = page; 
+
+        let myPage = page;
         const formId: HTMLElement | null = document.getElementById('form');
-    
+
         const childNodes: any = formId?.children;
         for (let i = 0; i < childNodes.length; i++) {
-            if(!(childNodes[i].classList.contains('hidden')) && (childNodes[i].nodeName.toLowerCase() === 'fieldset')) {
+            if (!(childNodes[i].classList.contains('hidden')) && (childNodes[i].nodeName.toLowerCase() === 'fieldset')) {
                 myPage = childNodes[i].id;
                 setPage(childNodes[i].id);
             }
@@ -86,7 +86,7 @@ const FormRenderer = (props: any) => {
         submitButton.disabled = true;
 
         if (myPage == pages - 1) {
-            
+
             if (submitButton) {
                 submitButton.disabled = false;
                 submitButton.classList.remove('hidden');
@@ -96,7 +96,7 @@ const FormRenderer = (props: any) => {
         }
 
     }
-    
+
     const btBw = () => {
         if (!handlePagesBw()) {
             return;
@@ -106,13 +106,13 @@ const FormRenderer = (props: any) => {
 
         const childNodes: any = formId?.children;
         for (let i = 0; i < childNodes.length; i++) {
-            if(!(childNodes[i].classList.contains('hidden')) && (childNodes[i].nodeName.toLowerCase() === 'fieldset')) {
+            if (!(childNodes[i].classList.contains('hidden')) && (childNodes[i].nodeName.toLowerCase() === 'fieldset')) {
                 setPage(childNodes[i].id);
             }
         }
 
         const submitButton = document.getElementById('submit') as HTMLButtonElement | null;
-        
+
         if (submitButton) {
             submitButton.disabled = true;
             submitButton.classList.add('hidden');
@@ -127,9 +127,9 @@ const FormRenderer = (props: any) => {
     console.log()
     return (
         <div>
-            <ProgressBar pageTotal={pages} page={Number(page) + 1}/>
+            <ProgressBar pageTotal={pages} page={Number(page) + 1} />
             <form id='form' className='section-default flex flex-col gap-4 py-32'>
-            <h1 className='text-2xl font-bold'>Desafios no deslocamento para grandes centros</h1>
+                <h1 className='text-2xl font-bold'>Desafios no deslocamento para grandes centros</h1>
                 {Object.values(formFormat).map((item: any, index: any) => {
 
                     return (
@@ -143,14 +143,14 @@ const FormRenderer = (props: any) => {
                                 item.type == 'radio' ?
                                     <Radio data={item.data} name={item.name} required={item.required} /> :
                                     item.type == 'checkbox' ?
-                                        <Checkbox data={item.data} name={item.name} goTo={item.goto}/> :
-                                            item.type == 'text' ?
-                                                <Text goTo={item.goto} name={item.name} placeholder={item.placeholder}/> :
-                                                    item.type == 'checkbox2' ?
-                                                        <Checkbox2 goTo={item.goto} data={item.data} name={item.name} /> :
-                                                            item.type == 'email' ?
-                                                                <Email goTo={item.goto} name={item.name} placeholder={item.placeholder}/> :
-                                                                    <Page goTo={item.goto} name={item.name}/> 
+                                        <Checkbox data={item.data} name={item.name} goTo={item.goto} /> :
+                                        item.type == 'text' ?
+                                            <Text goTo={item.goto} name={item.name} placeholder={item.placeholder} /> :
+                                            item.type == 'checkbox2' ?
+                                                <Checkbox2 goTo={item.goto} data={item.data} name={item.name} /> :
+                                                item.type == 'email' ?
+                                                    <Email goTo={item.goto} name={item.name} placeholder={item.placeholder} /> :
+                                                    <Page goTo={item.goto} name={item.name} />
 
                             }
                             <div className='flex flex-row items-center gap-4 text-red-500 hidden' id={`err-${index}`}>
