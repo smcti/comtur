@@ -1622,7 +1622,7 @@
                 "goto": "27"
             },
             {
-                "value": "nao_sei_flo",
+                "value": "nao_sei_decisão_voo_flo",
                 "label": "Não sei",
                 "goto": "27"
             }
@@ -2183,7 +2183,7 @@
         "title": "Deslocamento - Curitiba - Ônibus",
         "subtitle": "Você informou que quando precisa se deslocar para Curitiba o seu meio de transporte prioritário é <b>ônibus</b>. Por favor, <u>leia com atenção as alternativas</u> e <b>informe qual delas representa a realidade do seu local de residência.</b>",
         "required": false,
-        "name": "",
+        "name": "realidade_linhas_onibus_cwb",
         "data": [
             {
                 "value": "linha_curitiba",
