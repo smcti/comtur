@@ -37,6 +37,7 @@ const submit = async (event: any) => {
         });
 
         if (!response.ok) {
+            
             throw new Error('Request failed');
         }
 
