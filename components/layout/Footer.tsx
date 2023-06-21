@@ -27,7 +27,7 @@ const Footer = () => {
           {/* <img className="max-h-12" src="#" alt="logo" /> */}
         </div>
       </div>
-      <div className="section-default flex flex-col gap-4 text-center  pt-16">
+      <div className="section-default flex flex-col gap-4 text-center  pt-32">
         <div className="text-2xl text-gray-300"><span className="text-gray-50">PB</span> Forms</div>
         <hr />
         <div className="flex flex-col gap-4">
