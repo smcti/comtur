@@ -30,7 +30,7 @@ const Checkbox = (props: any) => {
                     {
                       subIndex == 0 ?
                         subItem.title :
-                          <input className="hover:cursor-pointer w-full h-full scale-125" type="checkbox" id={subItem.value} name={subItem.value} step={props.goTo} value={subItem.value}></input>
+                          <input className="hover:cursor-pointer w-full h-full scale-125 accent-indigo-500" type="checkbox" id={subItem.value} name={subItem.value} step={props.goTo} value={subItem.value}></input>
                     }
                   </td>
                 )

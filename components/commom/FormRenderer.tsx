@@ -169,7 +169,7 @@ const FormRenderer = (props: any) => {
                         <fieldset key={index} id={String(Object.keys(formFormat)[index])} className={`bg-white relative border rounded-md p-6 py-12 flex flex-col gap-8 ${index != 0 ? 'hidden' : ''}`} >
                             <div className='flex flex-row justify-between gap-4'>
                                 <div className='font-bold'>{item.title}</div>
-                                {(index != 0 && index != pages - 1) ? <h1 className='leading-5 min-w-[32px] h-8 bg-cello-800 text-zircon-50 flex items-center justify-center rounded-full'>{Number(keys[index])}</h1> : ''}
+                                {(index != 0 && index != pages - 1) ? <h1 className='leading-5 min-w-[32px] h-8 bg-indigo-500 text-zircon-50 flex items-center justify-center rounded-full'>{Number(keys[index])}</h1> : ''}
                             </div>
                             <div className={`leading-8 text-justify hyphens-auto ${index == 0 ? 'flex flex-col gap-4' : ''}`} dangerouslySetInnerHTML={{ __html: item.subtitle }}></div>
                             {

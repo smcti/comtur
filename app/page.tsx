@@ -4,7 +4,7 @@ import FormRenderer from '@components/commom/FormRenderer';
 
 const page = ({ params, searchParams }: { params: any, searchParams: any }) => {
     return (
-        <div className='bg-zircon'>
+        <div className='bg-gray-50'>
             <FormRenderer />
         </div>
     )
