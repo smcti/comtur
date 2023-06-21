@@ -11,6 +11,13 @@ import ProgressBar from '@components/ui/ProgressBar';
 import Page from '@components/formComponents/Page';
 import Checkbox2 from '@components/formComponents/Checkbox2';
 import Email from '@components/formComponents/Email';
+import ErrorModal from '@components/commom/Modal';
+import { test } from 'node:test';
+
+
+
+
+
 
 const keys = Object.keys(formFormat);
 const pages = keys.length;
@@ -35,25 +42,50 @@ const submit = async (event: any) => {
                 'Content-Type': 'application/json',
             },
         });
+        const responseData = await response.json();
 
-        if (!response.ok) {
-            
-            throw new Error('Request failed');
+        if (response.ok) {
+            const submitSucess: any = document.querySelector("#submit_sucess");
+            const submitSucessModal: any = document.querySelector("#sucess_modal");
+            const mainPage: any = document.querySelector("#main_page");
+
+            await submitSucessModal.showModal();
+            const config = { attributes: true };
+
+            const callback = (mutationList: any, observer: any) => {
+                for (const mutation of mutationList) {
+                    if (mutation.type === "attributes") {
+                        if (mutation.attributeName === "open") {
+                            console.log("Redirect");
+                            window.location.replace('https://google.com');
+
+                        }
+                    }
+                }
+            };
+
+            const observer = new MutationObserver(callback);
+            observer.observe(submitSucessModal, config);
+        }
+        else {
+            const submitError: any = document.querySelector("#submit_error");
+            const submitErrorModal: any = document.querySelector("#error_modal");
+            submitError.innerHTML = responseData.message;
+            submitErrorModal.showModal();
         }
 
-        // Handle the response here, e.g., parse JSON or check status
-        const responseData = await response.json();
-        window.location.replace('/obrigado')
-        console.log(responseData);
+
     } catch (error) {
         console.error(error);
     }
+
 }
 
 
 // Renders the form with the data provided by the form json
 // Only necessary props are passed to the inputs
 const FormRenderer = (props: any) => {
+
 
     const [page, setPage] = useState(0);
 
@@ -127,7 +159,7 @@ const FormRenderer = (props: any) => {
 
     console.log()
     return (
-        <div>
+        <div id="main_page">
             <ProgressBar pageTotal={pages} page={Number(page) + 1} />
             <form id='form' className='section-default flex flex-col gap-4 py-32'>
                 <h1 className='text-2xl font-bold'>Desafios no deslocamento para grandes centros</h1>
@@ -165,6 +197,9 @@ const FormRenderer = (props: any) => {
                     <button id='back' type='button' className='button hidden' onClick={btBw} >Voltar</button>
                 </div>
             </form>
+            <ErrorModal dialogId="error_modal" dialogTextId="submit_error" closeButton="submit_error_close" erro />
+            <ErrorModal dialogId="sucess_modal" dialogTextId="submit_sucess" closeButton="submit_sucess_close" />
+
         </div>
     )
 }

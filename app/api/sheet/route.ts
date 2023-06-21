@@ -82,7 +82,7 @@ export async function POST(req: Request) {
         })
 
         return NextResponse.json({
-            message: "Successfully inserterd data into COMTUR spreadsheets"
+            message: "Dados enviados com sucesso!"
         })
     } catch (error) {
         console.error(error);
