@@ -1,23 +1,31 @@
 const Footer = () => {
   return (
-    <footer className="mt-auto bg-cello py-32 text-zircon-50 font-poppins">
+    <footer className="mt-auto bg-indigo-500 py-32 text-zircon-50 font-poppins">
       <div className="section-default flex flex-col gap-8">
-        <h3 className="text-3xl w-full text-center">Parceiros</h3>
-        <div className="flex flex-row brightness-0 invert justify-between w-full gap-4">
-          <div className="max-h-12 w-fit">
-            <img className="max-h-12 w-auto" src="/assets/images/cacispar.png" alt="Logo cacispar" />
+        <div className="flex flex-col md:flex-row brightness-0 invert justify-between w-full gap-16">
+          <div className="flex flex-col w-fit gap-16">
+            <h3 className="text-3xl w-full">Realização</h3>
+            <div className="flex flex-col w-fit">
+              <h3 className="font-bold clamp-contur border-b border-white">COMTUR</h3>
+              <p className="clamp-contur-s leading-4">Conselho Municipal de Turismo</p>          
+            </div>
           </div>
-          <div className="max-h-12 w-fit">
-            <img className="max-h-12 w-auto" src="/assets/images/logomarca_agencia_regional.png" alt="logo" />
+          <div className="w-full flex flex-col gap-16">
+            <h3 className="text-3xl w-full">Parceiros</h3>
+            <div className="flex flex-row w-full justify-between gap-8">
+              <div className="max-h-12 w-fit">
+                <img className="max-h-12 w-auto" src="/assets/images/cacispar.png" alt="Logo cacispar" />
+              </div>
+              <div className="max-h-12 w-fit">
+                <img className="max-h-12 w-auto" src="/assets/images/logomarca_agencia_regional.png" alt="logo" />
+              </div>
+              <div className="max-h-12 w-fit">
+                <img className="max-h-12 w-auto" src="/assets/images/326444839_2333795833453568_810799049919276080_n.png" alt="logo" />
+              </div>
+            </div>
           </div>
-          <div className="max-h-12 w-fit">
-            <img className="max-h-12 w-auto" src="/assets/images/326444839_2333795833453568_810799049919276080_n.png" alt="logo" />
-          </div>
+          
           {/* <img className="max-h-12" src="#" alt="logo" /> */}
-          <div className="flex flex-col">
-            <h3 className="font-bold clamp-contur">COMTUR</h3>
-            <p className="clamp-contur-s">Conselho Municipal de Turismo</p>
-          </div>
         </div>
       </div>
       <div className="section-default flex flex-col gap-4 text-center  pt-16">
