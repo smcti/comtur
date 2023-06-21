@@ -4,6 +4,15 @@
 @tailwind utilities;
 
 @layer components {
+    .clamp-contur {
+        font-size: clamp(16px, 4vw, 29px);
+        line-height: clamp(1rem, 5vw, 2.25rem);
+    }
+
+    .clamp-contur-s {
+        font-size: clamp(6px, 1vw, 8px);
+    }
+
     .burguer-menu {
         @apply flex h-12 w-12 p-2;
     }

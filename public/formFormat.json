@@ -134,7 +134,7 @@
     },
     "4": {
         "type": "radio",
-        "title": "Perfil - Idade",
+        "title": "Perfil - Estado Civíl",
         "subtitle": "Por favor, informe <b>seu estado civil</b>",
         "required": true,
         "name": "estado_civil",
