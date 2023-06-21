@@ -2723,7 +2723,7 @@
         "type": "email",
         "title": "Perfil - email",
         "subtitle": "Por favor, insira seu email",
-        "placeholder": "email",
+        "placeholder": "exemplo@email.com",
         "required": false,
         "name": "email",
         "goto": "61"
