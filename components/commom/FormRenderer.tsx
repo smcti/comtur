@@ -11,7 +11,7 @@ import ProgressBar from '@components/ui/ProgressBar';
 import Page from '@components/formComponents/Page';
 import Checkbox2 from '@components/formComponents/Checkbox2';
 import Email from '@components/formComponents/Email';
-import ErrorModal from '@components/commom/Modal';
+import Modal from '@components/commom/Modal';
 import { test } from 'node:test';
 
 
@@ -197,8 +197,8 @@ const FormRenderer = (props: any) => {
                     <button id='back' type='button' className='button hidden' onClick={btBw} >Voltar</button>
                 </div>
             </form>
-            <ErrorModal dialogId="error_modal" dialogTextId="submit_error" closeButton="submit_error_close" erro />
-            <ErrorModal dialogId="sucess_modal" dialogTextId="submit_sucess" closeButton="submit_sucess_close" />
+            <Modal dialogId="error_modal" dialogTextId="submit_error" closeButton="submit_error_close" erro />
+            <Modal dialogId="sucess_modal" dialogTextId="submit_sucess" closeButton="submit_sucess_close" />
 
         </div>
     )
