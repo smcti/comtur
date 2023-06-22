@@ -51,22 +51,22 @@
         "arquitetura_engenharia": "Arquitetura | Engenharia",
         "artes": "Artes",
         "autonomo": "Autônomo (prestador de serviços sem vínculo empregatício)",
-        "bem_estar": "Bem-Estar | Clínica | Hospitalar | Nutrição | Saúde",
+        "bem_estar": "Bem-Estar",
         "comercio": "Comércio",
-        "comunicacao": "Comunicação (Design | Fotografia | Jornal | Mídia Digital | Publicidade | Rádio | Televisão | Vídeo)",
-        "construcao_imobiliario": "Construção | Imobiliário | Incorporação | Infraestrutura",
-        "cultura_eventos_shows": "Cultura | Eventos | Shows",
+        "comunicacao": "Comunicação",
+        "construcao_imobiliario": "Construção",
+        "cultura_eventos_shows": "Cultura",
         "educacao": "Educação",
         "esporte": "Esporte",
         "estudante": "Estudante",
-        "forcas_armadas": "Forças Armadas (Aeronáutica/Exército/Marinha)",
+        "forcas_armadas": "Forças Armadas",
         "industria": "Indústria",
-        "liberal": "Liberal (Advogado | Consultor | Contador | Dentista | Economista | Médico | Veterinário | Outro)",
+        "liberal": "Liberal",
         "prestacao_servicos": "Prestação de Serviços",
-        "seguranca_publica": "Segurança Pública (Bombeiros | Polícias Civil, Federal, Militar, Rod. Estadual, Rod. Federal | SAMU)",
-        "servico_publico": "Serviço Público (Municipal | Estadual | Federal)",
+        "seguranca_publica": "Segurança Pública",
+        "servico_publico": "Serviço Público",
         "tecnologia_informacao": "Tecnologia da Informação",
-        "turismo": "Turismo (Agência de Viagens | Consultoria | Gastronomia | Hotelaria | Locações | Transporte)",
+        "turismo": "Turismo",
         "outra_area_setor": "Outra área/setor"
     },
     "renda_familiar": {
@@ -101,9 +101,9 @@
         "outra_rede_social": "Nenhuma das anteriores / Outra"
     },
     "local_de_residencia": {
-        "sudoeste_pr": "Eu resido numa cidade da região Sudoeste do Paraná",
-        "oeste_sc": "Eu resido numa cidade da região Oeste de Santa Catarina",
-        "outro_local_residencia": "Eu não resido no Sudoeste do Paraná ou no Oeste de Santa Catarina"
+        "sudoeste_pr": "Sudoeste do Paraná",
+        "oeste_sc": "Oeste de Santa Catarina",
+        "outro_local_residencia": "Outro"
     },
     "cidade_spr": {
         "ampere": "Ampére",
