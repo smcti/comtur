@@ -47,8 +47,9 @@ const submit = async (event: any) => {
         if (response.ok) {
             const submitSucess: any = document.querySelector("#submit_sucess");
             const submitSucessModal: any = document.querySelector("#sucess_modal");
-            const mainPage: any = document.querySelector("#main_page");
-
+            const back: any = document.querySelector("#back");
+            const Submit: any = document.querySelector("#submit");
+            submitSucess.innerHTML = responseData.message;
             await submitSucessModal.showModal();
             const config = { attributes: true };
 
@@ -57,8 +58,9 @@ const submit = async (event: any) => {
                     if (mutation.type === "attributes") {
                         if (mutation.attributeName === "open") {
                             console.log("Redirect");
-                            window.location.replace('https://google.com');
-
+                            back.classList.add('hidden');
+                            Submit.classList.add('hidden');
+                            return window.location.replace('https://google.com');
                         }
                     }
                 }
