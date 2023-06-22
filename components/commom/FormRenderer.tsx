@@ -1,6 +1,7 @@
 import { Children, useState } from 'react';
 
 import { LuAlertCircle } from 'react-icons/lu';
+import { FaSpinner } from 'react-icons/fa';
 
 import formFormat from '@public/formFormat.json';
 import Checkbox from '@components/formComponents/Checkbox';
@@ -12,7 +13,6 @@ import Page from '@components/formComponents/Page';
 import Checkbox2 from '@components/formComponents/Checkbox2';
 import Email from '@components/formComponents/Email';
 import Modal from '@components/commom/Modal';
-import { test } from 'node:test';
 
 
 
@@ -23,6 +23,12 @@ const keys = Object.keys(formFormat);
 const pages = keys.length;
 const submit = async (event: any) => {
     event?.preventDefault()
+
+    const data: any = document.getElementById('submit');
+    const sending: any = document.getElementById('sendRef');
+    const loading: any = document.getElementById('loadRef');
+    sending.classList.add('hidden');
+    loading.classList.remove('hidden');
 
     const form: any = document.getElementById('form');
 
@@ -74,6 +80,8 @@ const submit = async (event: any) => {
             const submitErrorModal: any = document.querySelector("#error_modal");
             submitError.innerHTML = responseData.message;
             submitErrorModal.showModal();
+            sending.classList.remove('hidden');
+            loading.classList.add('hidden');
         }
 
 
@@ -194,7 +202,7 @@ const FormRenderer = (props: any) => {
                     )
                 })}
                 <div className='flex flex-row-reverse gap-4'>
-                    <button id='submit' type='button' className='button-send hidden' onClick={submit}>Enviar</button>
+                    <button id='submit' type='button' className='button-send hidden relative' onClick={submit}><span id='sendRef'>Enviar</span><FaSpinner id='loadRef' className='hidden animate-spin'/></button>
                     <button id='next' type='button' className='button' onClick={btFw} >Avançar</button>
                     <button id='back' type='button' className='button hidden' onClick={btBw} >Voltar</button>
                 </div>
