@@ -181,7 +181,7 @@ const FormRenderer = (props: any) => {
                                 <div className='font-bold'>{item.title}</div>
                                 {/* {(index != 0 && index != pages - 1) ? <h1 className='leading-5 min-w-[32px] h-8 bg-indigo-500 text-zircon-50 flex items-center justify-center rounded-full'>{Number(keys[index])}</h1> : ''} */}
                             </div>
-                            <div className={`leading-8 text-justify hyphens-auto ${index == 0 ? 'flex flex-col gap-4' : ''}`} dangerouslySetInnerHTML={{ __html: `<span>${(index != 0 && index != pages - 1) ? `${Number(keys[index])}) ` : ''}</span>` + item.subtitle }}></div>
+                            <div className={`leading-8 text-justify hyphens-auto ${index == 0 ? 'flex flex-col gap-4' : ''}`} dangerouslySetInnerHTML={{ __html: `<span>${(index != 0 && index != 61) ? `${Number(keys[index])}) ` : ''}</span>` + item.subtitle }}></div>
                             {
                                 item.type == 'radio' ?
                                 <Radio data={item.data} name={item.name} required={item.required} /> :
