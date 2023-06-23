@@ -176,7 +176,7 @@
             {
                 "value": "aposentado(a)/pensionista",
                 "label": "Aposentado(a)/Pensionista",
-                "goto": "6"
+                "goto": "7"
             },
             {
                 "value": "aprendiz(com_remuneracao)",
@@ -201,12 +201,12 @@
             {
                 "value": "desempregado(a)",
                 "label": "Desempregado(a)",
-                "goto": "6"
+                "goto": "8"
             },
             {
                 "value": "do_lar(dona_de_casa)",
                 "label": "Do lar (dona de casa)",
-                "goto": "6"
+                "goto": "8"
             },
             {
                 "value": "empresario",
@@ -595,7 +595,7 @@
             {
                 "value": "dois_vizinhos",
                 "label": "Dois Vizinhos",
-                "goto": "12"
+                "goto": "19"
             },
             {
                 "value": "eneas_marques",
@@ -610,7 +610,7 @@
             {
                 "value": "francisco_beltrao",
                 "label": "Francisco Beltrão",
-                "goto": "12"
+                "goto": "19"
             },
             {
                 "value": "honorio_serpa",
@@ -660,7 +660,7 @@
             {
                 "value": "pato_branco",
                 "label": "Pato Branco",
-                "goto": "12"
+                "goto": "19"
             },
             {
                 "value": "perola_oeste",
@@ -929,7 +929,7 @@
             {
                 "value": "chapeco",
                 "label": "Chapecó",
-                "goto": "16"
+                "goto": "19"
             },
             {
                 "value": "cordilheira_alta",
