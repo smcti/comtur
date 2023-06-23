@@ -112,6 +112,8 @@ const FormRenderer = (props: any) => {
             errMessage?.classList.add('hidden');
         }
 
+        console.log(page);
+
         let myPage = page;
         const formId: HTMLElement | null = document.getElementById('form');
 
@@ -123,12 +125,13 @@ const FormRenderer = (props: any) => {
             }
         }
 
+
         document.getElementById('next')?.classList.remove('hidden');
         document.getElementById('back')?.classList.remove('hidden');
         const submitButton = document.getElementById('submit') as HTMLButtonElement;
         submitButton.disabled = true;
 
-        if (myPage == pages - 1) {
+        if (myPage == 61) {
 
             if (submitButton) {
                 submitButton.disabled = false;
@@ -149,6 +152,7 @@ const FormRenderer = (props: any) => {
 
         const childNodes: any = formId?.children;
         for (let i = 0; i < childNodes.length; i++) {
+            
             if (!(childNodes[i].classList.contains('hidden')) && (childNodes[i].nodeName.toLowerCase() === 'fieldset')) {
                 setPage(childNodes[i].id);
             }

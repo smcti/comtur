@@ -149,11 +149,32 @@
         "vere": "Verê",
         "vitorino": "Vitorino"
     },
+    "dois_vizinhos_pb_fb_cv":
+    {
+        "muita_frequencia_dv_pb_fb_cv": "Muita frequência",
+        "alguma_frequencia_dv_pb_fb_cv": "Alguma frequência",
+        "pouca_frequencia_dv_pb_fb_cv": "Pouca frequência",
+        "nao_se_desloca_dv_pb_fb_cv": "Não se desloca"
+    },
+    "francisco_beltrao_pb_fb_cv":
+    {
+        "muita_frequencia_fb_pb_dv_cv": "Muita frequência",
+        "alguma_frequencia_fb_pb_dv_cv": "Alguma frequência",
+        "pouca_frequencia_fb_pb_dv_cv": "Pouca frequência",
+        "nao_se_desloca_fb_pb_dv_cv": "Não se desloca"
+    },
+    "pato_branco_pb_fb_cv":
+    {
+        "muita_frequencia_pb_dv_fb_cv": "Muita frequência",
+        "alguma_frequencia_pb_dv_fb_cv": "Alguma frequência",
+        "pouca_frequencia_pb_dv_fb_cv": "Pouca frequência",
+        "nao_se_desloca_pb_dv_fb_cv": "Não se desloca"
+    },
     "deslocamento_dv_fb_pb_spr": {
-        "com_muita_frequencia_spr": "Sim, com muita frequência",
-        "com_alguma_frequencia_spr": "Sim, com alguma frequência",
-        "com_pouca_frequencia_spr": "Sim, com pouca frequência",
-        "nao_preciso_me_deslocar_spr": "Não preciso me deslocar para essas cidades"
+        "com_muita_frequencia_spr": "Muita frequência",
+        "com_alguma_frequencia_spr": "Alguma frequência",
+        "com_pouca_frequencia_spr": "Pouca frequência",
+        "nao_preciso_me_deslocar_spr": "Não se desloca"
     },
     "cidade_osc": {
         "abelardo_luz": "Abelardo Luz",
@@ -215,10 +236,10 @@
         "sc_outra_cidade": "Outra cidade"
     },
     "desloca-se_para_cpc_dv_fb_osc": {
-        "com_muita_frequencia_osc": "Sim, com muita frequência",
-        "com_alguma_frequencia_osc": "Sim, com alguma frequência",
-        "com_pouca_frequencia_osc": "Sim, com pouca frequência",
-        "nao_preciso_deslocar_osc": "Não preciso me deslocar para essas cidades"
+        "com_muita_frequencia_osc": "Muita frequência",
+        "com_alguma_frequencia_osc": "Alguma frequência",
+        "com_pouca_frequencia_osc": "Pouca frequência",
+        "nao_preciso_deslocar_osc": "Não se desloca"
     },
     "desloca_para_florianopolis": {
         "Preciso me deslocar para Florianópolis uma vez por semana": "Preciso me deslocar para Florianópolis uma vez por semana",

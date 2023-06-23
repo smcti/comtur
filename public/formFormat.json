@@ -595,7 +595,7 @@
             {
                 "value": "dois_vizinhos",
                 "label": "Dois Vizinhos",
-                "goto": "19"
+                "goto": "11.1"
             },
             {
                 "value": "eneas_marques",
@@ -610,7 +610,7 @@
             {
                 "value": "francisco_beltrao",
                 "label": "Francisco Beltrão",
-                "goto": "19"
+                "goto": "11.3"
             },
             {
                 "value": "honorio_serpa",
@@ -660,7 +660,7 @@
             {
                 "value": "pato_branco",
                 "label": "Pato Branco",
-                "goto": "19"
+                "goto": "11.5"
             },
             {
                 "value": "perola_oeste",
@@ -743,6 +743,426 @@
                 "goto": "12"
             }
         ]
+    },
+    "11.1": {
+        "type": "radio",
+        "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
+        "subtitle": "Ao longo do ano você eventualmente precisa se deslocar do seu local de residência para Francisco Beltrão e/ou Pato Branco ou Cascavel?",
+        "required": false,
+        "name": "dois_vizinhos_pb_fb_cv",
+        "data": [
+            {
+                "value": "muita_frequencia_dv_pb_fb_cv",
+                "label": "Sim, com muita frequência",
+                "goto": "11.2"
+            },
+            {
+                "value": "alguma_frequencia_dv_pb_fb_cv",
+                "label": "Sim, com alguma frequência",
+                "goto": "11.2"
+            },
+            {
+                "value": "pouca_frequencia_dv_pb_fb_cv",
+                "label": "Sim, com pouca frequência",
+                "goto": "11.2"
+            },
+            {
+                "value": "nao_se_desloca_dv_pb_fb_cv",
+                "label": "Não preciso me deslocar para essas cidades",
+                "goto": "11.2"
+            }
+        ]
+    },
+    "11.2": {
+        "type": "checkbox",
+        "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
+        "subtitle": "Na questão anterior você respondeu que eventualmente precisa se deslocar do seu local de residência Francisco Beltrão e/ou Pato Branco e/ou Cascavel ao longo do ano. Qual ou quais as principais razões desse(s) deslocamento(s)? Você pode assinalar mais que uma resposta.",
+        "required": false,
+        "name": "razoes_deslocamento_dv_pb_fb_cv",
+        "data": [
+            [
+                {
+                    "title": "Francisco Beltrão"
+                },
+                {
+                    "title": "Pato Branco"
+                },
+                {
+                    "title": "Cascavel"
+                }
+            ],
+            [
+                {
+                    "title": "Acesso à saúde (pública e/ou privada)",
+                    "value": "spr_dv_acesso_saude"
+                },
+                {
+                    "title": "",
+                    "value": "spr_dv_acesso_saude_dv"
+                },
+                {
+                    "title": "",
+                    "value": "spr_dv_acesso_saude_fb"
+                },
+                {
+                    "title": "",
+                    "value": "spr_dv_acesso_saude_pb"
+                }
+            ],
+            [
+                {
+                    "title": "Compras",
+                    "value": "spr_dv_compras"
+                },
+                {
+                    "title": "",
+                    "value": "spr_dv_compras_dv"
+                },
+                {
+                    "title": "",
+                    "value": "spr_dv_compras_fb"
+                },
+                {
+                    "title": "",
+                    "value": "spr_dv_compras_pb"
+                }
+            ],
+            [
+                {
+                    "title": "Estudos",
+                    "value": "spr_dv_estudos"
+                },
+                {
+                    "title": "",
+                    "value": "spr_dv_estudos_dv"
+                },
+                {
+                    "title": "",
+                    "value": "spr_dv_estudos_fb"
+                },
+                {
+                    "title": "",
+                    "value": "spr_dv_estudos_pb"
+                }
+            ],
+            [
+                {
+                    "title": "Negócios / Trabalho",
+                    "value": "spr_dv_negocios_trabalho"
+                },
+                {
+                    "title": "",
+                    "value": "spr_dv_negocios_trabalho_dv"
+                },
+                {
+                    "title": "",
+                    "value": "spr_dv_negocios_trabalho_fb"
+                },
+                {
+                    "title": "",
+                    "value": "spr_dv_negocios_trabalho_pb"
+                }
+            ],
+            [
+                {
+                    "title": "Outra razão",
+                    "value": "spr_dv_outro"
+                },
+                {
+                    "title": "",
+                    "value": "spr_dv_outro_dv"
+                },
+                {
+                    "title": "",
+                    "value": "spr_dv_outro_fb"
+                },
+                {
+                    "title": "",
+                    "value": "spr_dv_outro_pb"
+                }
+            ]
+        ],
+        "goto": 19
+    },
+    "11.3": {
+        "type": "radio",
+        "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
+        "subtitle": " Ao longo do ano você eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Pato Branco ou Cascavel?",
+        "required": false,
+        "name": "francisco_beltrao_pb_fb_cv",
+        "data": [
+            {
+                "value": "muita_frequencia_fb_pb_dv_cv",
+                "label": "Sim, com muita frequência",
+                "goto": "11.4"
+            },
+            {
+                "value": "alguma_frequencia_fb_pb_dv_cv",
+                "label": "Sim, com alguma frequência",
+                "goto": "11.4"
+            },
+            {
+                "value": "pouca_frequencia_fb_pb_dv_cv",
+                "label": "Sim, com pouca frequência",
+                "goto": "11.4"
+            },
+            {
+                "value": "nao_se_desloca_fb_pb_dv_cv",
+                "label": "Não preciso me deslocar para essas cidades",
+                "goto": "11.4"
+            }
+        ]
+    },
+    "11.4": {
+        "type": "checkbox",
+        "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
+        "subtitle": "Na questão anterior você respondeu que eventualmente precisa se deslocar do seu local de residência Francisco Beltrão e/ou Pato Branco e/ou Cascavel ao longo do ano. Qual ou quais as principais razões desse(s) deslocamento(s)? Você pode assinalar mais que uma resposta.",
+        "required": false,
+        "name": "razoes_deslocamento_fb_pb_dv_cv",
+        "data": [
+            [
+                {
+                    "title": "Dois Vizinhos"
+                },
+                {
+                    "title": "Pato Branco"
+                },
+                {
+                    "title": "Cascavel"
+                }
+            ],
+            [
+                {
+                    "title": "Acesso à saúde (pública e/ou privada)",
+                    "value": "spr_fb_acesso_saude"
+                },
+                {
+                    "title": "",
+                    "value": "spr_fb_acesso_saude_dv"
+                },
+                {
+                    "title": "",
+                    "value": "spr_fb_acesso_saude_fb"
+                },
+                {
+                    "title": "",
+                    "value": "spr_fb_acesso_saude_pb"
+                }
+            ],
+            [
+                {
+                    "title": "Compras",
+                    "value": "spr_fb_compras"
+                },
+                {
+                    "title": "",
+                    "value": "spr_fb_compras_dv"
+                },
+                {
+                    "title": "",
+                    "value": "spr_fb_compras_fb"
+                },
+                {
+                    "title": "",
+                    "value": "spr_fb_compras_pb"
+                }
+            ],
+            [
+                {
+                    "title": "Estudos",
+                    "value": "spr_fb_estudos"
+                },
+                {
+                    "title": "",
+                    "value": "spr_fb_estudos_dv"
+                },
+                {
+                    "title": "",
+                    "value": "spr_fb_estudos_fb"
+                },
+                {
+                    "title": "",
+                    "value": "spr_fb_estudos_pb"
+                }
+            ],
+            [
+                {
+                    "title": "Negócios / Trabalho",
+                    "value": "spr_fb_negocios_trabalho"
+                },
+                {
+                    "title": "",
+                    "value": "spr_fb_negocios_trabalho_dv"
+                },
+                {
+                    "title": "",
+                    "value": "spr_fb_negocios_trabalho_fb"
+                },
+                {
+                    "title": "",
+                    "value": "spr_fb_negocios_trabalho_pb"
+                }
+            ],
+            [
+                {
+                    "title": "Outra razão",
+                    "value": "spr_fb_outro"
+                },
+                {
+                    "title": "",
+                    "value": "spr_fb_outro_dv"
+                },
+                {
+                    "title": "",
+                    "value": "spr_fb_outro_fb"
+                },
+                {
+                    "title": "",
+                    "value": "spr_fb_outro_pb"
+                }
+            ]
+        ],
+        "goto": 19
+    },
+    "11.5": {
+        "type": "radio",
+        "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
+        "subtitle": "Ao longo do ano você eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Francisco Beltrão ou Cascavel?",
+        "required": false,
+        "name": "pato_branco_pb_fb_cv",
+        "data": [
+            {
+                "value": "muita_frequencia_pb_dv_fb_cv",
+                "label": "Sim, com muita frequência",
+                "goto": "11.6"
+            },
+            {
+                "value": "alguma_frequencia_pb_dv_fb_cv",
+                "label": "Sim, com alguma frequência",
+                "goto": "11.6"
+            },
+            {
+                "value": "pouca_frequencia_pb_dv_fb_cv",
+                "label": "Sim, com pouca frequência",
+                "goto": "11.6"
+            },
+            {
+                "value": "nao_se_desloca_pb_dv_fb_cv",
+                "label": "Não preciso me deslocar para essas cidades",
+                "goto": "11.6"
+            }
+        ]
+    },  
+    "11.6": {
+        "type": "checkbox",
+        "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
+        "subtitle": "Na questão anterior você respondeu que eventualmente precisa se deslocar do seu local de residência Francisco Beltrão e/ou Pato Branco e/ou Cascavel ao longo do ano. Qual ou quais as principais razões desse(s) deslocamento(s)? Você pode assinalar mais que uma resposta.",
+        "required": false,
+        "name": "razoes_deslocamento_pb_fb_dv_cv",
+        "data": [
+            [
+                {
+                    "title": "Dois Vizinhos"
+                },
+                {
+                    "title": "Pato Branco"
+                },
+                {
+                    "title": "Cascavel"
+                }
+            ],
+            [
+                {
+                    "title": "Acesso à saúde (pública e/ou privada)",
+                    "value": "spr_pb_acesso_saude"
+                },
+                {
+                    "title": "",
+                    "value": "spr_pb_acesso_saude_dv"
+                },
+                {
+                    "title": "",
+                    "value": "spr_pb_acesso_saude_fb"
+                },
+                {
+                    "title": "",
+                    "value": "spr_pb_acesso_saude_cv"
+                }
+            ],
+            [
+                {
+                    "title": "Compras",
+                    "value": "spr_pb_compras"
+                },
+                {
+                    "title": "",
+                    "value": "spr_pb_compras_dv"
+                },
+                {
+                    "title": "",
+                    "value": "spr_pb_compras_fb"
+                },
+                {
+                    "title": "",
+                    "value": "spr_pb_compras_cv"
+                }
+            ],
+            [
+                {
+                    "title": "Estudos",
+                    "value": "spr_pb_estudos"
+                },
+                {
+                    "title": "",
+                    "value": "spr_pb_estudos_dv"
+                },
+                {
+                    "title": "",
+                    "value": "spr_pb_estudos_fb"
+                },
+                {
+                    "title": "",
+                    "value": "spr_pb_estudos_cv"
+                }
+            ],
+            [
+                {
+                    "title": "Negócios / Trabalho",
+                    "value": "spr_pb_negocios_trabalho"
+                },
+                {
+                    "title": "",
+                    "value": "spr_pb_negocios_trabalho_dv"
+                },
+                {
+                    "title": "",
+                    "value": "spr_pb_negocios_trabalho_fb"
+                },
+                {
+                    "title": "",
+                    "value": "spr_pb_negocios_trabalho_cv"
+                }
+            ],
+            [
+                {
+                    "title": "Outra razão",
+                    "value": "spr_pb_outro"
+                },
+                {
+                    "title": "",
+                    "value": "spr_pb_outro_dv"
+                },
+                {
+                    "title": "",
+                    "value": "spr_pb_outro_fb"
+                },
+                {
+                    "title": "",
+                    "value": "spr_pb_outro_cv"
+                }
+            ]
+        ],
+        "goto": 19
     },
     "12": {
         "type": "radio",
@@ -2732,6 +3152,6 @@
         "type": "page",
         "title": "Conclusão",
         "subtitle": "<p>Obrigado por participar desta pesquisa</p>",
-        "goto": "1"
+        "goto": "last"
     }
 }
