@@ -13,7 +13,7 @@ export const metadata = {
     {
       rel: 'icon',
       type: 'image/png',
-      url: '/assets/icons/C.png',
+      url: '/assets/icons/C-round.png',
       // media: '(prefers-color-scheme: dark)'
     }
   ]
