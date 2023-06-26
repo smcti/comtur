@@ -1086,7 +1086,7 @@
     "11.5": {
         "type": "radio",
         "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
-        "subtitle": "Ao longo do ano você eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Francisco Beltrão ou Cascavel?",
+        "subtitle": "Ao longo do ano você eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Francisco Beltrão e/ou Cascavel?",
         "required": false,
         "name": "pato_branco_pb_fb_cv",
         "data": [
