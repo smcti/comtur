@@ -39,7 +39,7 @@
             {
                 "value": "16_a_17 anos",
                 "label": "16 a 17 anos",
-                "goto": "60"
+                "goto": "3"
             },
             {
                 "value": "18_a_24 anos",
@@ -199,14 +199,19 @@
                 "goto": "6"
             },
             {
-                "value": "desempregado(a)",
-                "label": "Desempregado(a)",
-                "goto": "8"
+                "value": "desempregado-procurando-emprego",
+                "label": "Desempregado(a) - Procurando emprego",
+                "goto": "7"
+            },
+            {
+                "value": "desempregado-nao-procurando-emprego",
+                "label": "Desempregado(a) - Não procurando emprego",
+                "goto": "7"
             },
             {
                 "value": "do_lar(dona_de_casa)",
                 "label": "Do lar (dona de casa)",
-                "goto": "8"
+                "goto": "7"
             },
             {
                 "value": "empresario",
@@ -359,32 +364,86 @@
             {
                 "value": "ate_1320",
                 "label": "Até R$ 1.320,00",
-                "goto": "8"
+                "goto": "7.1"
             },
             {
                 "value": "1321_2640",
                 "label": "Entre R$ 1.321,00 e R$ 2.640,00",
-                "goto": "8"
+                "goto": "7.1"
             },
             {
                 "value": "2641_3960",
                 "label": "Entre R$ 2.641,00 e R$ 3.960,00",
-                "goto": "8"
+                "goto": "7.1"
             },
             {
                 "value": "3961_6600",
                 "label": "Entre R$ 3.961,00 e R$ 6.600,00",
-                "goto": "8"
+                "goto": "7.1"
             },
             {
                 "value": "6601_13200",
                 "label": "Entre R$ 6.601,00 e R$ 13.200,00",
-                "goto": "8"
+                "goto": "7.1"
             },
             {
                 "value": "acima_13200",
                 "label": "Acima de R$ 13.200,00",
+                "goto": "7.1"
+            }
+        ]
+    },
+    "7.1": {
+        "type": "radio",
+        "title": "Perfil - Renda Familiar",
+        "subtitle": "Você ou alguém na sua residência faz uso de benefícios sociais (Auxílio Brasil, Bolsa Família etc.)?",
+        "required": true,
+        "name": "uso_auxilio",
+        "data": [
+            {
+                "value": "ua_sim",
+                "label": "Sim",
+                "goto": "7.2"
+            },
+            {
+                "value": "ua_nao",
+                "label": "Não",
                 "goto": "8"
+            },
+            {
+                "value": "ua_nao_sei",
+                "label": "Não sei",
+                "goto": "8"
+            }
+        ]
+    },
+    "7.2": {
+        "type": "checkbox2",
+        "title": "Perfil - Renda Familiar",
+        "subtitle": "Você ou alguém na sua residência faz uso de benefícios sociais (Auxílio Brasil, Bolsa Família etc.)?",
+        "required": false,
+        "name": "auxilio_x",
+        "goto": "8",
+        "data": [
+            {
+                "value": "auxilio_x-brasil",
+                "label": "Auxílio Brasil"
+            },
+            {
+                "value": "auxilio_x-gas",
+                "label": "Auxílio Gás"
+            }, 
+            {
+                "value": "auxilio_x-BPC",
+                "label": "Benefício de Prestação Continuada (BPC)"
+            }, 
+            {
+                "value": "auxilio_x-familia",
+                "label": "Bolsa Família"
+            }, 
+            {
+                "value": "auxilio_x-outro",
+                "label": "Outro(s) benefício(s)"
             }
         ]
     },
@@ -747,7 +806,7 @@
     "11.1": {
         "type": "radio",
         "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
-        "subtitle": "Ao longo do ano você eventualmente precisa se deslocar do seu local de residência para Francisco Beltrão e/ou Pato Branco ou Cascavel?",
+        "subtitle": "Ao longo do ano você eventualmente precisa se deslocar do seu local de residência para Francisco Beltrão e/ou Pato Branco e/ou Cascavel?",
         "required": false,
         "name": "dois_vizinhos_pb_fb_cv",
         "data": [
@@ -769,14 +828,14 @@
             {
                 "value": "nao_se_desloca_dv_pb_fb_cv",
                 "label": "Não preciso me deslocar para essas cidades",
-                "goto": "11.2"
+                "goto": "19"
             }
         ]
     },
     "11.2": {
         "type": "checkbox",
         "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
-        "subtitle": "Na questão anterior você respondeu que eventualmente precisa se deslocar do seu local de residência Francisco Beltrão e/ou Pato Branco e/ou Cascavel ao longo do ano. Qual ou quais as principais razões desse(s) deslocamento(s)? Você pode assinalar mais que uma resposta.",
+        "subtitle": "Na questão anterior você respondeu que eventualmente precisa se deslocar do seu local de residência para Francisco Beltrão e/ou Pato Branco e/ou Cascavel ao longo do ano. Qual ou quais as principais razões desse(s) deslocamento(s)? Você pode assinalar mais que uma resposta.",
         "required": false,
         "name": "razoes_deslocamento_dv_pb_fb_cv",
         "data": [
@@ -887,7 +946,7 @@
     "11.3": {
         "type": "radio",
         "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
-        "subtitle": " Ao longo do ano você eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Pato Branco ou Cascavel?",
+        "subtitle": " Ao longo do ano você eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Pato Branco e/ou Cascavel?",
         "required": false,
         "name": "francisco_beltrao_pb_fb_cv",
         "data": [
@@ -909,14 +968,14 @@
             {
                 "value": "nao_se_desloca_fb_pb_dv_cv",
                 "label": "Não preciso me deslocar para essas cidades",
-                "goto": "11.4"
+                "goto": "19"
             }
         ]
     },
     "11.4": {
         "type": "checkbox",
         "title": "Perfil - Local de Residência (Sudoeste do Paraná)",
-        "subtitle": "Na questão anterior você respondeu que eventualmente precisa se deslocar do seu local de residência Francisco Beltrão e/ou Pato Branco e/ou Cascavel ao longo do ano. Qual ou quais as principais razões desse(s) deslocamento(s)? Você pode assinalar mais que uma resposta.",
+        "subtitle": "Na questão anterior você respondeu que eventualmente precisa se deslocar do seu local de residência para Dois Vizinhos e/ou Pato Branco e/ou Cascavel ao longo do ano. Qual ou quais as principais razões desse(s) deslocamento(s)? Você pode assinalar mais que uma resposta.",
         "required": false,
         "name": "razoes_deslocamento_fb_pb_dv_cv",
         "data": [
@@ -1049,7 +1108,7 @@
             {
                 "value": "nao_se_desloca_pb_dv_fb_cv",
                 "label": "Não preciso me deslocar para essas cidades",
-                "goto": "11.6"
+                "goto": "19"
             }
         ]
     },  
@@ -1065,7 +1124,7 @@
                     "title": "Dois Vizinhos"
                 },
                 {
-                    "title": "Pato Branco"
+                    "title": "Francisco Beltrão"
                 },
                 {
                     "title": "Cascavel"
@@ -1407,8 +1466,8 @@
                 "goto": "16"
             },
             {
-                "value": "guarambu",
-                "label": "Guarambú",
+                "value": "guatambu",
+                "label": "Guatambú",
                 "goto": "16"
             },
             {
@@ -1990,7 +2049,7 @@
             {
                 "value": "nao_utilizaria_flo",
                 "label": "Não utilizaria",
-                "goto": "26"
+                "goto": "27"
             },
             {
                 "value": "nao_sei_flo",
@@ -2362,7 +2421,7 @@
     "36": {
         "type": "radio",
         "title": "Deslocamento - São Paulo -  Avião - Preferência Campinas / Congonhas / Guarulhos",
-        "subtitle": "Caso uma companhia aérea disponibilizasse <b>voo saindo do Aeroporto Regional de Pato Branco para SÂO PAULO, <u>qual sua preferência pelo aeroporto de destino</u>?</b>",
+        "subtitle": "Caso uma companhia aérea disponibilizasse <b>voo saindo do Aeroporto Regional de Pato Branco para SÃO PAULO, <u>qual sua preferência pelo aeroporto de destino</u>?</b>",
         "required": false,
         "name": "preferencia_aeroporto_destino_sp",
         "data": [
@@ -2985,7 +3044,7 @@
             {
                 "value": "nao_conexao_cwb",
                 "label": "Não",
-                "goto": "57"
+                "goto": "58"
             }
         ]
     },
@@ -3096,7 +3155,7 @@
             {
                 "value": "nao_utilizaria_cwb",
                 "label": "Não utilizaria",
-                "goto": "59"
+                "goto": "60"
             },
             {
                 "value": "nao_sei_voo_mesmo_dia_cwb",

@@ -15,14 +15,14 @@ export async function POST(req: Request) {
             range: headerRange,
         });
 
-        console.log(values);
         const checkbox_keys = [
             "spr_acesso_saude", "spr_compras", "spr_estudos", "spr_negocios_trabalho", "spr_outro",
             "spr_dv_acesso_saude", "spr_dv_compras", "spr_dv_estudos", "spr_dv_negocios_trabalho", "spr_dv_outro",
             "spr_fb_acesso_saude", "spr_fb_compras", "spr_fb_estudos", "spr_fb_negocios_trabalho", "spr_fb_outro",
             "spr_pb_acesso_saude", "spr_pb_compras", "spr_pb_estudos", "spr_pb_negocios_trabalho", "spr_pb_outro",
             "osc_acesso_saude", "osc_compras", "osc_estudos", "osc_negocios_trabalho", "osc_outro",
-            "destino_conexoes_cwb"
+            "destino_conexoes_cwb",
+            "auxilio_x"
         ];
         checkbox_keys.forEach(checkboxKey => {
             const matchingValues = Object.entries(values)

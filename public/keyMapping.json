@@ -38,7 +38,8 @@
         "assalariado(a)_com_registro": "Assalariado(a) COM REGISTRO em carteira",
         "assalariado(a)_sem_registro": "Assalariado(a) SEM REGISTRO em carteira",
         "autonomo(a)": "Autônomo(a)",
-        "desempregado(a)": "Desempregado(a)",
+        "desempregado-procurando-emprego": "Desempregado - Procurando Emprego",
+        "desempregado-nao-procurando-emprego": "Desempregado - Não Procurando Emprego",
         "do_lar(dona_de_casa)": "Do lar (dona de casa)",
         "empresario": "Empresário(a)",
         "estagiario(com_remuneração)": "Estagiário(a) (com remuneração)",
@@ -76,6 +77,11 @@
         "3961_6600": "Entre R$ 3.961,00 e R$ 6.600,00",
         "6601_13200": "Entre R$ 6.601,00 e R$ 13.200,00",
         "acima_13200": "Acima de R$ 13.200,00"
+    },
+    "uso_auxilio":{
+        "ua_sim": "Sim",
+        "ua_nao": "Não",
+        "ua_nao_sei": "Não sei"        
     },
     "fonte_de_informacao": {
         "acessar_sites": "Acessar sites de notícias",
