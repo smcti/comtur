@@ -36,12 +36,17 @@ export const getCurrentPage = () => {
       if ((child.type === "radio" || child.type === "checkbox") && child.checked) {
         return child.step;
       }
+      console.log(child.nodeName)
 
-      if (child.nodeName.toLowerCase() === 'tr') {
-        const trNode = child.childNodes;
-        for (let k = 0; k < trNode.length; k++) {
-          if (trNode[k].firstElementChild?.checked) {
-            return trNode[k].firstElementChild.step;
+      // FIXME WHAT THE HECK IS THIS?
+      if (child.nodeName.toLowerCase() === 'tbody') {
+        for (let k = 0; k < child.childNodes.length; k++) {
+          console.log(child.childNodes[k])
+          const trNode = child.childNodes[k].childNodes;
+          for (let l = 0; l < trNode.length; l++) {
+            if (trNode[l].firstElementChild?.checked) {
+              return trNode[l].firstElementChild.step;
+            }
           }
         }
       }
