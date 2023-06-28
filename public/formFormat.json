@@ -2674,7 +2674,7 @@
     "43": {
         "type": "radio",
         "title": "SBPO - Uso do Aeroporto",
-        "subtitle": "Na questão anterior você respondeu que quando precisa se deslocar para Curitiba o seu meio de transporte prioritário é avião. Durante o ano de 2022 você utilizou os voos da Azul Linhas Aéreas Brasileiras no Aeroporto Regional de Pato Branco para se deslocar até Curitiba?",
+        "subtitle": "Na questão anterior você respondeu que quando precisa se deslocar para Curitiba o seu meio de transporte prioritário é avião. Durante o ano de 2022 você utilizou o voo Curitiba-Pato Branco no Aeroporto Regional de Pato Branco para se deslocar até Curitiba?",
         "required": false,
         "name": "uso_azul_aeroporto_pato_branco",
         "data": [
@@ -2853,7 +2853,7 @@
     "49": {
         "type": "radio",
         "title": "SBPO - Uso do Aeroporto - Despacho de Bagagem",
-        "subtitle": "De modo geral, <b>você despachou ou costuma despachar bagagem nos voos da Azul Linhas Aéreas Brasileiras</b> no Aeroporto Regional de Pato Branco?",
+        "subtitle": "De modo geral, <b>você despachou ou costuma despachar bagagem no voo Curitiba - Pato Branco</b> no Aeroporto Regional de Pato Branco?",
         "required": false,
         "name": "despacho_bagagem_azul_cwb",
         "data": [
@@ -2877,7 +2877,7 @@
     "50": {
         "type": "radio",
         "title": "SBPO - Uso do Aeroporto - Antecedência de Compra de Passagem",
-        "subtitle": "De modo geral, <b>com quanto tempo de antecedência você comprou a(s) passagem(ns) da Azul Linhas Aéreas Brasileiras</b>?",
+        "subtitle": "De modo geral, <b>com quanto tempo de antecedência você comprou a(s) passagem(ns) para o voo Curitiba - Pato Branco no Aeroporto Regional de Pato Branco?</b>?",
         "required": false,
         "name": "antecedencia_compra_passagem_azul_cwb",
         "data": [
@@ -2921,7 +2921,7 @@
     "51": {
         "type": "radio",
         "title": "SBPO - Uso do Aeroporto - Pagamento da Passagem",
-        "subtitle": "Por gentileza informe quem, na maioria das vezes, <b>pagou pela(s) passagem(ns) da Azul Linhas Aéreas Brasileiras</b> quando você viajou para Curitiba a partir do Aeroporto Regional de Pato Branco.",
+        "subtitle": "Por gentileza informe quem, na maioria das vezes, <b>pagou pela(s) passagem(ns) para o voo Curitiba - Pato Branco</b> no Aeroporto Regional de Pato Branco.",
         "required": false,
         "name": "pagamento_passagem_cwb",
         "data": [
@@ -2950,7 +2950,7 @@
     "52": {
         "type": "radio",
         "title": "SBPO - Uso do Aeroporto - Número de Viagens",
-        "subtitle": "Ao longo de 2022 <b>quantas vezes aproximadamente</b> você utilizou o voo da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba?",
+        "subtitle": "Ao longo de 2022 <b>quantas vezes aproximadamente</b> você utilizou o voo Curitiba - Pato Branco no Aeroporto Regional de Pato Branco para se deslocar até Curitiba?",
         "required": false,
         "name": "numero_viagens_cwb",
         "data": [
@@ -2979,7 +2979,7 @@
     "53": {
         "type": "radio",
         "title": "SBPO - Uso do Aeroporto - Condição de Passageiro",
-        "subtitle": "Por favor, selecione a <b>opção que melhor representa a sua condição de passageiro</b> quando utilizou o voo da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba no ano de 2022.",
+        "subtitle": "Por favor, selecione a <b>opção que melhor representa a sua condição de passageiro</b> quando utilizou o voo Curitiba - Pato Branco no Aeroporto Regional de Pato Branco para se deslocar até Curitiba no ano de 2022.",
         "required": false,
         "name": "acompanhamento_voo",
         "data": [
@@ -3003,7 +3003,7 @@
     "54": {
         "type": "radio",
         "title": "SBPO - Uso do Aeroporto - Motivo da Viagem",
-        "subtitle": "Por favor, <u>leia com atenção</u> e <b>selecione a opção que melhor representa a razão que MAIS MOTIVOU sua(s) viagem(ns)</b> quando utilizou o voo da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba no ano de 2022.",
+        "subtitle": "Por favor, <u>leia com atenção</u> e <b>selecione a opção que melhor representa a razão que MAIS MOTIVOU sua(s) viagem(ns)</b> quando utilizou o voo Curitiba - Pato Branco no Aeroporto Regional de Pato Branco para se deslocar até Curitiba no ano de 2022.",
         "required": false,
         "name": "motivo_viagem_cwb",
         "data": [
@@ -3032,7 +3032,7 @@
     "55": {
         "type": "radio",
         "title": "SBPO - Uso do Aeroporto - Necessidade de Conexão",
-        "subtitle": "Quando você utilizou o(s) voo(s) da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba no ano de 2022, <b>em alguma(s) ocasião(ões) precisou fazer conexão para outro aeroporto?</b>",
+        "subtitle": "Quando você utilizou o(s) voo(s) Curitiba - Pato Branco no Aeroporto Regional de Pato Branco para se deslocar até Curitiba no ano de 2022, <b>em alguma(s) ocasião(ões) precisou fazer conexão para outro aeroporto?</b>",
         "required": false,
         "name": "necessidade_conexao_cwb",
         "data": [
