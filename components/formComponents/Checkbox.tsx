@@ -3,7 +3,7 @@ import React from 'react';
 const Checkbox = (props: any) => {
   return (
     <div className='clamp-matrix sm:w-full h-full overflow-auto sm:overflow-hidden'>
-      <table className='sm:min-w-[360px] w-full'>
+      <table className='sm:min-w-[360px] w-full border-separate border-spacing-2'>
         <thead>
           <tr>
             {Object.values(props.data[0]).map((item: any, index: any) => {
@@ -24,14 +24,14 @@ const Checkbox = (props: any) => {
 
 
             return (
-              <tr className='after:content-[""] after:block after:py-5' key={index}>
+              <tr key={index}>
                 {Object.values(item).map((subItem: any, subIndex: any) => {
                   return (
-                    <td key={subIndex}>
+                    <td className={`${subIndex == 0 ? '' : 'text-center align-middle'}`} key={subIndex}>
                       {
                         subIndex == 0 ?
                           subItem.title :
-                            <input className="hover:cursor-pointer w-full h-full scale-125 accent-indigo-500" type="checkbox" id={subItem.value} name={subItem.value} step={props.goTo} value={subItem.value}></input>
+                            <input className="hover:cursor-pointer scale-[120%] accent-indigo-500 z-10" type="checkbox" id={subItem.value} name={subItem.value} step={props.goTo} value={subItem.value}></input>
                       }
                     </td>
                   )
