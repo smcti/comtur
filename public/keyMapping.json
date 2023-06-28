@@ -349,8 +349,8 @@
         "foz_do_iguacu_pr_sp": "Aeroporto de Foz do Iguaçu/PR",
         "guarapuava_pr_sp": "Aeroporto de Guarapuava/PR",
         "pato_branco_executiva_sp": "Aeroporto de Pato Branco (aeronave executiva/particular)",
-        "sao_jose_pinhais_conexao_sp": "Aeroporto de São José dos Pinhais (com conexão após voo da Azul saindo de Pato Branco)",
-        "sao_jose_pinhais_sem_conexao_sp": "Aeroporto de São José dos Pinhais (sem ter feito conexão após voo da Azul saindo de Pato Branco)",
+        "sao_jose_pinhais_conexao_sp": "Aeroporto de São José dos Pinhais (com conexão saindo de Pato Branco)",
+        "sao_jose_pinhais_sem_conexao_sp": "Aeroporto de São José dos Pinhais (sem ter feito conexão saindo de Pato Branco)",
         "outro_aeroporto_sp": "Outro aeroporto"
     },
     "utilizaria_aeroporto_pb_campinas": {
@@ -423,7 +423,7 @@
         "linha_curitiba": "Minha cidade tem linha(s) de ônibus para Curitiba",
         "outra_cidade_onibus_curitiba": "Preciso ir até outra cidade para conseguir linha(s) de ônibus para Curitiba"
     },
-    "uso_azul_aeroporto_pato_branco": {
+    "uso_aeroporto_pato_branco": {
         "sim_cwb": "Sim",
         "nao_cwb": "Não"
     },
@@ -460,12 +460,12 @@
         "nao_consumo_cwb": "Não",
         "as_vezes_consumo_cwb": "Às vezes"
     },
-    "despacho_bagagem_azul_cwb": {
+    "despacho_bagagem_cwb": {
         "sim_sempre_despacho_cwb": "Sim, sempre despachei/despacho bagagem",
         "depende_despacho_cwb": "Depende, às vezes sim outras vezes não",
         "nao_despacho_cwb": "Não, não despachei/despacho bagagem"
     },
-    "antecedencia_compra_passagem_azul_cwb": {
+    "antecedencia_compra_passagem_cwb": {
         "menos_30_dias_cwb": "Geralmente com menos de 30 dias de antecedência",
         "30_59_dias_cwb": "Geralmente com 30 e 59 dias de antecedência",
         "60_89_dias_cwb": "Geralmente com 60 e 89 dias de antecedência",

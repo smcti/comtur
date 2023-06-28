@@ -2316,12 +2316,12 @@
             },
             {
                 "value": "sao_jose_pinhais_conexao_sp",
-                "label": "Aeroporto de São José dos Pinhais (com conexão após voo da Azul saindo de Pato Branco)",
+                "label": "Aeroporto de São José dos Pinhais (com conexão saindo de Pato Branco)",
                 "goto": "33"
             },
             {
                 "value": "sao_jose_pinhais_sem_conexao_sp",
-                "label": "Aeroporto de São José dos Pinhais (sem ter feito conexão após voo da Azul saindo de Pato Branco)",
+                "label": "Aeroporto de São José dos Pinhais (sem ter feito conexão saindo de Pato Branco)",
                 "goto": "33"
             },
             {
@@ -2676,7 +2676,7 @@
         "title": "SBPO - Uso do Aeroporto",
         "subtitle": "Na questão anterior você respondeu que quando precisa se deslocar para Curitiba o seu meio de transporte prioritário é avião. Durante o ano de 2022 você utilizou o voo Curitiba-Pato Branco no Aeroporto Regional de Pato Branco para se deslocar até Curitiba?",
         "required": false,
-        "name": "uso_azul_aeroporto_pato_branco",
+        "name": "uso_aeroporto_pato_branco",
         "data": [
             {
                 "value": "sim_cwb",
@@ -2855,7 +2855,7 @@
         "title": "SBPO - Uso do Aeroporto - Despacho de Bagagem",
         "subtitle": "De modo geral, <b>você despachou ou costuma despachar bagagem no voo Curitiba - Pato Branco</b> no Aeroporto Regional de Pato Branco?",
         "required": false,
-        "name": "despacho_bagagem_azul_cwb",
+        "name": "despacho_bagagem_cwb",
         "data": [
             {
                 "value": "sim_sempre_despacho_cwb",
@@ -2879,7 +2879,7 @@
         "title": "SBPO - Uso do Aeroporto - Antecedência de Compra de Passagem",
         "subtitle": "De modo geral, <b>com quanto tempo de antecedência você comprou a(s) passagem(ns) para o voo Curitiba - Pato Branco no Aeroporto Regional de Pato Branco?</b>?",
         "required": false,
-        "name": "antecedencia_compra_passagem_azul_cwb",
+        "name": "antecedencia_compra_passagem_cwb",
         "data": [
             {
                 "value": "menos_30_dias_cwb",
@@ -3051,7 +3051,7 @@
     "56": {
         "type": "checkbox2",
         "title": "SBPO - Uso do Aeroporto - Destino das Conexões",
-        "subtitle": "Você informou que a <b>razão das suas viagens</b> quando utilizou o voo da Azul Linhas Aéreas Brasileiras para se deslocar de Pato Branco até Curitiba no ano de 2022 <u>incluíram fazer conexões para outros aeroportos</u>. Por favor, informe <b>o(s) destino(s)</b> para onde precisou fazer conexões (você pode selecionar mais de uma alternativa):",
+        "subtitle": "Você informou que a <b>razão das suas viagens</b> quando utilizou o voo para se deslocar de Pato Branco até Curitiba no ano de 2022 <u>incluíram fazer conexões para outros aeroportos</u>. Por favor, informe <b>o(s) destino(s)</b> para onde precisou fazer conexões (você pode selecionar mais de uma alternativa):",
         "required": false,
         "name": "destino_conexoes_cwb",
         "goto": "58",
