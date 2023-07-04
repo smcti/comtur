@@ -13,10 +13,8 @@ import Page from '@components/formComponents/Page';
 import Checkbox2 from '@components/formComponents/Checkbox2';
 import Email from '@components/formComponents/Email';
 import Modal from '@components/commom/Modal';
+import topFunction from '@utils/topFunction'
 import CPF from '@components/formComponents/CPF'
-
-
-
 
 
 
@@ -113,6 +111,8 @@ const FormRenderer = (props: any) => {
             errMessage?.classList.add('hidden');
         }
 
+        topFunction();
+
         console.log(page);
 
         let myPage = page;
@@ -148,6 +148,8 @@ const FormRenderer = (props: any) => {
         if (!handlePagesBw()) {
             return;
         }
+
+        topFunction();        
 
         const formId = document.getElementById('form');
 

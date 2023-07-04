@@ -3,7 +3,7 @@ const Radio = (props: any) => {
     <div className="flex flex-col gap-4">
       {Object.values(props.data).map((item: any, index: any) => {
         return (
-          <div key={index} className="flex flex-row gap-4">
+          <div key={index} className="flex flex-row gap-4 items-center">
             <input className="hover:cursor-pointer scale-125 accent-indigo-500 min-w-[12px]" type="radio" id={item.value} name={props.name} value={item.value} required={props.required} step={item.goto}/>
             <label className="hover:cursor-pointer" htmlFor={item.value}>{item.label}</label>
           </div>
