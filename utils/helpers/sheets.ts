@@ -47,3 +47,37 @@ exports.updateValues = (obj:any, keyMappings:any) => {
     return newObj;
   };
   
+  exports.verifyCPF = async (cpf: string) => {
+    const { googleSheets, auth, spreadsheetId } = await authSheets();
+  
+    const headerRange = "COMTUR!1:1";
+    const response = await googleSheets.spreadsheets.values.get({
+      auth,
+      spreadsheetId,
+      range: headerRange,
+    });
+  
+    if (!response.data.values) {
+      throw new Error("No column headers found");
+    }
+  
+    const headers = response.data.values[0];
+    const cpfColumnIndex = headers.indexOf("cpf");
+  
+    if (cpfColumnIndex === -1) {
+      throw new Error("CPF column not found");
+    }
+    const valuesRange = `COMTUR!${String.fromCharCode(65 + cpfColumnIndex)}:${String.fromCharCode(65 + cpfColumnIndex)}`;
+    const cpfResponse = await googleSheets.spreadsheets.values.get({
+      auth,
+      spreadsheetId,
+      range: valuesRange,
+    });
+  
+    if (!cpfResponse.data.values) {
+      throw new Error("No cpf values found");
+    }
+  
+    const cpfValues = cpfResponse.data.values.flat();
+    return cpfValues.includes(cpf);
+  };

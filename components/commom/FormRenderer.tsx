@@ -13,6 +13,7 @@ import Page from '@components/formComponents/Page';
 import Checkbox2 from '@components/formComponents/Checkbox2';
 import Email from '@components/formComponents/Email';
 import Modal from '@components/commom/Modal';
+import CPF from '@components/formComponents/CPF'
 
 
 
@@ -131,7 +132,7 @@ const FormRenderer = (props: any) => {
         const submitButton = document.getElementById('submit') as HTMLButtonElement;
         submitButton.disabled = true;
 
-        if (myPage == 61) {
+        if (myPage == 59) {
 
             if (submitButton) {
                 submitButton.disabled = false;
@@ -197,7 +198,9 @@ const FormRenderer = (props: any) => {
                                 <Checkbox2 goTo={item.goto} data={item.data} name={item.name} /> :
                                 item.type == 'email' ?
                                 <Email goTo={item.goto} name={item.name} placeholder={item.placeholder} /> :
-                                <Page goTo={item.goto} name={item.name} />
+                                item.type == 'CPF'? <CPF value='' name={item.name} goTo={item.goto} placeholder={item.placeholder} id="myCPF"/>
+                                : 
+                                <Page goTo={item.goto} name={item.name}/>
 
                             }
                             <div className='flex flex-row items-center gap-4 text-red-500 hidden' id={`err-${index}`}>

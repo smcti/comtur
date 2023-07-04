@@ -26,29 +26,21 @@ export async function POST(req: Request) {
         ];
         checkbox_keys.forEach(checkboxKey => {
             const matchingValues = Object.entries(values)
-              .filter(([key]) => key.includes(checkboxKey))
-              .map(([, value]) => value);
-          
+                .filter(([key]) => key.includes(checkboxKey))
+                .map(([, value]) => value);
+
             values[checkboxKey] = matchingValues.join(", ");
-          });
-
-        if (!values.email) {
-            return NextResponse.json({
-                message: "Email não inserido",
-            },
-                {
-                    status: 400
-                }
-            )
-        }
-
-        if (await sheets.verifyEmail(values.email)) {
-            return NextResponse.json({
-                message: "Email já registrado",
-            },
-                {
-                    status: 401
-                })
+        });
+        if (values.cpf) {
+            values.cpf = values.cpf.replace(".", "").replace(".", "").replace("-", "");
+            if (!sheets.verifyCPF(values.cpf)) {
+                return NextResponse.json({
+                    message: "CPF já registrado"
+                },
+                    {
+                        status: 403
+                    })
+            }
         }
 
         if (!response.data.values) {

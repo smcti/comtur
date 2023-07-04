@@ -3,7 +3,44 @@
         "type": "page",
         "title": "LEIA ANTES DE COMEÇAR A RESPONDER",
         "subtitle": "<p>Esta sondagem é uma iniciativa do <b>Conselho Municipal de Turismo (COMTUR)</b> de Pato Branco/PR, entidade que auxilia na elaboração de propostas de planejamento turístico no contexto da <b>Região Turística Vales do Iguaçu</b> dentro do Programa de Regionalização do Turismo coordenado pela Instância de Governança Regional (IGR) e conta com o apoio da <b>Agência de Desenvolvimento Regional do Sudoeste do Paraná</b>, da <b>Associação do Municípios do Sudoeste do Paraná - AMSOP</b> e da <b>Coordenaria das Associações Comerciais e Empresarias do Sudoeste do Paraná - CACISPAR.</b></p><p>O objetivo desta sondagem é identificar o perfil e, principalmente, <b><em>compreender facilidades ou dificuldades do <u>público em geral</u></em></b> das regiões Sudoeste do Paraná e Oeste de Santa Catarina <b><em>quando necessita se deslocar para centros microrregionais e grandes centros como Curitiba, Florianópolis e São Paulo.</em></b></p><p>Os resultados desta sondagem serão anônimos e utilizados <b><u>unicamente como informação estatística</u></b> que será compartilhada com as entidades apoiadoras para que possam desenvolver ações em <b>favor de todas as pessoas</b> que necessitam se deslocar, diária ou eventualmente, para outras cidades em busca de serviços, soluções e/ou negócios.</p><p><b><u>Nenhum dado pessoal será coletado</U></b> e as respostas serão usadas <b><u>exclusivamente para fins de pesquisa</u></b>. Sua participação será mantida em <b><u>absoluta confidencialidade.</u></b></p><p>Você precisará de <b>poucos minutos para responder</b>. É fundamental que você <b><u>responda a pesquisa até o final.</u></b></p><p>Obrigado por participar!</p>",
-        "goto": "1"
+        "goto": "0.1"
+    },
+    "0.1": {
+        "type": "radio",
+        "title": "Termo de consentimento Email e CPF",
+        "subtitle": "Você aceita fornecer seu CPF e seu email?",
+        "required": true,
+        "name": "cpf_email",
+        "data": [
+            {
+                "value": "aceito_cpf_email",
+                "label": "Eu aceito fornecer meu CPF e meu Email",
+                "goto": "0.2"
+            },
+            {
+                "value": "recuso_cpf_email",
+                "label": "Eu me recuso a fornecer meu CPF e meu Email",
+                "goto": "1"
+            }
+        ]
+    },
+    "0.2": {
+        "type": "CPF",
+        "title": "CPF",
+        "subtitle": "Por gentileza, informe seu CPF",
+        "placeholder": "000.000.000-00",
+        "required":false,
+        "name": "cpf",
+        "goto": "0.3"
+    },
+    "0.3": {
+        "type": "email",
+        "title": "Perfil - email",
+        "subtitle": "Por favor, insira seu email",
+        "placeholder": "exemplo@email.com",
+        "required": false,
+        "name": "email",
+        "goto": "59"
     },
     "1": {
         "type": "radio",
@@ -3199,15 +3236,6 @@
         ]
     },
     "60": {
-        "type": "email",
-        "title": "Perfil - email",
-        "subtitle": "Por favor, insira seu email",
-        "placeholder": "exemplo@email.com",
-        "required": false,
-        "name": "email",
-        "goto": "61"
-    },
-    "61": {
         "type": "page",
         "title": "Conclusão",
         "subtitle": "<p>Obrigado por participar desta pesquisa</p>",

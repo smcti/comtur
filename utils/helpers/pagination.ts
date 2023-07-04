@@ -1,5 +1,5 @@
 const queue: number[] = [0];
-
+const cpf = require('@utils/helpers/verifyCPF');
 // The function gets the current page, checks if the checkboxes, radio and text
 // are marked, and return the page it goes to.
 // I'm hacking storing this information in the step field of the buttons
@@ -13,11 +13,26 @@ export const getCurrentPage = () => {
   if (element.children[2].type === 'email') {
     var email = element.children[2].value;
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    
+
     if (emailRegex.test(email)) {
       return element.children[2].step;
-    }    
+    }
   }
+
+  if ((element.children[2].type === 'text') && element.children[2].classList.contains('cpf')) {
+    try {
+      if (element.children[2].classList.contains('cpf_exist') || element.children[2].classList.contains('cpf_invalid') ||
+        element.children[2].classList.contains('verifying_cpf') || element.children[2].value.length != 14 ) {
+        return false;
+      }
+    } catch (error) {
+
+    }
+    if (!cpf.verifyCPF(element.children[2].value) && cpf.cpfExists(element.children[2].value)) {
+      return false;
+    }
+  }
+
 
   if ((element.children[2].type === 'text') && element.children[2].value.replace(/[^a-z1-9]/gi, "").length >= 1) {
     return element.children[2].step;
