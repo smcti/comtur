@@ -132,7 +132,7 @@ const FormRenderer = (props: any) => {
         const submitButton = document.getElementById('submit') as HTMLButtonElement;
         submitButton.disabled = true;
 
-        if (myPage == 59) {
+        if (myPage == 60) {
 
             if (submitButton) {
                 submitButton.disabled = false;
