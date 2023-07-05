@@ -18,11 +18,8 @@ export const getCurrentPage = () => {
       return element.children[2].step;
     }
   }
-  console.log(element.children[2])
   if (element.children[2].classList.contains('singleCheck')) {
-    console.log("hi mom");
     const singleCheckElement = element.children[2].children[0];
-    console.log(singleCheckElement);
     const step = singleCheckElement.getAttribute('step');
     return step;
   }
@@ -72,7 +69,6 @@ export const getCurrentPage = () => {
       }
     }
   }
-  console.log('here');
   return false;
 }
 
