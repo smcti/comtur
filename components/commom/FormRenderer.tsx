@@ -15,6 +15,7 @@ import Email from '@components/formComponents/Email';
 import Modal from '@components/commom/Modal';
 import topFunction from '@utils/topFunction'
 import CPF from '@components/formComponents/CPF'
+import SingleCheck from '@components/formComponents/singleCheck';
 const indexMap:any = require('@public/indexMap.json')
 
 
@@ -198,7 +199,7 @@ const FormRenderer = (props: any) => {
                                                 item.type == 'email' ?
                                                     <Email goTo={item.goto} name={item.name} placeholder={item.placeholder} /> :
                                                     item.type == 'CPF' ? <CPF value='' name={item.name} goTo={item.goto} placeholder={item.placeholder} id="myCPF" />
-                                                        :
+                                                        : item.type == 'singleCheck'?<SingleCheck name ={item.name} value ={item.value} defaultGoTo={item.defaultGoTo} goTo={item.goto} data={item.data} /> :
                                                         <Page goTo={item.goto} name={item.name} />
 
                             }

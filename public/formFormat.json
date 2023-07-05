@@ -6,22 +6,18 @@
         "goto": "0.1"
     },
     "0.1": {
-        "type": "radio",
+        "type": "singleCheck",
         "title": "TERMOS DE USO E POLÍTICA DE PRIVACIDADAE",
-        "subtitle": "<b><u><a target='_blank' href ='/assets/docs/termos_de_uso.pdf'>TERMO DE USO</a></u></b>",
+        "subtitle": "Leia o <b><u><a target='popup' href ='/assets/docs/termos_de_uso.pdf'>TERMO DE USO</a></u></b>",
         "required": true,
         "name": "cpf_email",
+        "goto": "0.2",
+        "defaultGoTo": "1",
         "data": [
             {
                 "value": "aceito_cpf_email",
-                "label": "Eu li e aceito fornecer meus dados pessoais",
-                "goto": "0.2"
-            },
-            {
-                "value": "recuso_cpf_email",
-                "label": "Me recuso a fornecer meus dados pessoais",
-                "goto": "1"
-            } 
+                "label": "Eu li e concordo com os termos de uso (opcional)."
+            }
         ]
     },
     "0.2": {
