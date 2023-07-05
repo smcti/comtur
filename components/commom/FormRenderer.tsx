@@ -169,7 +169,8 @@ const FormRenderer = (props: any) => {
         }
         document.getElementById('next')?.classList.remove('hidden');
         document.getElementById('back')?.classList.remove('hidden');
-        if (page == 1) {
+        console.log(page);
+        if (page == 0.1) {
             document.getElementById('back')?.classList.add('hidden');
         }
     }
