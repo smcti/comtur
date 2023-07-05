@@ -101,7 +101,6 @@ const FormRenderer = (props: any) => {
     const btFw = () => {
         const element = document.getElementById(String(page));
         const errMessage = document.getElementById("err-" + (String(page)));
-        console.log("err-" + (String(page)));
         if (!handlePagesFw()) {
             element?.classList.add('border-red-300');
             errMessage?.classList.remove('hidden');
@@ -170,13 +169,11 @@ const FormRenderer = (props: any) => {
         }
         document.getElementById('next')?.classList.remove('hidden');
         document.getElementById('back')?.classList.remove('hidden');
-        console.log(page);
         if (page == 0.1) {
             document.getElementById('back')?.classList.add('hidden');
         }
     }
 
-    console.log()
     return (
         <div id="main_page">
             <ProgressBar pageTotal={pages} page={Number(page) + 1} />

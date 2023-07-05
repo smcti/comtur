@@ -55,7 +55,7 @@ const CPF = (props: CPFProps) => {
                 setInvalidCPFError('CPF inválido');
             }
             setVerifyingCPF(false);
-        } else if (formattedCPF.length > 14) {
+        } else if (formattedCPF.length >= 14) {
             setCpfExistsError('');
             setInvalidCPFError('Verifique o CPF');
         } else {
