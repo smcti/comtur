@@ -7,21 +7,21 @@
     },
     "0.1": {
         "type": "radio",
-        "title": "Termo de consentimento Email e CPF",
-        "subtitle": "Você aceita fornecer seu CPF e seu email para a pesquida do COMTUR?",
+        "title": "TERMOS DE USO E POLÍTICA DE PRIVACIDADAE",
+        "subtitle": "<b><u><a target='_blank' href ='/assets/docs/termos_de_uso.pdf'>TERMO DE USO</a></u></b>",
         "required": true,
         "name": "cpf_email",
         "data": [
             {
                 "value": "aceito_cpf_email",
-                "label": "Eu aceito fornecer meu CPF e meu Email",
+                "label": "Eu li e aceito fornecer meus dados pessoais",
                 "goto": "0.2"
             },
             {
                 "value": "recuso_cpf_email",
-                "label": "Eu me recuso a fornecer meu CPF e meu Email",
+                "label": "Me recuso a fornecer meus dados pessoais",
                 "goto": "1"
-            }
+            } 
         ]
     },
     "0.2": {
