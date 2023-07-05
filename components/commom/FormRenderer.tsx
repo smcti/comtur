@@ -101,6 +101,7 @@ const FormRenderer = (props: any) => {
     const btFw = () => {
         const element = document.getElementById(String(page));
         const errMessage = document.getElementById("err-" + (String(page)));
+        console.log("err-" + (String(page)));
         if (!handlePagesFw()) {
             element?.classList.add('border-red-300');
             errMessage?.classList.remove('hidden');
@@ -206,7 +207,7 @@ const FormRenderer = (props: any) => {
                                 <Page goTo={item.goto} name={item.name}/>
 
                             }
-                            <div className='flex flex-row items-center gap-4 text-red-500 hidden' id={`err-${index}`}>
+                            <div className='flex flex-row items-center gap-4 text-red-500 hidden' id={`err-${keys[index]}`}>
                                 <div><LuAlertCircle /></div>Por favor, preencha o campo acima antes de avançar</div>
                         </fieldset>
                     )
