@@ -8,7 +8,7 @@
     "0.1": {
         "type": "singleCheck",
         "title": "TERMOS DE USO E POLÍTICA DE PRIVACIDADAE",
-        "subtitle": "Leia o <b><u><a target='popup' href ='/assets/docs/termos_de_uso.pdf'>TERMO DE USO</a></u></b>",
+        "subtitle": "Leia os <b><u><a target='popup' href ='/assets/docs/termos_de_uso.pdf'>TERMOS DE USO</a></u></b>",
         "required": true,
         "name": "cpf_email",
         "goto": "0.2",
