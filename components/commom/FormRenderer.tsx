@@ -15,8 +15,10 @@ import Email from '@components/formComponents/Email';
 import Modal from '@components/commom/Modal';
 import topFunction from '@utils/topFunction'
 import CPF from '@components/formComponents/CPF'
+const indexMap:any = require('@public/indexMap.json')
 
 
+  
 
 const keys = Object.keys(formFormat);
 const pages = keys.length;
@@ -95,7 +97,6 @@ const submit = async (event: any) => {
 // Only necessary props are passed to the inputs
 const FormRenderer = (props: any) => {
 
-
     const [page, setPage] = useState(0);
 
     const btFw = () => {
@@ -107,13 +108,13 @@ const FormRenderer = (props: any) => {
 
             return;
         } else {
+
             element?.classList.remove('border-red-300');
             errMessage?.classList.add('hidden');
         }
-
+        
         topFunction();
-
-        console.log(page);
+     
 
         let myPage = page;
         const formId: HTMLElement | null = document.getElementById('form');
@@ -125,7 +126,6 @@ const FormRenderer = (props: any) => {
                 setPage(childNodes[i].id);
             }
         }
-
 
         document.getElementById('next')?.classList.remove('hidden');
         document.getElementById('back')?.classList.remove('hidden');
@@ -149,18 +149,16 @@ const FormRenderer = (props: any) => {
             return;
         }
 
-        topFunction();        
-
+        topFunction();
         const formId = document.getElementById('form');
 
         const childNodes: any = formId?.children;
         for (let i = 0; i < childNodes.length; i++) {
-            
+
             if (!(childNodes[i].classList.contains('hidden')) && (childNodes[i].nodeName.toLowerCase() === 'fieldset')) {
                 setPage(childNodes[i].id);
             }
         }
-
         const submitButton = document.getElementById('submit') as HTMLButtonElement | null;
 
         if (submitButton) {
@@ -173,10 +171,10 @@ const FormRenderer = (props: any) => {
             document.getElementById('back')?.classList.add('hidden');
         }
     }
-
     return (
         <div id="main_page">
-            <ProgressBar pageTotal={pages} page={Number(page) + 1} />
+         <ProgressBar pageTotal={pages} page={indexMap[page] + 1} />
+
             <form id='form' className='section-default flex flex-col gap-4 py-32'>
                 <h1 className='text-2xl font-bold'>Desafios no deslocamento para grandes centros</h1>
                 {Object.values(formFormat).map((item: any, index: any) => {
@@ -190,18 +188,18 @@ const FormRenderer = (props: any) => {
                             <div className={`leading-8 text-justify hyphens-auto ${index == 0 ? 'flex flex-col gap-4' : ''}`} dangerouslySetInnerHTML={{ __html: `<span>${(index != 0 && index != 61) ? `${Number(keys[index])}) ` : ''}</span>` + item.subtitle }}></div>
                             {
                                 item.type == 'radio' ?
-                                <Radio data={item.data} name={item.name} required={item.required} /> :
-                                item.type == 'checkbox' ?
-                                <Checkbox data={item.data} name={item.name} goTo={item.goto} /> :
-                                item.type == 'text' ?
-                                <Text goTo={item.goto} name={item.name} placeholder={item.placeholder} /> :
-                                item.type == 'checkbox2' ?
-                                <Checkbox2 goTo={item.goto} data={item.data} name={item.name} /> :
-                                item.type == 'email' ?
-                                <Email goTo={item.goto} name={item.name} placeholder={item.placeholder} /> :
-                                item.type == 'CPF'? <CPF value='' name={item.name} goTo={item.goto} placeholder={item.placeholder} id="myCPF"/>
-                                : 
-                                <Page goTo={item.goto} name={item.name}/>
+                                    <Radio data={item.data} name={item.name} required={item.required} /> :
+                                    item.type == 'checkbox' ?
+                                        <Checkbox data={item.data} name={item.name} goTo={item.goto} /> :
+                                        item.type == 'text' ?
+                                            <Text goTo={item.goto} name={item.name} placeholder={item.placeholder} /> :
+                                            item.type == 'checkbox2' ?
+                                                <Checkbox2 goTo={item.goto} data={item.data} name={item.name} /> :
+                                                item.type == 'email' ?
+                                                    <Email goTo={item.goto} name={item.name} placeholder={item.placeholder} /> :
+                                                    item.type == 'CPF' ? <CPF value='' name={item.name} goTo={item.goto} placeholder={item.placeholder} id="myCPF" />
+                                                        :
+                                                        <Page goTo={item.goto} name={item.name} />
 
                             }
                             <div className='flex flex-row items-center gap-4 text-red-500 hidden' id={`err-${keys[index]}`}>
@@ -210,7 +208,7 @@ const FormRenderer = (props: any) => {
                     )
                 })}
                 <div className='flex flex-row-reverse gap-4'>
-                    <button id='submit' type='button' className='button-send hidden relative' onClick={submit}><span id='sendRef'>Enviar</span><FaSpinner id='loadRef' className='hidden animate-spin'/></button>
+                    <button id='submit' type='button' className='button-send hidden relative' onClick={submit}><span id='sendRef'>Enviar</span><FaSpinner id='loadRef' className='hidden animate-spin' /></button>
                     <button id='next' type='button' className='button' onClick={btFw} >Avançar</button>
                     <button id='back' type='button' className='button hidden' onClick={btBw} >Voltar</button>
                 </div>
