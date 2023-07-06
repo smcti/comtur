@@ -2,13 +2,13 @@
     "0": {
         "type": "page",
         "title": "LEIA ANTES DE COMEÇAR A RESPONDER",
-        "subtitle": "<p>Esta sondagem é uma iniciativa do <b>Conselho Municipal de Turismo (COMTUR)</b> de Pato Branco/PR, entidade que auxilia na elaboração de propostas de planejamento turístico no contexto da <b>Região Turística Vales do Iguaçu</b> dentro do Programa de Regionalização do Turismo coordenado pela Instância de Governança Regional (IGR) e conta com o apoio da <b>Agência de Desenvolvimento Regional do Sudoeste do Paraná</b>, da <b>Associação do Municípios do Sudoeste do Paraná - AMSOP</b> e da <b>Coordenaria das Associações Comerciais e Empresarias do Sudoeste do Paraná - CACISPAR.</b></p><p>O objetivo desta sondagem é identificar o perfil e, principalmente, <b><em>compreender facilidades ou dificuldades do <u>público em geral</u></em></b> das regiões Sudoeste do Paraná e Oeste de Santa Catarina <b><em>quando necessita se deslocar para centros microrregionais e grandes centros como Curitiba, Florianópolis e São Paulo.</em></b></p><p>Os resultados desta sondagem serão anônimos e utilizados <b><u>unicamente como informação estatística</u></b> que será compartilhada com as entidades apoiadoras para que possam desenvolver ações em <b>favor de todas as pessoas</b> que necessitam se deslocar, diária ou eventualmente, para outras cidades em busca de serviços, soluções e/ou negócios.</p><p><b><u>Nenhum dado pessoal será coletado</U></b> e as respostas serão usadas <b><u>exclusivamente para fins de pesquisa</u></b>. Sua participação será mantida em <b><u>absoluta confidencialidade.</u></b></p><p>Você precisará de <b>poucos minutos para responder</b>. É fundamental que você <b><u>responda a pesquisa até o final.</u></b></p><p>Obrigado por participar!</p>",
+        "subtitle": "<p>Esta sondagem é uma iniciativa do <b>Conselho Municipal de Turismo (COMTUR)</b> de Pato Branco/PR, entidade que auxilia na elaboração de propostas de planejamento turístico no contexto da <b>Região Turística Vales do Iguaçu</b> dentro do Programa de Regionalização do Turismo coordenado pela Instância de Governança Regional (IGR) e conta com o apoio da <b>Agência de Desenvolvimento Regional do Sudoeste do Paraná</b>, da <b>Associação do Municípios do Sudoeste do Paraná - AMSOP</b> e da <b>Coordenaria das Associações Comerciais e Empresarias do Sudoeste do Paraná - CACISPAR.</b></p><p>O objetivo desta sondagem é identificar o perfil e, principalmente, <b><em>compreender facilidades ou dificuldades do <u>público em geral</u></em></b> das regiões Sudoeste do Paraná e Oeste de Santa Catarina <b><em>quando necessita se deslocar para centros microrregionais e grandes centros como Curitiba, Florianópolis e São Paulo.</em></b></p><p>Os resultados desta sondagem serão anônimos e utilizados <b><u>unicamente como informação estatística</u></b> que será compartilhada com as entidades apoiadoras para que possam desenvolver ações em <b>favor de todas as pessoas</b> que necessitam se deslocar, diária ou eventualmente, para outras cidades em busca de serviços, soluções e/ou negócios.</p><p>As respostas serão usadas <b><u>exclusivamente para fins de pesquisa</u></b>. Sua participação será mantida em <b><u>absoluta confidencialidade.</u></b></p><p>Você precisará de <b>poucos minutos para responder</b>. É fundamental que você <b><u>responda a pesquisa até o final.</u></b></p><p>Obrigado por participar!</p>",
         "goto": "0.1"
     },
     "0.1": {
         "type": "singleCheck",
-        "title": "TERMOS DE USO E POLÍTICA DE PRIVACIDADAE",
-        "subtitle": "Leia os <b><u><a target='popup' href ='/assets/docs/termos_de_uso.pdf'>TERMOS DE USO</a></u></b>",
+        "title": "TERMOS DE USO E POLÍTICA DE PRIVACIDADE",
+        "subtitle": "Você pode concorrer a uma <b>viagem para o Rio de Janeiro!</b><br />Concordando com os <b><u><a target='popup' href ='/assets/docs/termos_de_uso.pdf'>TERMOS DE USO E POLÍTICAS DE PRIVACIDADE</a></u></b>, e respondendo o questionário até final você pode <b>concorrer a uma viagem com acompanhante para o Rio de Janeiro</b>, com saída e retorno pelo <b>Aeroporto Regional de Pato Branco</b>.",
         "required": true,
         "name": "cpf_email",
         "goto": "0.2",
@@ -16,7 +16,7 @@
         "data": [
             {
                 "value": "aceito_cpf_email",
-                "label": "Eu li e concordo com os termos de uso (opcional)."
+                "label": "Eu li e concordo com os termos de uso."
             }
         ]
     },
