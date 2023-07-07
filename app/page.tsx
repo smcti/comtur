@@ -1,5 +1,7 @@
 'use client'
 
+import { FiHelpCircle } from 'react-icons/fi'
+
 import FormRenderer from '@components/commom/FormRenderer';
 
 const page = ({ params, searchParams }: { params: any, searchParams: any }) => {

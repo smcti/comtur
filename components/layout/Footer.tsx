@@ -1,4 +1,10 @@
+'use client'
+
 const Footer = () => {
+  const sendEmail = () => {
+    window.location.href= "mailto:ajuda@patobranco.tec.br?cc=projetos@patobranco.tec.br, projeto.dev@patobranco.tec.br, cattani@patobranco.tec.br &subject=Ajuda com o formulário COMTUR"
+  }
+
   return (
     <footer className="mt-auto bg-indigo-500 py-32 text-zircon-50 font-poppins">
       <div className="section-default flex flex-col gap-8">
@@ -23,11 +29,16 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
           {/* <img className="max-h-12" src="#" alt="logo" /> */}
         </div>
       </div>
       <div className="section-default flex flex-col gap-4 text-center  pt-32">
+          <div><b>Precisa de ajuda?</b> entre em contato com <span 
+          className="underline hover:cursor-pointer"
+          onClick={() => {sendEmail()}}>
+            ajuda@patobranco.tec.br
+            </span>
+          </div>
         <div className="text-2xl text-gray-300"><span className="text-gray-50">PB</span> Forms</div>
         <hr />
         <div className="flex flex-col gap-4">
