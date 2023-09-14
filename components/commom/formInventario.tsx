@@ -59,7 +59,8 @@ const FormInventario = () => {
       }
 
       // Now you can work with formData
-      const url: string = String(process.env.PDF_API_URL);
+      const url: string =
+        "https://comtur.patobranco.tec.br/api/pdfSheets";
       try {
         const request = await fetch(url, {
           method: "POST",
