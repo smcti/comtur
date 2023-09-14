@@ -60,7 +60,9 @@ const FormInventario = () => {
 
       // Now you can work with formData
       const url: string =
-        "https://comtur.patobranco.tec.br/api/pdfSheets";
+        process.env.NODE_ENV === "production"
+          ? "https://comtur.patobranco.tec.br/api/pdfSheets"
+          : "http://localhost:3000/api/pdfSheets";
       try {
         const request = await fetch(url, {
           method: "POST",
