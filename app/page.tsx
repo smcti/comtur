@@ -1,7 +1,9 @@
 import React from "react";
+import { redirect } from "next/navigation";
 
 const page = () => {
-  return <div>Hello</div>;
+  redirect("/inventario");
+  return <div></div>;
 };
 
 export default page;
