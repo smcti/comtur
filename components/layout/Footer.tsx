@@ -1,13 +1,14 @@
-'use client'
+"use client";
 
 const Footer = () => {
   const sendEmail = () => {
-    window.location.href= "mailto:ajuda@patobranco.tec.br?cc=projetos@patobranco.tec.br, projeto.dev@patobranco.tec.br, cattani@patobranco.tec.br &subject=Ajuda com o formulário COMTUR"
-  }
+    window.location.href =
+      "mailto:ajuda@patobranco.tec.br?cc=projetos@patobranco.tec.br, projeto.dev@patobranco.tec.br, cattani@patobranco.tec.br &subject=Ajuda com o formulário COMTUR";
+  };
 
   return (
-    <footer className="mt-auto bg-indigo-500 py-32 text-zircon-50 font-poppins">
-      <div className="section-default flex flex-col gap-8">
+    <footer className='mt-auto bg-indigo-500 py-32 text-zircon-50 font-poppins'>
+      {/* <div className="section-default flex flex-col gap-8">
         <div className="flex flex-col md:flex-row brightness-0 invert justify-between w-full gap-16">
           <div className="flex flex-col w-fit gap-16">
             <h3 className="text-3xl w-full">Realização</h3>
@@ -29,32 +30,43 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          {/* <img className="max-h-12" src="#" alt="logo" /> */}
         </div>
-      </div>
-      <div className="section-default flex flex-col gap-4 text-center  pt-32">
-          <div><b>Precisa de ajuda?</b> entre em contato com <span 
-          className="underline hover:cursor-pointer"
-          onClick={() => {sendEmail()}}>
+      </div> */}
+      <div className='section-default flex flex-col gap-4 text-center  pt-32'>
+        <div>
+          <b>Precisa de ajuda?</b> entre em contato com{" "}
+          <span
+            className='underline hover:cursor-pointer'
+            onClick={() => {
+              sendEmail();
+            }}
+          >
             ajuda@patobranco.tec.br
-            </span>
-          </div>
-        <div className="text-2xl text-gray-300"><span className="text-gray-50">PB</span> Forms</div>
+          </span>
+        </div>
+        <div className='text-2xl text-gray-300'>
+          <span className='text-gray-50'>PB</span> Forms
+        </div>
         <hr />
-        <div className="flex flex-col gap-4">
-          <div>
-            Desenvolvido e disponibilizado pela
-          </div>
-          <a className="underline" href="https://patobranco.tec.br/" target="_blank">
-            <div className="w-full flex flex-col items-center">
-              <img className="h-12" src="/assets/icons/logo-secretaria-white.svg" alt="Brasão Secretaria Municipal de Ciência, Tecnologia e Inovação" />
+        <div className='flex flex-col gap-4'>
+          <div>Desenvolvido e disponibilizado pela</div>
+          <a
+            className='underline'
+            href='https://patobranco.tec.br/'
+            target='_blank'
+          >
+            <div className='w-full flex flex-col items-center'>
+              <img
+                className='h-12'
+                src='/assets/icons/logo-secretaria-white.svg'
+                alt='Brasão Secretaria Municipal de Ciência, Tecnologia e Inovação'
+              />
             </div>
           </a>
         </div>
-
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

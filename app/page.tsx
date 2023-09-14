@@ -1,15 +1,7 @@
-'use client'
+import React from "react";
 
-import { FiHelpCircle } from 'react-icons/fi'
+const page = () => {
+  return <div>Hello</div>;
+};
 
-import FormRenderer from '@components/commom/FormRenderer';
-
-const page = ({ params, searchParams }: { params: any, searchParams: any }) => {
-    return (
-        <div className='bg-gray-50'>
-            <FormRenderer />
-        </div>
-    )
-}
-
-export default page
+export default page;
