@@ -92,7 +92,11 @@ const FormInventario = () => {
         }
       } catch (error) {
         // Handle network errors or other exceptions
+        setLoading(false);
         console.error("An error occurred:", error);
+        alert(
+          "Um erro inesperado ocorreu em nosso servidor. Por favor, entre em contato com o email ajuda@patobranco.tec.br e reporte o ocorrido. Obrigado desde já."
+        );
       }
     } else {
       setLoading(false);
