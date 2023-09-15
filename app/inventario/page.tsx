@@ -3,7 +3,8 @@
 import React, { useState } from "react";
 import FormInventario from "@components/commom/formInventario";
 import topFunction from "@utils/topFunction";
-const page = () => {
+
+const Page = () => {
   const [read, setRead] = useState(false);
 
   return (
@@ -118,4 +119,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
