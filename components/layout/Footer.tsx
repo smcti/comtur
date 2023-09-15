@@ -44,9 +44,9 @@ const Footer = () => {
             ajuda@patobranco.tec.br
           </span>
         </div>
-        <div className='text-2xl text-gray-300'>
+        {/* <div className='text-2xl text-gray-300'>
           <span className='text-gray-50'>PB</span> Forms
-        </div>
+        </div> */}
         <hr />
         <div className='flex flex-col gap-4'>
           <div>Desenvolvido e disponibilizado pela</div>
