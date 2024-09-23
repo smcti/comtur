@@ -2,7 +2,6 @@ const Button = (props: any) => {
   return (
     <>
       <button>Button</button>
-      
     </>
   )
 }
