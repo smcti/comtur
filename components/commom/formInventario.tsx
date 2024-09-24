@@ -246,6 +246,7 @@ const FormInventario = () => {
             className="flex flex-row gap-4 items-center hover:underline underline-offset-2"
             href="assets/docs/Inventário_PatoBranco_Web_08/2024.pdf"
             download
+            
           >
             <BiDownload className="text-indigo-500" />
             Faça download do Inventário Pato Branco
