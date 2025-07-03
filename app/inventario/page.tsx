@@ -27,6 +27,7 @@ const Page = () => {
       )}
       {!read ? (
         <div className='flex flex-col gap-4 bg-white p-4 rounded-lg border'>
+
           <p>
             O Inventário da Oferta Turística de Pato Branco é o
             documento que descreve o Município no cenário turístico.
@@ -49,7 +50,7 @@ const Page = () => {
           </p>
           <p>
             A presente Versão do Inventário da Oferta Turística de
-            Pato Branco traz informações coletadas até Julho de 2023.
+            Pato Branco traz informações coletadas até Junho de 2025.
             Além do recorte temporal, vale lembrar que o levantamento
             de empresas considerou como critério a localização em
             áreas turísticas o que inclui a Região Central da cidade,
@@ -94,7 +95,7 @@ const Page = () => {
             BAGGIO. A. J.{" "}
             <b>Inventário da Oferta Turística de Pato Branco</b> .
             Pato Branco, PR: Prefeitura de Pato Branco/SEBRAE-PR,
-            2023. Versão 1 Julho, 2023.
+            2023. Versão 2 Junho, 2025.
           </cite>
           <p>Boa leitura.</p>
         </div>
