@@ -244,7 +244,7 @@ const FormInventario = () => {
         <div className="w-full">
           <a
             className="flex flex-row gap-4 items-center hover:underline underline-offset-2"
-            href="assets/docs/Inventário_PatoBranco_Web_08/2025.pdf"
+            href="/assets/docs/Inventário_PatoBranco_Web_08/2025.pdf"
             download
             
           >
