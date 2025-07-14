@@ -49,7 +49,7 @@ const FormInventario = () => {
         process.env.NODE_ENV === "production"
           ? "https://comtur.patobranco.tec.br/api/pdfSheets"
           : "http://localhost:3000/api/pdfSheets";
-      /*try {
+      try {
         const request = await fetch(url, {
           method: "POST",
           headers: {
@@ -85,7 +85,7 @@ const FormInventario = () => {
         alert(
           "Um erro inesperado ocorreu em nosso servidor. Por favor, entre em contato com o email ajuda@patobranco.tec.br e reporte o ocorrido. Obrigado desde já."
         );
-      } */
+      } /*
       try {
         // A tentativa de enviar os dados para a API ainda será feita.
         // Ela continuará falhando em segundo plano, mas não vai travar o usuário.
@@ -104,7 +104,7 @@ const FormInventario = () => {
         // Forçamos a exibição do link de download para o usuário.
         setLoading(false);
         setState(true); // <--- A MUDANÇA MÁGICA ESTÁ AQUI
-        }
+        }*/
     } else {
       setLoading(false);
       // Handle the case where the element with ID "form" was not found
